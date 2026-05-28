@@ -115,30 +115,27 @@
     </div>
   </section>
 
-  <!-- ============ METHODOLOGIE ============ -->
+  <!-- ============ DISCLAIMER ============ -->
   <section class="section">
-    <div style="background: var(--sage-bg); border: 1.5px solid var(--sage); border-radius: 16px; padding: 32px 36px; display: flex; gap: 24px; align-items: flex-start;">
-      <div style="flex-shrink:0; width:48px; height:48px; border-radius:12px; background: var(--sage); display:grid; place-items:center;">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--ink)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+    <div style="background: #FFF8E6; border: 2px solid #E8A910; border-radius: 16px; padding: 32px 36px;">
+      <div style="display:flex; align-items:center; gap:14px; margin-bottom:20px;">
+        <div style="flex-shrink:0; width:44px; height:44px; border-radius:10px; background:#E8A910; display:grid; place-items:center;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        </div>
+        <h3 style="margin:0; font-size:19px; font-weight:700; letter-spacing:-0.01em; color:#92610A;">Note sur la lecture des ratios S/P</h3>
       </div>
-      <div>
-        <h3 style="margin:0 0 10px 0; font-size:18px; font-weight:700; letter-spacing:-0.01em;">Methodologie de calcul — pourquoi ces ratios sont conservateurs</h3>
-        <p style="margin:0 0 14px 0; font-size:15px; line-height:1.65; color:var(--ink-2);">
-          Les indicateurs S/P presentes dans ce portefeuille sont calcules sur une base <strong>volontairement prudente</strong> :
-        </p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom:16px;">
-          <div style="background:white; border-radius:10px; padding:16px 18px; border:1px solid var(--line);">
-            <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); font-weight:600; margin-bottom:6px;">Cote primes</div>
-            <div style="font-size:14.5px; line-height:1.55; color:var(--ink);">Primes encaissees <strong>nettes de commissions</strong>, hors taxes. Seul le montant reellement percu par la compagnie est comptabilise.</div>
-          </div>
-          <div style="background:white; border-radius:10px; padding:16px 18px; border:1px solid var(--line);">
-            <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:var(--muted); font-weight:600; margin-bottom:6px;">Cote sinistres</div>
-            <div style="font-size:14.5px; line-height:1.55; color:var(--ink);">Sinistralite brute : montants <strong>verses par Allianz, sans deduction des recours</strong> encaisses ou a encaisser.</div>
-          </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom:18px;">
+        <div style="background:white; border-radius:10px; padding:18px 20px; border:1px solid #E8D5A0;">
+          <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:#92610A; font-weight:700; margin-bottom:8px;">Primes retenues</div>
+          <div style="font-size:15px; line-height:1.6; color:var(--ink);">Primes payees par les clients, <strong>deduction faite des commissions agence</strong>.<br/><span style="color:var(--muted);">Les taxes d'assurances n'ont <strong>pas</strong> ete deduites.</span></div>
         </div>
-        <div style="background: var(--ink); color:white; border-radius:10px; padding:16px 20px; font-size:15px; line-height:1.6;">
-          <strong style="font-size:16px;">En resume :</strong> les S/P affiches representent le <strong>scenario le plus defavorable</strong>. Apres prise en compte des recours, les ratios reels sont <strong>meilleurs</strong> que ceux presentes ici.
+        <div style="background:white; border-radius:10px; padding:18px 20px; border:1px solid #E8D5A0;">
+          <div style="font-size:12px; text-transform:uppercase; letter-spacing:0.06em; color:#92610A; font-weight:700; margin-bottom:8px;">Sinistres retenus</div>
+          <div style="font-size:15px; line-height:1.6; color:var(--ink);">Sinistres payes par Allianz (charge brute).<br/><span style="color:var(--muted);">Les recours encaisses n'ont <strong>pas</strong> ete deduits de la charge sinistre.</span></div>
         </div>
+      </div>
+      <div style="background:#92610A; color:white; border-radius:10px; padding:18px 22px; font-size:16px; line-height:1.6; font-weight:500;">
+        Si le ratio S/P est bon en l'etat, il est en realite <strong>encore meilleur</strong> une fois les recours deduits.
       </div>
     </div>
   </section>

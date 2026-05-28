@@ -32,29 +32,29 @@ export default function ProtectedLayout({
   if (!user) return null;
 
   return (
-    <div className="relative">
-      {/* Floating top-right bar */}
-      <div className="fixed top-4 right-4 z-50 flex items-center gap-2">
+    <div className="flex flex-col h-screen">
+      {/* App bar */}
+      <div className="shrink-0 h-10 bg-[#1a1917] flex items-center justify-end px-4 gap-2 relative">
         {admin && (
           <Link
             href="/admin/logs"
-            className="inline-flex items-center gap-1.5 px-3 py-2 rounded-full bg-white/90 backdrop-blur border border-[var(--line)] text-xs font-medium text-[var(--ink-2)] hover:bg-[var(--surface-2)] transition-colors shadow-sm"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-[11px] font-medium text-white/70 hover:text-white hover:bg-white/10 transition-colors"
           >
-            <Shield size={13} />
+            <Shield size={12} />
             Admin
           </Link>
         )}
         <button
           onClick={() => setOpen(!open)}
-          className="inline-flex items-center gap-2 px-3 py-2 rounded-full bg-white/90 backdrop-blur border border-[var(--line)] text-xs font-medium text-[var(--ink-2)] hover:bg-[var(--surface-2)] transition-colors shadow-sm"
+          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-medium text-white/70 hover:text-white hover:bg-white/10 transition-colors"
         >
-          <span className="w-5 h-5 rounded-full bg-[var(--ink)] text-white grid place-items-center text-[10px] font-bold">
+          <span className="w-5 h-5 rounded-full bg-white/20 text-white grid place-items-center text-[10px] font-bold">
             {user.email?.[0]?.toUpperCase() || "?"}
           </span>
           {user.email?.split("@")[0]}
         </button>
         {open && (
-          <div className="absolute top-full right-0 mt-2 w-56 bg-white rounded-xl border border-[var(--line)] shadow-lg overflow-hidden">
+          <div className="absolute top-full right-4 mt-1 w-56 bg-white rounded-xl border border-[var(--line)] shadow-lg overflow-hidden z-50">
             <div className="px-4 py-3 border-b border-[var(--line)]">
               <div className="text-xs font-medium truncate">{user.email}</div>
               <div className="text-[11px] text-[var(--muted)]">
@@ -74,7 +74,9 @@ export default function ProtectedLayout({
           </div>
         )}
       </div>
-      {children}
+      <div className="flex-1 overflow-auto">
+        {children}
+      </div>
     </div>
   );
 }
