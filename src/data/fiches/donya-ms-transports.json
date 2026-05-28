@@ -1,0 +1,576 @@
+{
+  "slug": "donya-ms-transports",
+  "nom": "DONYA MS TRANSPORTS",
+  "subtitle": "SAS – Transports routiers de fret interurbains (NAF 4941A) – Bordeaux",
+  "kpiHeader": [
+    {
+      "label": "Portefeuille actif",
+      "value": "12 contrats",
+      "sub": "35 098,34 EUR de prime TTC/an"
+    },
+    {
+      "label": "Sinistralité",
+      "value": "22 sinistres",
+      "sub": "16 367,34 EUR réglés cumul",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissées",
+      "value": "38 234,31 EUR",
+      "sub": "cumul 2024 – 2026"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "42,8 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "vert"
+    },
+    {
+      "label": "Contrats actifs",
+      "value": "12",
+      "sub": "dont 11 Automobile + 1 Autres"
+    },
+    {
+      "label": "Prime TTC/an portefeuille",
+      "value": "35 098,34 EUR",
+      "sub": "tous contrats actifs"
+    },
+    {
+      "label": "Sinistres réels cumulés",
+      "value": "22",
+      "sub": "règle « 1 jour = 1 sinistre »",
+      "accent": "rouge"
+    },
+    {
+      "label": "Sinistralité brute cumulée",
+      "value": "16 367,34 EUR",
+      "sub": "tous montants réglés confondus",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissées (cumul)",
+      "value": "38 234,31 EUR",
+      "sub": "quittances situation P"
+    },
+    {
+      "label": "Commissions cumulées",
+      "value": "4 241,39 EUR",
+      "sub": "11.1 % des primes"
+    },
+    {
+      "label": "Prime nette commissions",
+      "value": "33 992,92 EUR",
+      "sub": "primes – commissions"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "42,8 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "vert"
+    }
+  ],
+  "ficheClient": [
+    {
+      "label": "N° client Lagon",
+      "value": "1000024568"
+    },
+    {
+      "label": "Raison sociale",
+      "value": "SAS DONYA MS TRANSPORTS"
+    },
+    {
+      "label": "SIRET",
+      "value": "924 938 889 00012"
+    },
+    {
+      "label": "Catégorie juridique",
+      "value": "5710 – Société par Actions Simplifiée"
+    },
+    {
+      "label": "Code NAF",
+      "value": "4941A – Transports routiers de fret interurbains"
+    },
+    {
+      "label": "Adresse",
+      "value": "3 Impasse des Hirondelles, 33100 Bordeaux"
+    },
+    {
+      "label": "Date de création de la société",
+      "value": "01/03/2024"
+    },
+    {
+      "label": "Date de création de la fiche Lagon",
+      "value": "12/11/2024"
+    },
+    {
+      "label": "Point de vente",
+      "value": "Corniche"
+    },
+    {
+      "label": "Chargée de clientèle",
+      "value": "Emma Nogaro"
+    },
+    {
+      "label": "Valorisation foyer / client / potentiel",
+      "value": "5 / 5 / 5"
+    },
+    {
+      "label": "Ancienneté du client",
+      "value": "1 an et 6 mois (depuis novembre 2024)"
+    }
+  ],
+  "syntheseAnnuelle": {
+    "intro": "Lecture économique année par année. Primes calculées par année d'émission, sinistralité par année de survenance.",
+    "rows": [
+      {
+        "annee": "2024",
+        "primesEncaissees": "721,64 EUR",
+        "commissions": "77,87 EUR",
+        "primeNette": "643,77 EUR",
+        "nbSinistres": "–",
+        "sinistralite": "–",
+        "spBrut": "–",
+        "spNet": "–",
+        "isProjection": false
+      },
+      {
+        "annee": "2025",
+        "primesEncaissees": "20 018,14 EUR",
+        "commissions": "2 228,91 EUR",
+        "primeNette": "17 789,23 EUR",
+        "nbSinistres": "15",
+        "sinistralite": "5 961,92 EUR",
+        "spBrut": "29,8 %",
+        "spNet": "33,5 %",
+        "isProjection": false
+      },
+      {
+        "annee": "2026",
+        "primesEncaissees": "17 494,53 EUR",
+        "commissions": "1 934,61 EUR",
+        "primeNette": "15 559,92 EUR",
+        "nbSinistres": "7",
+        "sinistralite": "10 405,42 EUR",
+        "spBrut": "59,5 %",
+        "spNet": "66,9 %",
+        "isProjection": false
+      }
+    ],
+    "projection": {
+      "annee": "2026 (projection 12 mois)",
+      "primesEncaissees": "34 989,06 EUR",
+      "commissions": "3 869,22 EUR",
+      "primeNette": "31 119,84 EUR",
+      "nbSinistres": "–",
+      "sinistralite": "10 405,42 EUR",
+      "spBrut": "29,7 %",
+      "spNet": "33,4 %",
+      "isProjection": true
+    },
+    "calloutProjection": "Facteur de projection appliqué pour 2026 : mois_couverts = 6 (dernière émission au 01/06/2026), facteur = 12 / 6 = 2,0. Les primes 2026 observées sont multipliées par 2 pour comparaison annualisée. La sinistralité reste à sa valeur observée (non projetée – règle métier)."
+  },
+  "sinistres": {
+    "intro": "22 évènements réels après dédup par N° sinistre société et application de la règle « 1 jour = 1 sinistre ».1 regroupement",
+    "rows": [
+      {
+        "dateSurvenance": "23/05/2026",
+        "contrat": "AF413903282",
+        "numSinistre": "20261609058",
+        "situation": "Ouvert",
+        "montantRegle": "5,42 EUR"
+      },
+      {
+        "dateSurvenance": "04/05/2026",
+        "contrat": "AF421438854",
+        "numSinistre": "20261593844",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "02/05/2026",
+        "contrat": "AF421594685",
+        "numSinistre": "20261594685",
+        "situation": "Ouvert",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "13/04/2026",
+        "contrat": "AF413675254",
+        "numSinistre": "20261578776 (regr.)",
+        "situation": "Réglé",
+        "montantRegle": "10 400,00 EUR"
+      },
+      {
+        "dateSurvenance": "02/02/2026",
+        "contrat": "AF421096383",
+        "numSinistre": "20261558527",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "31/01/2026",
+        "contrat": "AF413729161",
+        "numSinistre": "20261558260",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "19/01/2026",
+        "contrat": "AF413903282",
+        "numSinistre": "20261536709",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "26/12/2025",
+        "contrat": "AF421096383",
+        "numSinistre": "20261539211",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "17/12/2025",
+        "contrat": "AF421021005",
+        "numSinistre": "20251760465",
+        "situation": "Ouvert",
+        "montantRegle": "922,04 EUR"
+      },
+      {
+        "dateSurvenance": "12/12/2025",
+        "contrat": "AF421021005",
+        "numSinistre": "20261537984",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "06/12/2025",
+        "contrat": "AF421021005",
+        "numSinistre": "20261510994",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "25/11/2025",
+        "contrat": "AF421141391",
+        "numSinistre": "20251752889",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "25/11/2025",
+        "contrat": "AF413729161",
+        "numSinistre": "20261501516",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "21/11/2025",
+        "contrat": "AF413729161",
+        "numSinistre": "20251751681",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "18/11/2025",
+        "contrat": "AF421021005",
+        "numSinistre": "20261516399",
+        "situation": "Ouvert",
+        "montantRegle": "1 015,00 EUR"
+      },
+      {
+        "dateSurvenance": "12/11/2025",
+        "contrat": "AF421021005",
+        "numSinistre": "20261516593",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "23/07/2025",
+        "contrat": "AF413729161",
+        "numSinistre": "20251693065",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "22/07/2025",
+        "contrat": "AF413675254",
+        "numSinistre": "20261516112",
+        "situation": "Réglé",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "11/07/2025",
+        "contrat": "AF421021005",
+        "numSinistre": "20251647051",
+        "situation": "Réglé",
+        "montantRegle": "438,42 EUR"
+      },
+      {
+        "dateSurvenance": "22/02/2025",
+        "contrat": "AF413729161",
+        "numSinistre": "20251597057",
+        "situation": "Réglé",
+        "montantRegle": "1 015,00 EUR"
+      },
+      {
+        "dateSurvenance": "22/02/2025",
+        "contrat": "AF413675254",
+        "numSinistre": "20251544921",
+        "situation": "Réglé",
+        "montantRegle": "541,46 EUR"
+      },
+      {
+        "dateSurvenance": "30/01/2025",
+        "contrat": "AF413729161",
+        "numSinistre": "20251552080",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      }
+    ]
+  },
+  "contrats": {
+    "intro": "12 contrats en cours pour une prime TTC/an totale de 35 098,34 EUR.11 Auto1 Protection juridique1 suspendu1 résilié",
+    "actifs": [
+      {
+        "numContrat": "AF413903311",
+        "designation": "FX-379-JW IVECO DAILY Voiture parti",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/05",
+        "primeTtcAn": "5 460,74 EUR"
+      },
+      {
+        "numContrat": "AF413903282",
+        "designation": "FX-917-JW IVECO DAILY Voiture parti",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/05",
+        "primeTtcAn": "4 793,18 EUR"
+      },
+      {
+        "numContrat": "AF421096383",
+        "designation": "EN-832-XK FIAT DUCATO Voiture parti",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "3 526,46 EUR"
+      },
+      {
+        "numContrat": "AF421141391",
+        "designation": "EG-041-KA FORD TRANSIT VI Voiture",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "3 439,10 EUR"
+      },
+      {
+        "numContrat": "AF421036276",
+        "designation": "AQ-216-PA PEUGEOT BOXER Voiture",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "3 386,42 EUR"
+      },
+      {
+        "numContrat": "AF421276194",
+        "designation": "EK-748-KJ IVECO DAILY Voiture partic",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "23/12",
+        "primeTtcAn": "3 295,80 EUR"
+      },
+      {
+        "numContrat": "AF413675254",
+        "designation": "DK-855-JN FIAT DUCATO Voiture parti",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/12",
+        "primeTtcAn": "3 271,44 EUR"
+      },
+      {
+        "numContrat": "AF421338303",
+        "designation": "EM-177-KY FORD TRANSIT VI Voiture",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "16/02",
+        "primeTtcAn": "2 988,38 EUR"
+      },
+      {
+        "numContrat": "AF421261121",
+        "designation": "DF-784-SW FIAT DUCATO Voiture parti",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "13/12",
+        "primeTtcAn": "2 160,84 EUR"
+      },
+      {
+        "numContrat": "AF421244555",
+        "designation": "1BNT535 RENAULT MASTER Voiture p",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "03/12",
+        "primeTtcAn": "2 114,04 EUR"
+      },
+      {
+        "numContrat": "AF413729161",
+        "designation": "DH-087-ZM IVECO DAILY Voiture parti",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "468,98 EUR"
+      },
+      {
+        "numContrat": "64272442",
+        "designation": "PROTECTION JURIDIQUE",
+        "couverture": "Autres",
+        "situation": "En cours",
+        "echeance": "23/12",
+        "primeTtcAn": "192,96 EUR"
+      },
+      {
+        "numContrat": "AF421021005",
+        "designation": "FM-610-QX MERCEDES SPRINTER I Vo",
+        "couverture": "Automobile",
+        "situation": "Suspendu",
+        "echeance": "07/07",
+        "primeTtcAn": "4 384,10 EUR"
+      },
+      {
+        "numContrat": "64251928",
+        "designation": "HA-152-RK UB JJ50 Cyclomoteur",
+        "couverture": "Automobile",
+        "situation": "Résilié",
+        "echeance": "06/12",
+        "primeTtcAn": "446,64 EUR"
+      }
+    ],
+    "resilies": [],
+    "suspendus": [],
+    "callout": "Contrôle cohérence Lagon : total prime TTC/an des contrats en cours reconstitué 35 098,34 EUR = pied de page Lagon 35 098,34 EUR. Écart 0,00 EUR."
+  },
+  "encaissements": {
+    "intro": "Quittances en situation P (payées) agrégées par année d'émission. Source : export Lagon (159 quittances P sur 164).",
+    "annees": [
+      "Commissions"
+    ],
+    "rows": [
+      {
+        "numPolice": "2024",
+        "designation": "721,64 EUR",
+        "montantsParAnnee": {
+          "Commissions": "77,87 EUR"
+        },
+        "total": "643,77 EUR"
+      },
+      {
+        "numPolice": "2025",
+        "designation": "20 018,14 EUR",
+        "montantsParAnnee": {
+          "Commissions": "2 228,91 EUR"
+        },
+        "total": "17 789,23 EUR"
+      },
+      {
+        "numPolice": "2026",
+        "designation": "17 494,53 EUR",
+        "montantsParAnnee": {
+          "Commissions": "1 934,61 EUR"
+        },
+        "total": "15 559,92 EUR"
+      },
+      {
+        "numPolice": "2026 (projection 12 mois)",
+        "designation": "34 989,06 EUR",
+        "montantsParAnnee": {
+          "Commissions": "3 869,22 EUR"
+        },
+        "total": "31 119,84 EUR"
+      }
+    ]
+  },
+  "indicateursCumul": [
+    {
+      "label": "Contrats actifs",
+      "value": "12",
+      "sub": "dont 11 Automobile + 1 Autres"
+    },
+    {
+      "label": "Prime TTC/an portefeuille",
+      "value": "35 098,34 EUR",
+      "sub": "tous contrats actifs"
+    },
+    {
+      "label": "Sinistres réels cumulés",
+      "value": "22",
+      "sub": "règle « 1 jour = 1 sinistre »",
+      "accent": "rouge"
+    },
+    {
+      "label": "Sinistralité brute cumulée",
+      "value": "16 367,34 EUR",
+      "sub": "tous montants réglés confondus",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissées (cumul)",
+      "value": "38 234,31 EUR",
+      "sub": "quittances situation P"
+    },
+    {
+      "label": "Commissions cumulées",
+      "value": "4 241,39 EUR",
+      "sub": "11.1 % des primes"
+    },
+    {
+      "label": "Prime nette commissions",
+      "value": "33 992,92 EUR",
+      "sub": "primes – commissions"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "42,8 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "vert"
+    }
+  ],
+  "methodologie": {
+    "schemaEconomique": "Primes brutes                       Sinistres payés\n- Commissions       doit couvrir →  - Recours encaissés\n- Taxes                              = Charge nette\n= Prime nette compagnie",
+    "regles": [
+      "Filtre quittances : seules les quittances en situation P (payées) sont prises en compte (159 / 164).",
+      "Déduplication sinistres : 1 entrée unique par N° de sinistre société.",
+      "Règle « 1 jour = 1 sinistre » : les lignes partageant (N° contrat, date de survenance) sont consolidées en un évènement unique. 1 regroupement appliqué.",
+      "Projection annualisée 2026 : facteur = 12 / 6 = 2,0 (mois_couverts = 6, dernière émission au 01/06/2026). Primes × 2 ; sinistralité non projetée.",
+      "Temporalité mixte : Primes = année d'émission ; Sinistres = année de survenance.",
+      "Bloc 01 – fiche entreprise : 1 capture Lagon (SAS DONYA MS TRANSPORTS).",
+      "Bloc 02 – contrats : 2 captures Lagon (A + B), 14 lignes consolidées (12 N + 1 S + 1 R).",
+      "Bloc 03 – sinistres : 3 captures Lagon (A + B + C), 23 lignes après dédup → 22 évènements après règle « 1 jour = 1 sinistre ».",
+      "Bloc 04 – quittances : QUITTANCE_EXP2026052714172452.xlsx (164 lignes, 159 en situation P).",
+      "Date d'extraction Lagon : 27/05/2026."
+    ],
+    "controles": [
+      {
+        "type": "check",
+        "texte": "Prime TTC/an contrats actifs : reconstitué 35 098,34 EUR = pied de page Lagon 35 098,34 EUR. Écart 0,00 EUR."
+      },
+      {
+        "type": "check",
+        "texte": "Total règlements sinistres : reconstitué 16 367,34 EUR = pied de page Lagon 16 367,34 EUR. Écart 0,00 EUR."
+      },
+      {
+        "type": "check",
+        "texte": "Cohérence inter-blocs : tous les N° de contrat présents dans les sinistres (bloc 03) et les quittances (bloc 04) sont retrouvés dans le bloc 02."
+      }
+    ],
+    "sources": [
+      "Bloc 01 – fiche entreprise : 1 capture Lagon (SAS DONYA MS TRANSPORTS).",
+      "Bloc 02 – contrats : 2 captures Lagon (A + B), 14 lignes consolidées (12 N + 1 S + 1 R).",
+      "Bloc 03 – sinistres : 3 captures Lagon (A + B + C), 23 lignes après dédup → 22 évènements après règle « 1 jour = 1 sinistre ».",
+      "Bloc 04 – quittances : QUITTANCE_EXP2026052714172452.xlsx (164 lignes, 159 en situation P).",
+      "Date d'extraction Lagon : 27/05/2026."
+    ]
+  },
+  "footer": {
+    "agence": "Agence Allianz Marseille : Nogaro & Boetti",
+    "dateGeneration": "27/05/2026"
+  }
+}

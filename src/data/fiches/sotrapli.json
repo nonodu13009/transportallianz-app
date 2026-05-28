@@ -1,0 +1,410 @@
+{
+  "slug": "sotrapli",
+  "nom": "SOTRAPLI",
+  "subtitle": "SAS – Transports routiers de fret de proximité (NAF 4941B) – Evry Courcouronnes",
+  "kpiHeader": [
+    {
+      "label": "Portefeuille actif",
+      "value": "9 contrats",
+      "sub": "21 614,16 EUR de prime TTC/an"
+    },
+    {
+      "label": "Sinistralité",
+      "value": "8 sinistres",
+      "sub": "0,00 EUR réglés",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissées",
+      "value": "16 302,63 EUR",
+      "sub": "cumul 2025 – 2026"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "0,0 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "vert"
+    },
+    {
+      "label": "Contrats actifs",
+      "value": "9",
+      "sub": "dont 8 Automobile + 1 RC Transport"
+    },
+    {
+      "label": "Prime TTC/an portefeuille",
+      "value": "21 614,16 EUR",
+      "sub": "tous contrats actifs"
+    },
+    {
+      "label": "Sinistres réels cumulés",
+      "value": "8",
+      "sub": "règle « 1 jour = 1 sinistre »",
+      "accent": "rouge"
+    },
+    {
+      "label": "Sinistralité brute cumulée",
+      "value": "0,00 EUR",
+      "sub": "tous montants réglés confondus",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissées (cumul)",
+      "value": "16 302,63 EUR",
+      "sub": "quittances situation P"
+    },
+    {
+      "label": "Commissions cumulées",
+      "value": "1 826,67 EUR",
+      "sub": "11.2 % des primes"
+    },
+    {
+      "label": "Prime nette commissions",
+      "value": "14 475,96 EUR",
+      "sub": "primes – commissions"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "0,0 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "vert"
+    }
+  ],
+  "ficheClient": [
+    {
+      "label": "N° client Lagon",
+      "value": "1000026656"
+    },
+    {
+      "label": "Raison sociale",
+      "value": "SAS SOTRAPLI"
+    },
+    {
+      "label": "SIRET",
+      "value": "894 614 809 00032"
+    },
+    {
+      "label": "Catégorie juridique",
+      "value": "5710 – Société par Actions Simplifiée"
+    },
+    {
+      "label": "Code NAF",
+      "value": "4941B – Transports routiers de fret de proximité"
+    },
+    {
+      "label": "Adresse",
+      "value": "10 Allée des Champs Élysées, 91080 Evry Courcouronnes"
+    },
+    {
+      "label": "Date de création de la société",
+      "value": "01/07/2025"
+    },
+    {
+      "label": "Date de création de la fiche Lagon",
+      "value": "21/07/2025"
+    },
+    {
+      "label": "Point de vente",
+      "value": "Corniche"
+    },
+    {
+      "label": "Chargé de clientèle",
+      "value": "Corentin Ulrich"
+    },
+    {
+      "label": "Valorisation foyer / client / potentiel",
+      "value": "4 / 4 / 5"
+    },
+    {
+      "label": "Ancienneté du client",
+      "value": "10 mois (depuis juillet 2025)"
+    }
+  ],
+  "syntheseAnnuelle": {
+    "intro": "Lecture économique année par année. Primes calculées par année d'émission, sinistralité par année de survenance.",
+    "rows": [
+      {
+        "annee": "2025",
+        "primesEncaissees": "6 849,71 EUR",
+        "commissions": "770,52 EUR",
+        "primeNette": "6 079,19 EUR",
+        "nbSinistres": "4",
+        "sinistralite": "–",
+        "spBrut": "–",
+        "spNet": "–",
+        "isProjection": false
+      },
+      {
+        "annee": "2026",
+        "primesEncaissees": "9 452,92 EUR",
+        "commissions": "1 056,15 EUR",
+        "primeNette": "8 396,77 EUR",
+        "nbSinistres": "4",
+        "sinistralite": "–",
+        "spBrut": "–",
+        "spNet": "–",
+        "isProjection": false
+      }
+    ],
+    "projection": {
+      "annee": "2026 (projection 12 mois)",
+      "primesEncaissees": "18 905,84 EUR",
+      "commissions": "2 112,30 EUR",
+      "primeNette": "16 793,54 EUR",
+      "nbSinistres": "–",
+      "sinistralite": "–",
+      "spBrut": "–",
+      "spNet": "–",
+      "isProjection": true
+    },
+    "calloutProjection": "Facteur de projection appliqué pour 2026 : mois_couverts = 6 (dernière émission au 01/06/2026), facteur = 12 / 6 = 2,0. Les primes 2026 observées sont multipliées par 2 pour comparaison annualisée. La sinistralité reste à sa valeur observée (non projetée – règle métier)."
+  },
+  "sinistres": {
+    "intro": "8 évènements réels après dédup par N° sinistre société et application de la règle « 1 jour = 1 sinistre ».0 regroupements",
+    "rows": [
+      {
+        "dateSurvenance": "07/04/2026",
+        "contrat": "AF421061968",
+        "numSinistre": "20261603516",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "27/03/2026",
+        "contrat": "AF421233115",
+        "numSinistre": "20261584119",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "19/03/2026",
+        "contrat": "AF421061968",
+        "numSinistre": "20261584191",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "13/02/2026",
+        "contrat": "AF421061968",
+        "numSinistre": "20261558481",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "08/12/2025",
+        "contrat": "AF421233085",
+        "numSinistre": "20251754510",
+        "situation": "pré-ouvert",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "31/10/2025",
+        "contrat": "AF421061931",
+        "numSinistre": "20251753109",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "29/09/2025",
+        "contrat": "AF421061931",
+        "numSinistre": "20251728123",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      },
+      {
+        "dateSurvenance": "10/09/2025",
+        "contrat": "AF421061931",
+        "numSinistre": "20251730347",
+        "situation": "Réglé",
+        "montantRegle": "–"
+      }
+    ]
+  },
+  "contrats": {
+    "intro": "9 contrats en cours pour une prime TTC/an totale de 21 614,16 EUR.8 Auto1 RC Transport",
+    "actifs": [
+      {
+        "numContrat": "AF421257846",
+        "designation": "GB-679-RB MERCEDES SPRINTER I Vo",
+        "situation": "Automobile",
+        "echeance": "11/12",
+        "primeTtcAn": "3 132,00 EUR"
+      },
+      {
+        "numContrat": "AF421233115",
+        "designation": "DP-426-JH RENAULT MASTER III Voitu",
+        "situation": "Automobile",
+        "echeance": "01/01",
+        "primeTtcAn": "2 651,28 EUR"
+      },
+      {
+        "numContrat": "AF421061931",
+        "designation": "FF-936-AZ RENAULT MASTER III Voitu",
+        "situation": "Automobile",
+        "echeance": "01/01",
+        "primeTtcAn": "2 633,52 EUR"
+      },
+      {
+        "numContrat": "AF421233085",
+        "designation": "BD-618-HN IVECO DAILY Voiture parti",
+        "situation": "Automobile",
+        "echeance": "01/01",
+        "primeTtcAn": "2 616,36 EUR"
+      },
+      {
+        "numContrat": "AF421061960",
+        "designation": "BT-765-PB IVECO DAILY Voiture parti",
+        "situation": "Automobile",
+        "echeance": "01/01",
+        "primeTtcAn": "2 417,40 EUR"
+      },
+      {
+        "numContrat": "AF421061968",
+        "designation": "EJ-197-MJ FIAT DUCATO Voiture parti",
+        "situation": "Automobile",
+        "echeance": "01/01",
+        "primeTtcAn": "2 329,80 EUR"
+      },
+      {
+        "numContrat": "AF421061939",
+        "designation": "GK-914-XN OPEL VIVARO Voiture par",
+        "situation": "Automobile",
+        "echeance": "01/01",
+        "primeTtcAn": "2 297,28 EUR"
+      },
+      {
+        "numContrat": "AF421061947",
+        "designation": "BV-816-VY MERCEDES SPRINTER Voi",
+        "situation": "Automobile",
+        "echeance": "27/08",
+        "primeTtcAn": "2 091,12 EUR"
+      },
+      {
+        "numContrat": "64543848",
+        "designation": "Allianz RC Transport",
+        "situation": "Resp. Civile",
+        "echeance": "31/12",
+        "primeTtcAn": "1 445,40 EUR"
+      }
+    ],
+    "resilies": [],
+    "suspendus": [],
+    "callout": "Contrôle cohérence Lagon : total prime TTC/an reconstitué 21 614,16 EUR = pied de page Lagon 21 614,16 EUR. Écart 0,00 EUR."
+  },
+  "encaissements": {
+    "intro": "Quittances en situation P (payées) agrégées par année d'émission. Source : export Lagon (86 quittances).",
+    "annees": [
+      "Commissions"
+    ],
+    "rows": [
+      {
+        "numPolice": "2025",
+        "designation": "6 849,71 EUR",
+        "montantsParAnnee": {
+          "Commissions": "770,52 EUR"
+        },
+        "total": "6 079,19 EUR"
+      },
+      {
+        "numPolice": "2026",
+        "designation": "9 452,92 EUR",
+        "montantsParAnnee": {
+          "Commissions": "1 056,15 EUR"
+        },
+        "total": "8 396,77 EUR"
+      },
+      {
+        "numPolice": "2026 (projection 12 mois)",
+        "designation": "18 905,84 EUR",
+        "montantsParAnnee": {
+          "Commissions": "2 112,30 EUR"
+        },
+        "total": "16 793,54 EUR"
+      }
+    ]
+  },
+  "indicateursCumul": [
+    {
+      "label": "Contrats actifs",
+      "value": "9",
+      "sub": "dont 8 Automobile + 1 RC Transport"
+    },
+    {
+      "label": "Prime TTC/an portefeuille",
+      "value": "21 614,16 EUR",
+      "sub": "tous contrats actifs"
+    },
+    {
+      "label": "Sinistres réels cumulés",
+      "value": "8",
+      "sub": "règle « 1 jour = 1 sinistre »",
+      "accent": "rouge"
+    },
+    {
+      "label": "Sinistralité brute cumulée",
+      "value": "0,00 EUR",
+      "sub": "tous montants réglés confondus",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissées (cumul)",
+      "value": "16 302,63 EUR",
+      "sub": "quittances situation P"
+    },
+    {
+      "label": "Commissions cumulées",
+      "value": "1 826,67 EUR",
+      "sub": "11.2 % des primes"
+    },
+    {
+      "label": "Prime nette commissions",
+      "value": "14 475,96 EUR",
+      "sub": "primes – commissions"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "0,0 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "vert"
+    }
+  ],
+  "methodologie": {
+    "schemaEconomique": "Primes brutes                       Sinistres payés\n- Commissions       doit couvrir →  - Recours encaissés\n- Taxes                              = Charge nette\n= Prime nette compagnie",
+    "regles": [
+      "Filtre quittances : seules les quittances en situation P (payées) sont prises en compte (86 / 86).",
+      "Déduplication sinistres : 1 entrée unique par N° de sinistre société.",
+      "Règle « 1 jour = 1 sinistre » : les lignes partageant (N° contrat, date de survenance) sont consolidées en un évènement unique. 0 regroupements appliqués.",
+      "Projection annualisée 2026 : facteur = 12 / 6 = 2,0 (mois_couverts = 6, dernière émission au 01/06/2026). Primes × 2 ; sinistralité non projetée.",
+      "Temporalité mixte : Primes = année d'émission ; Sinistres = année de survenance. Choix volontaire (charge de l'année vs encaissement de l'année).",
+      "Bloc 01 – fiche entreprise : 1 capture Lagon (SAS SOTRAPLI Pro).",
+      "Bloc 02 – contrats : 1 capture Lagon, 9 lignes (9 N actifs).",
+      "Bloc 03 – sinistres : 1 capture Lagon, 8 lignes → 8 évènements après règle « 1 jour = 1 sinistre ».",
+      "Bloc 04 – quittances : QUITTANCE_EXP2026052714120936.xlsx (86 lignes, toutes en situation P).",
+      "Date d'extraction Lagon : 27/05/2026."
+    ],
+    "controles": [
+      {
+        "type": "check",
+        "texte": "Prime TTC/an contrats actifs : reconstitué 21 614,16 EUR = pied de page Lagon 21 614,16 EUR. Écart 0,00 EUR."
+      },
+      {
+        "type": "check",
+        "texte": "Total règlements sinistres : reconstitué 0,00 EUR = pied de page Lagon 0,00 EUR. Écart 0,00 EUR."
+      },
+      {
+        "type": "check",
+        "texte": "Cohérence inter-blocs : tous les N° de contrat présents dans les sinistres (bloc 03) et les quittances (bloc 04) sont retrouvés dans le bloc 02 (contrats actifs)."
+      }
+    ],
+    "sources": [
+      "Bloc 01 – fiche entreprise : 1 capture Lagon (SAS SOTRAPLI Pro).",
+      "Bloc 02 – contrats : 1 capture Lagon, 9 lignes (9 N actifs).",
+      "Bloc 03 – sinistres : 1 capture Lagon, 8 lignes → 8 évènements après règle « 1 jour = 1 sinistre ».",
+      "Bloc 04 – quittances : QUITTANCE_EXP2026052714120936.xlsx (86 lignes, toutes en situation P).",
+      "Date d'extraction Lagon : 27/05/2026."
+    ]
+  },
+  "footer": {
+    "agence": "Agence Allianz Marseille : Nogaro & Boetti",
+    "dateGeneration": "27/05/2026"
+  }
+}

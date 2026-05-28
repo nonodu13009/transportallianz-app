@@ -1,0 +1,447 @@
+{
+  "slug": "logestra-hexagone",
+  "nom": "LOGESTRA HEXAGONE",
+  "subtitle": "SARL · Transport routier de fret interurbains · Comines (59560)",
+  "kpiHeader": [
+    {
+      "label": "Portefeuille actif",
+      "value": "13",
+      "sub": "contrats — 70 181,54 € / an"
+    },
+    {
+      "label": "Sinistralité cumulée",
+      "value": "14 149,88 €",
+      "sub": "8 évènements (2026 uniquement)",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissées (cumul)",
+      "value": "50 031,65 €",
+      "sub": "nov. 2024 → mai 2026"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "28,3 %",
+      "sub": "hors recours / hors commissions"
+    },
+    {
+      "label": "Primes encaissées",
+      "value": "50 031,65 €"
+    },
+    {
+      "label": "Commissions agence",
+      "value": "5 671,81 €"
+    },
+    {
+      "label": "Prime nette compagnie",
+      "value": "44 359,84 €"
+    },
+    {
+      "label": "Sinistralité brute",
+      "value": "14 149,88 €",
+      "accent": "rouge"
+    },
+    {
+      "label": "Nb sinistres réels",
+      "value": "8",
+      "sub": "post règle « 1 jour = 1 sin. »",
+      "accent": "rouge"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "28,3 %"
+    },
+    {
+      "label": "S/P net cumulé",
+      "value": "31,9 %"
+    },
+    {
+      "label": "Contrats actifs",
+      "value": "13",
+      "sub": "70 181,54 € TTC/an"
+    }
+  ],
+  "ficheClient": [
+    {
+      "label": "Raison sociale",
+      "value": "LOGESTRA HEXAGONE"
+    },
+    {
+      "label": "N° client Lagon",
+      "value": "1000024625"
+    },
+    {
+      "label": "Forme juridique",
+      "value": "SARL · Code 5499 (Autre société à resp. limitée ASARL)"
+    },
+    {
+      "label": "Activité (NAF)",
+      "value": "4941A — Transport routier de fret interurbains"
+    },
+    {
+      "label": "SIREN / SIRET",
+      "value": "882 183 080 · 88218308000010"
+    },
+    {
+      "label": "Date création société",
+      "value": "01/02/2020"
+    },
+    {
+      "label": "Adresse",
+      "value": "82 Rue d'Hurlupin — 59560 Comines"
+    },
+    {
+      "label": "Point de vente",
+      "value": "Corniche"
+    },
+    {
+      "label": "Dirigeant",
+      "value": "M. ALAN DJERAF"
+    },
+    {
+      "label": "Chargé clientèle",
+      "value": "ULRICH CORENTIN"
+    }
+  ],
+  "syntheseAnnuelle": {
+    "intro": "Entrée en portefeuille : nov. 2024 (1 quittance). Montée en puissance en 2025 (15 715 € de primes). Sur S1 2026, le portefeuille a fortement monté (33 525 € sur 6 mois) avec une concentration de sinistres sur février-avril 2026.",
+    "rows": [
+      {
+        "annee": "2024",
+        "primesEncaissees": "791,86 €",
+        "commissions": "89,22 €",
+        "primeNette": "702,64 €",
+        "nbSinistres": "—",
+        "sinistralite": "—",
+        "spBrut": "0,0 %",
+        "spNet": "0,0 %",
+        "isProjection": false
+      },
+      {
+        "annee": "2025",
+        "primesEncaissees": "15 715,15 €",
+        "commissions": "1 774,52 €",
+        "primeNette": "13 940,63 €",
+        "nbSinistres": "—",
+        "sinistralite": "—",
+        "spBrut": "0,0 %",
+        "spNet": "0,0 %",
+        "isProjection": false
+      },
+      {
+        "annee": "2026",
+        "primesEncaissees": "33 524,64 €",
+        "commissions": "3 808,07 €",
+        "primeNette": "29 716,57 €",
+        "nbSinistres": "8",
+        "sinistralite": "14 149,88 €",
+        "spBrut": "42,2 %",
+        "spNet": "47,6 %",
+        "isProjection": false
+      }
+    ],
+    "projection": {
+      "annee": "2026 (projection 12 mois)",
+      "primesEncaissees": "67 049,28 €",
+      "commissions": "7 616,14 €",
+      "primeNette": "59 433,14 €",
+      "nbSinistres": "8",
+      "sinistralite": "14 149,88 €",
+      "spBrut": "21,1 %",
+      "spNet": "23,8 %",
+      "isProjection": true
+    },
+    "calloutProjection": "Projection 2026. Mois couverts = 6 (quittances émises de janvier à juin 2026). Facteur appliqué sur les primes : 12 / 6 = ×2,00. Sinistralité non projetée. Le S/P brut projeté tombe ainsi à 21,1 % (vs 42,2 % observé sur 6 mois)."
+  },
+  "sinistres": {
+    "intro": "8 évènements réels après application de la règle « 1 jour = 1 sinistre » (18 lignes brutes Lagon → 13 dédupliquées par N° société, puis 4 regroupements appliqués). Tous les sinistres sont concentrés sur février-avril 2026.",
+    "rows": [
+      {
+        "dateSurvenance": "07/04/2026",
+        "contrat": "AF421203489",
+        "numSinistre": "202600802",
+        "situation": "Ouvert ⭐ regroupé",
+        "montantRegle": "04/05/2026"
+      },
+      {
+        "dateSurvenance": "09/03/2026",
+        "contrat": "AF421203314",
+        "numSinistre": "202600937",
+        "situation": "Ouvert ⭐ regroupé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "04/03/2026",
+        "contrat": "AF421204132",
+        "numSinistre": "202600635",
+        "situation": "Ouvert ⭐ regroupé",
+        "montantRegle": "10/04/2026"
+      },
+      {
+        "dateSurvenance": "26/02/2026",
+        "contrat": "AF421204103",
+        "numSinistre": "202600387",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "07/02/2026",
+        "contrat": "AF421203330",
+        "numSinistre": "202600340",
+        "situation": "Réglé ⭐ regroupé",
+        "montantRegle": "24/02/2026"
+      },
+      {
+        "dateSurvenance": "05/02/2026",
+        "contrat": "AF421239504",
+        "numSinistre": "202600889",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "04/02/2026",
+        "contrat": "AF421239483",
+        "numSinistre": "202600259",
+        "situation": "Réglé",
+        "montantRegle": "13/02/2026"
+      },
+      {
+        "dateSurvenance": "05/02/2026",
+        "contrat": "AF421239483",
+        "numSinistre": "202600267",
+        "situation": "Ouvert",
+        "montantRegle": "—"
+      }
+    ]
+  },
+  "contrats": {
+    "intro": "13 contrats en cours (Sit = N) — 12 MERCEDES VITO + 1 RENAULT TRAFIC III. Pied de page Lagon : 70 181,54 € TTC/an — cohérence vérifiée.",
+    "actifs": [
+      {
+        "numContrat": "🚗",
+        "designation": "AF421203489",
+        "couverture": "20/04/2026",
+        "situation": "HF-404-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 539,34 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421203322",
+        "couverture": "20/04/2026",
+        "situation": "HF-452-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 539,34 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421204103",
+        "couverture": "20/04/2026",
+        "situation": "HF-461-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 539,34 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421203314",
+        "couverture": "20/04/2026",
+        "situation": "HF-572-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 539,34 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421203298",
+        "couverture": "20/04/2026",
+        "situation": "HF-665-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "4 016,06 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421203330",
+        "couverture": "20/04/2026",
+        "situation": "HF-690-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 690,06 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421204115",
+        "couverture": "20/04/2026",
+        "situation": "HF-847-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 539,34 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421204132",
+        "couverture": "20/04/2026",
+        "situation": "HF-807-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 850,14 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421212574",
+        "couverture": "20/04/2026",
+        "situation": "HF-796-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 241,38 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421212563",
+        "couverture": "20/04/2026",
+        "situation": "HF-434-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 241,38 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421239483",
+        "couverture": "20/04/2026",
+        "situation": "HF-885-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 241,38 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421239504",
+        "couverture": "20/04/2026",
+        "situation": "HF-627-NA MERCEDES VITO",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 241,38 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF413682041",
+        "couverture": "27/11/2025",
+        "situation": "GM-871-XQ RENAULT TRAFIC III",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 963,06 €"
+      }
+    ],
+    "resilies": [],
+    "suspendus": []
+  },
+  "encaissements": {
+    "intro": "Primes effectivement encaissées (quittances Situation = P) par année d'émission. 125 quittances payées sur 125 (100 %).",
+    "annees": [
+      "Commissions"
+    ],
+    "rows": [
+      {
+        "numPolice": "2024",
+        "designation": "791,86 €",
+        "montantsParAnnee": {
+          "Commissions": "89,22 €"
+        },
+        "total": "702,64 €"
+      },
+      {
+        "numPolice": "2025",
+        "designation": "15 715,15 €",
+        "montantsParAnnee": {
+          "Commissions": "1 774,52 €"
+        },
+        "total": "13 940,63 €"
+      },
+      {
+        "numPolice": "2026",
+        "designation": "33 524,64 €",
+        "montantsParAnnee": {
+          "Commissions": "3 808,07 €"
+        },
+        "total": "29 716,57 €"
+      },
+      {
+        "numPolice": "2026 (projection 12 mois)",
+        "designation": "67 049,28 €",
+        "montantsParAnnee": {
+          "Commissions": "7 616,14 €"
+        },
+        "total": "59 433,14 €"
+      }
+    ]
+  },
+  "indicateursCumul": [
+    {
+      "label": "Primes encaissées",
+      "value": "50 031,65 €"
+    },
+    {
+      "label": "Commissions agence",
+      "value": "5 671,81 €"
+    },
+    {
+      "label": "Prime nette compagnie",
+      "value": "44 359,84 €"
+    },
+    {
+      "label": "Sinistralité brute",
+      "value": "14 149,88 €",
+      "accent": "rouge"
+    },
+    {
+      "label": "Nb sinistres réels",
+      "value": "8",
+      "sub": "post règle « 1 jour = 1 sin. »",
+      "accent": "rouge"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "28,3 %"
+    },
+    {
+      "label": "S/P net cumulé",
+      "value": "31,9 %"
+    },
+    {
+      "label": "Contrats actifs",
+      "value": "13",
+      "sub": "70 181,54 € TTC/an"
+    }
+  ],
+  "methodologie": {
+    "schemaEconomique": "Primes brutes                       Sinistres payés\n− Commissions       doit couvrir →  − Recours encaissés\n− Taxes                              = Charge nette\n= Prime nette compagnie",
+    "regles": [
+      "Déduplication contrats par N° entre captures A et B (13 contrats uniques, tous Sit=N).",
+      "Déduplication sinistres par N° de sinistre société : 18 lignes brutes → 13 lignes uniques.",
+      "Règle « 1 jour = 1 sinistre » sur clé (N° contrat, date de survenance) : 13 → 8 évènements réels via 4 regroupements.",
+      "Quittances filtrées Situation = P : 125 quittances retenues sur 125 (100 %).",
+      "Projection annualisée 2026 : facteur 12/6 = ×2,00 appliqué aux primes et commissions observées (jan-jun 2026). Sinistralité non projetée.",
+      "Temporalité mixte assumée : primes par année d'émission, sinistres par année de survenance.",
+      "01_-_ENTREPRISE.PNG — capture Lagon fiche société",
+      "02_-_CONTRAT_A.PNG, 02_-_CONTRAT_B.PNG — captures Lagon liste contrats",
+      "03_-_SINISTRE_A.PNG, 03_-_SINISTRE_B.PNG — captures Lagon liste sinistres",
+      "QUITTANCE_EXP2026052714093126.XLSX — export Lagon quittances",
+      "Date d'extraction Lagon : 27/05/2026"
+    ],
+    "controles": [
+      {
+        "type": "warn",
+        "texte": "Données disponibles : primes brutes, commissions, sinistres payés. Données manquantes : taxes, recours encaissés. → Tous les S/P produits sont qualifiés « brut hors recours / hors commissions »."
+      },
+      {
+        "type": "check",
+        "texte": "✓ Pied de page contrats Lagon : 70 181,54 € — Total calculé : 70 181,54 € — Écart : 0,00 €"
+      },
+      {
+        "type": "check",
+        "texte": "✓ Pied de page sinistres Lagon : 14 149,88 € — Total après dédup : 14 149,88 € — Écart : 0,00 €"
+      }
+    ],
+    "sources": [
+      "01_-_ENTREPRISE.PNG — capture Lagon fiche société",
+      "02_-_CONTRAT_A.PNG, 02_-_CONTRAT_B.PNG — captures Lagon liste contrats",
+      "03_-_SINISTRE_A.PNG, 03_-_SINISTRE_B.PNG — captures Lagon liste sinistres",
+      "QUITTANCE_EXP2026052714093126.XLSX — export Lagon quittances",
+      "Date d'extraction Lagon : 27/05/2026"
+    ]
+  },
+  "footer": {
+    "agence": "Agence Allianz Marseille : Nogaro & Boetti",
+    "dateGeneration": "27 mai 2026"
+  }
+}

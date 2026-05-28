@@ -1,0 +1,1398 @@
+{
+  "slug": "kfb-transports",
+  "nom": "KFB TRANSPORTS",
+  "subtitle": "SARL — Transports routiers de fret de proximite (4941B) — Marseille (13015)",
+  "kpiHeader": [
+    {
+      "label": "Portefeuille actif",
+      "value": "46 contrats",
+      "sub": "126.773 EUR/an TTC"
+    },
+    {
+      "label": "Sinistralite cumulee",
+      "value": "167.988 EUR",
+      "sub": "96 evenements reels",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissees",
+      "value": "245.632 EUR",
+      "sub": "2022 a 2026 (observe)"
+    },
+    {
+      "label": "S/P brut cumule",
+      "value": "68.4 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "orange"
+    },
+    {
+      "label": "Contrats actifs",
+      "value": "46",
+      "sub": "dont 42 Auto"
+    },
+    {
+      "label": "Prime portefeuille",
+      "value": "126.773 EUR",
+      "sub": "TTC / an"
+    },
+    {
+      "label": "Sinistres reels",
+      "value": "96",
+      "sub": "post regroupement",
+      "accent": "rouge"
+    },
+    {
+      "label": "Sinistralite brute",
+      "value": "167.988 EUR",
+      "sub": "montants regles",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissees",
+      "value": "245.632 EUR",
+      "sub": "cumul observe"
+    },
+    {
+      "label": "Commissions",
+      "value": "27.768 EUR",
+      "sub": "cumul observe"
+    },
+    {
+      "label": "Prime nette",
+      "value": "217.864 EUR",
+      "sub": "primes - commissions"
+    },
+    {
+      "label": "S/P brut cumule",
+      "value": "68.4 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "orange"
+    }
+  ],
+  "ficheClient": [
+    {
+      "label": "N° client Lagon",
+      "value": "1000020161"
+    },
+    {
+      "label": "Date creation fiche",
+      "value": "02/02/2022"
+    },
+    {
+      "label": "Raison sociale",
+      "value": "SARL KFB TRANSPORTS"
+    },
+    {
+      "label": "SIREN / SIRET",
+      "value": "833 378 672 — 83337867200020"
+    },
+    {
+      "label": "Code NAF",
+      "value": "4941B — Transports routiers de fret de proximite"
+    },
+    {
+      "label": "Date creation societe",
+      "value": "01/12/2019"
+    },
+    {
+      "label": "Adresse",
+      "value": "87 Boulevard de la Mediterranee, 13015 Marseille"
+    },
+    {
+      "label": "Effectif",
+      "value": "23"
+    },
+    {
+      "label": "Point de vente",
+      "value": "Corniche (H91358)"
+    },
+    {
+      "label": "Charge de clientele",
+      "value": "Ulrich Corentin"
+    }
+  ],
+  "syntheseAnnuelle": {
+    "intro": "Lecture economique de la relation client par annee : primes encaissees (annee d'emission) face a la sinistralite brute (annee de survenance).",
+    "rows": [
+      {
+        "annee": "2022",
+        "primesEncaissees": "3 036,52 EUR",
+        "commissions": "334,34 EUR",
+        "primeNette": "2 702,18 EUR",
+        "nbSinistres": "1",
+        "sinistralite": "836,20 EUR",
+        "spBrut": "27.5 %",
+        "spNet": "30.9 %",
+        "isProjection": false
+      },
+      {
+        "annee": "2023",
+        "primesEncaissees": "40 049,72 EUR",
+        "commissions": "4 447,68 EUR",
+        "primeNette": "35 602,04 EUR",
+        "nbSinistres": "15",
+        "sinistralite": "18 085,10 EUR",
+        "spBrut": "45.2 %",
+        "spNet": "50.8 %",
+        "isProjection": false
+      },
+      {
+        "annee": "2024",
+        "primesEncaissees": "63 571,57 EUR",
+        "commissions": "7 690,04 EUR",
+        "primeNette": "55 881,53 EUR",
+        "nbSinistres": "29",
+        "sinistralite": "65 457,93 EUR",
+        "spBrut": "103.0 %",
+        "spNet": "117.1 %",
+        "isProjection": false
+      },
+      {
+        "annee": "2025",
+        "primesEncaissees": "81 390,32 EUR",
+        "commissions": "8 893,08 EUR",
+        "primeNette": "72 497,24 EUR",
+        "nbSinistres": "46",
+        "sinistralite": "81 573,03 EUR",
+        "spBrut": "100.2 %",
+        "spNet": "112.5 %",
+        "isProjection": false
+      },
+      {
+        "annee": "2026 (observe)",
+        "primesEncaissees": "57 583,61 EUR",
+        "commissions": "6 402,57 EUR",
+        "primeNette": "51 181,04 EUR",
+        "nbSinistres": "5",
+        "sinistralite": "2 035,42 EUR",
+        "spBrut": "3.5 %",
+        "spNet": "4.0 %",
+        "isProjection": false
+      },
+      {
+        "annee": "Total observe",
+        "primesEncaissees": "245 631,74 EUR",
+        "commissions": "27 767,71 EUR",
+        "primeNette": "217 864,03 EUR",
+        "nbSinistres": "96",
+        "sinistralite": "167 987,68 EUR",
+        "spBrut": "68.4 %",
+        "spNet": "77.1 %",
+        "isProjection": false
+      }
+    ],
+    "projection": {
+      "annee": "2026 (projection 12 mois)",
+      "primesEncaissees": "115 167,22 EUR",
+      "commissions": "12 805,14 EUR",
+      "primeNette": "102 362,08 EUR",
+      "nbSinistres": "5",
+      "sinistralite": "2 035,42 EUR",
+      "spBrut": "1.8 %",
+      "spNet": "2.0 %",
+      "isProjection": true
+    },
+    "calloutProjection": "Annee 2026 : facteur de projection 12 / 6 = 2,0 applique sur les primes et commissions (mois couverts = 6, derniere emission observee : juin 2026). La sinistralite 2026 est laissee a sa valeur observee (non projetee)."
+  },
+  "sinistres": {
+    "intro": "96 evenements reels apres deduplication (116 lignes Lagon) et application de la regle metier « 1 jour = 1 sinistre ». Tri par date de survenance decroissante.",
+    "rows": [
+      {
+        "dateSurvenance": "64802678",
+        "contrat": "20/04/2026",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677425",
+        "contrat": "16/04/2026",
+        "numSinistre": "pré-ouvert",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413395410",
+        "contrat": "10/04/2026",
+        "numSinistre": "pré-ouvert",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF421030155",
+        "contrat": "10/04/2026",
+        "numSinistre": "Ouvert",
+        "situation": "5,42 EUR",
+        "montantRegle": "5,42 EUR"
+      },
+      {
+        "dateSurvenance": "64397999",
+        "contrat": "09/02/2026",
+        "numSinistre": "Réglé",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413658396",
+        "contrat": "31/12/2025",
+        "numSinistre": "Réglé",
+        "situation": "101,01 EUR",
+        "montantRegle": "101,01 EUR"
+      },
+      {
+        "dateSurvenance": "64444018",
+        "contrat": "20/12/2025",
+        "numSinistre": "Réouvert",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677394",
+        "contrat": "13/12/2025",
+        "numSinistre": "Réglé",
+        "situation": "1 687,21 EUR",
+        "montantRegle": "1 687,21 EUR"
+      },
+      {
+        "dateSurvenance": "AF406737369",
+        "contrat": "28/11/2025",
+        "numSinistre": "Ouvert",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179881",
+        "contrat": "20/11/2025",
+        "numSinistre": "Ouvert",
+        "situation": "1 015,00 EUR",
+        "montantRegle": "1 015,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413658426",
+        "contrat": "19/11/2025",
+        "numSinistre": "Réglé",
+        "situation": "877,01 EUR",
+        "montantRegle": "877,01 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179800",
+        "contrat": "17/11/2025",
+        "numSinistre": "Sans suite",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413104812",
+        "contrat": "10/11/2025",
+        "numSinistre": "Ouvert",
+        "situation": "121,22 EUR",
+        "montantRegle": "121,22 EUR"
+      },
+      {
+        "dateSurvenance": "AF413173719",
+        "contrat": "27/10/2025",
+        "numSinistre": "Réglé",
+        "situation": "14 808,23 EUR",
+        "montantRegle": "14 808,23 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677388",
+        "contrat": "21/10/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677419",
+        "contrat": "16/10/2025",
+        "numSinistre": "Réglé",
+        "situation": "1 780,00 EUR",
+        "montantRegle": "1 780,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413104812",
+        "contrat": "10/10/2025",
+        "numSinistre": "Ouvert",
+        "situation": "5,42 EUR",
+        "montantRegle": "5,42 EUR"
+      },
+      {
+        "dateSurvenance": "AF413395356",
+        "contrat": "06/10/2025",
+        "numSinistre": "Réglé",
+        "situation": "8 963,61 EUR",
+        "montantRegle": "8 963,61 EUR"
+      },
+      {
+        "dateSurvenance": "AF413658396",
+        "contrat": "02/10/2025",
+        "numSinistre": "Ouvert",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179872",
+        "contrat": "22/09/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179800",
+        "contrat": "17/09/2025",
+        "numSinistre": "Ouvert",
+        "situation": "484,48 EUR",
+        "montantRegle": "484,48 EUR"
+      },
+      {
+        "dateSurvenance": "AF413104812",
+        "contrat": "25/08/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413207324",
+        "contrat": "20/08/2025",
+        "numSinistre": "Réglé",
+        "situation": "2 114,04 EUR",
+        "montantRegle": "2 114,04 EUR"
+      },
+      {
+        "dateSurvenance": "AF413395410",
+        "contrat": "06/08/2025",
+        "numSinistre": "Ouvert",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677425",
+        "contrat": "04/08/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413173719",
+        "contrat": "03/08/2025",
+        "numSinistre": "pré-ouvert",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413395410",
+        "contrat": "29/07/2025",
+        "numSinistre": "Réglé",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179800",
+        "contrat": "24/07/2025",
+        "numSinistre": "Réglé",
+        "situation": "6 464,50 EUR",
+        "montantRegle": "6 464,50 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677419",
+        "contrat": "22/07/2025",
+        "numSinistre": "Réglé",
+        "situation": "9 264,24 EUR",
+        "montantRegle": "9 264,24 EUR"
+      },
+      {
+        "dateSurvenance": "AF413658408",
+        "contrat": "02/07/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413658408",
+        "contrat": "26/06/2025",
+        "numSinistre": "Réglé",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677419",
+        "contrat": "26/06/2025",
+        "numSinistre": "Réglé",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677425",
+        "contrat": "23/06/2025",
+        "numSinistre": "Réglé",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413658396",
+        "contrat": "17/06/2025",
+        "numSinistre": "Ouvert",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677413",
+        "contrat": "17/06/2025",
+        "numSinistre": "Réglé",
+        "situation": "2 444,80 EUR",
+        "montantRegle": "2 444,80 EUR"
+      },
+      {
+        "dateSurvenance": "AF413173719",
+        "contrat": "03/06/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179800",
+        "contrat": "02/05/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179814",
+        "contrat": "30/04/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413173719",
+        "contrat": "11/04/2025",
+        "numSinistre": "Réglé",
+        "situation": "4 245,87 EUR",
+        "montantRegle": "4 245,87 EUR"
+      },
+      {
+        "dateSurvenance": "62745005",
+        "contrat": "07/04/2025",
+        "numSinistre": "Réglé",
+        "situation": "8 411,62 EUR",
+        "montantRegle": "8 411,62 EUR"
+      },
+      {
+        "dateSurvenance": "AF406737407",
+        "contrat": "01/04/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179757",
+        "contrat": "31/03/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179814",
+        "contrat": "30/03/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413027007",
+        "contrat": "30/03/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677425",
+        "contrat": "25/03/2025",
+        "numSinistre": "Réglé",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677413",
+        "contrat": "17/03/2025",
+        "numSinistre": "Réglé",
+        "situation": "514,77 EUR",
+        "montantRegle": "514,77 EUR"
+      },
+      {
+        "dateSurvenance": "AF413677413",
+        "contrat": "03/03/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179872",
+        "contrat": "28/02/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179856",
+        "contrat": "28/02/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413395356",
+        "contrat": "31/01/2025",
+        "numSinistre": "Réglé",
+        "situation": "2 030,00 EUR",
+        "montantRegle": "2 030,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413291730",
+        "contrat": "06/01/2025",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413027007",
+        "contrat": "19/12/2024",
+        "numSinistre": "Réglé",
+        "situation": "5 838,78 EUR",
+        "montantRegle": "5 838,78 EUR"
+      },
+      {
+        "dateSurvenance": "AF413027007",
+        "contrat": "09/12/2024",
+        "numSinistre": "Sans suite",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179808",
+        "contrat": "30/10/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413395410",
+        "contrat": "18/10/2024",
+        "numSinistre": "Réglé",
+        "situation": "5 537,64 EUR",
+        "montantRegle": "5 537,64 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179856",
+        "contrat": "15/10/2024",
+        "numSinistre": "Réglé",
+        "situation": "10 913,73 EUR",
+        "montantRegle": "10 913,73 EUR"
+      },
+      {
+        "dateSurvenance": "AF406737359",
+        "contrat": "08/10/2024",
+        "numSinistre": "Réglé",
+        "situation": "712,55 EUR",
+        "montantRegle": "712,55 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179844",
+        "contrat": "30/09/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179757",
+        "contrat": "24/09/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF407775507",
+        "contrat": "17/09/2024",
+        "numSinistre": "Réglé",
+        "situation": "10 103,12 EUR",
+        "montantRegle": "10 103,12 EUR"
+      },
+      {
+        "dateSurvenance": "AF406737407",
+        "contrat": "13/09/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413541889",
+        "contrat": "12/09/2024",
+        "numSinistre": "Réglé",
+        "situation": "645,87 EUR",
+        "montantRegle": "645,87 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179847",
+        "contrat": "09/09/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179825",
+        "contrat": "09/09/2024",
+        "numSinistre": "pré-ouvert",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF407775507",
+        "contrat": "05/09/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179872",
+        "contrat": "03/09/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179899",
+        "contrat": "27/08/2024",
+        "numSinistre": "Réglé",
+        "situation": "1 950,00 EUR",
+        "montantRegle": "1 950,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413395356",
+        "contrat": "27/08/2024",
+        "numSinistre": "Réglé",
+        "situation": "5 318,08 EUR",
+        "montantRegle": "5 318,08 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179825",
+        "contrat": "16/08/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179881",
+        "contrat": "14/08/2024",
+        "numSinistre": "Réglé",
+        "situation": "1 950,00 EUR",
+        "montantRegle": "1 950,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179881",
+        "contrat": "07/08/2024",
+        "numSinistre": "Sans suite",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413074836",
+        "contrat": "23/07/2024",
+        "numSinistre": "Réglé",
+        "situation": "144,72 EUR",
+        "montantRegle": "144,72 EUR"
+      },
+      {
+        "dateSurvenance": "62864472",
+        "contrat": "21/05/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406737369",
+        "contrat": "02/05/2024",
+        "numSinistre": "Réglé",
+        "situation": "5 190,32 EUR",
+        "montantRegle": "5 190,32 EUR"
+      },
+      {
+        "dateSurvenance": "AF413267685",
+        "contrat": "18/03/2024",
+        "numSinistre": "Réglé",
+        "situation": "6 903,12 EUR",
+        "montantRegle": "6 903,12 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179808",
+        "contrat": "08/03/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413027007",
+        "contrat": "27/02/2024",
+        "numSinistre": "Réglé",
+        "situation": "1 950,00 EUR",
+        "montantRegle": "1 950,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179894",
+        "contrat": "26/02/2024",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179757",
+        "contrat": "02/02/2024",
+        "numSinistre": "Réglé",
+        "situation": "1 950,00 EUR",
+        "montantRegle": "1 950,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406737373",
+        "contrat": "11/01/2024",
+        "numSinistre": "Réglé",
+        "situation": "6 350,00 EUR",
+        "montantRegle": "6 350,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179881",
+        "contrat": "04/12/2023",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406737359",
+        "contrat": "18/11/2023",
+        "numSinistre": "Réglé",
+        "situation": "1 776,00 EUR",
+        "montantRegle": "1 776,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179808",
+        "contrat": "16/11/2023",
+        "numSinistre": "Ouvert",
+        "situation": "200,00 EUR",
+        "montantRegle": "200,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179865",
+        "contrat": "03/10/2023",
+        "numSinistre": "Réglé",
+        "situation": "1 776,00 EUR",
+        "montantRegle": "1 776,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179814",
+        "contrat": "26/09/2023",
+        "numSinistre": "Sans suite",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF413104815",
+        "contrat": "04/09/2023",
+        "numSinistre": "",
+        "situation": "5,42 EUR",
+        "montantRegle": "5,42 EUR"
+      },
+      {
+        "dateSurvenance": "AF413027007",
+        "contrat": "28/08/2023",
+        "numSinistre": "Réglé",
+        "situation": "3 460,86 EUR",
+        "montantRegle": "3 460,86 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179844",
+        "contrat": "11/08/2023",
+        "numSinistre": "Réglé",
+        "situation": "5 332,32 EUR",
+        "montantRegle": "5 332,32 EUR"
+      },
+      {
+        "dateSurvenance": "AF413074836",
+        "contrat": "02/08/2023",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179757",
+        "contrat": "31/03/2023",
+        "numSinistre": "Réglé",
+        "situation": "1 776,00 EUR",
+        "montantRegle": "1 776,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179800",
+        "contrat": "17/03/2023",
+        "numSinistre": "Réglé",
+        "situation": "1 776,00 EUR",
+        "montantRegle": "1 776,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406737369",
+        "contrat": "16/03/2023",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF407775507",
+        "contrat": "14/03/2023",
+        "numSinistre": "Réglé",
+        "situation": "476,74 EUR",
+        "montantRegle": "476,74 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179814",
+        "contrat": "11/03/2023",
+        "numSinistre": "Réglé",
+        "situation": "0,00 EUR",
+        "montantRegle": "0,00 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179881",
+        "contrat": "15/02/2023",
+        "numSinistre": "Réglé",
+        "situation": "1 505,76 EUR",
+        "montantRegle": "1 505,76 EUR"
+      },
+      {
+        "dateSurvenance": "AF406179865",
+        "contrat": "13/10/2022",
+        "numSinistre": "Réglé",
+        "situation": "836,20 EUR",
+        "montantRegle": "836,20 EUR"
+      }
+    ]
+  },
+  "contrats": {
+    "intro": "46 contrats actifs (Sit = N) pour 126.773 EUR/an TTC. 6 contrats resilies ou remplaces.",
+    "actifs": [
+      {
+        "numContrat": "AF413104812",
+        "designation": "FR-972-QH IVECO DAILY",
+        "situation": "27/06",
+        "echeance": "Auto",
+        "primeTtcAn": "7 193,06 EUR"
+      },
+      {
+        "numContrat": "AF406737369",
+        "designation": "HE-693-DX FORD TRANSIT VI",
+        "situation": "01/02",
+        "echeance": "Auto",
+        "primeTtcAn": "5 052,02 EUR"
+      },
+      {
+        "numContrat": "AF406179825",
+        "designation": "HH-117-YG MERCEDES SPRINTER",
+        "situation": "01/04",
+        "echeance": "Auto",
+        "primeTtcAn": "4 409,30 EUR"
+      },
+      {
+        "numContrat": "AF421357487",
+        "designation": "GB-951-TQ NISSAN NV400",
+        "situation": "04/02",
+        "echeance": "Auto",
+        "primeTtcAn": "4 347,50 EUR"
+      },
+      {
+        "numContrat": "AF421357484",
+        "designation": "GB-147-RS NISSAN NV400",
+        "situation": "04/02",
+        "echeance": "Auto",
+        "primeTtcAn": "4 347,50 EUR"
+      },
+      {
+        "numContrat": "AF413395356",
+        "designation": "FR-608-XV MERCEDES SPRINTER",
+        "situation": "15/03",
+        "echeance": "Auto",
+        "primeTtcAn": "4 128,50 EUR"
+      },
+      {
+        "numContrat": "AF421030155",
+        "designation": "HE-463-PM RENAULT MASTER IV",
+        "situation": "01/01",
+        "echeance": "Auto",
+        "primeTtcAn": "4 108,58 EUR"
+      },
+      {
+        "numContrat": "AF421030157",
+        "designation": "HE-395-PM RENAULT MASTER IV",
+        "situation": "01/01",
+        "echeance": "Auto",
+        "primeTtcAn": "4 108,58 EUR"
+      },
+      {
+        "numContrat": "AF413541889",
+        "designation": "HE-892-VP RENAULT MASTER IV",
+        "situation": "22/07",
+        "echeance": "Auto",
+        "primeTtcAn": "3 954,74 EUR"
+      },
+      {
+        "numContrat": "AF406179757",
+        "designation": "AJ-177-KT FORD TRANSIT",
+        "situation": "01/02",
+        "echeance": "Auto",
+        "primeTtcAn": "3 498,00 EUR"
+      },
+      {
+        "numContrat": "AF406179881",
+        "designation": "DL-653-DJ IVECO DAILY",
+        "situation": "01/02",
+        "echeance": "Auto",
+        "primeTtcAn": "3 393,00 EUR"
+      },
+      {
+        "numContrat": "AF413395410",
+        "designation": "GB-042-RJ FIAT DUCATO",
+        "situation": "15/03",
+        "echeance": "Auto",
+        "primeTtcAn": "3 370,22 EUR"
+      },
+      {
+        "numContrat": "64444018",
+        "designation": "CW-956-TS MERCEDES Camion",
+        "situation": "01/06",
+        "echeance": "Auto",
+        "primeTtcAn": "3 332,76 EUR"
+      },
+      {
+        "numContrat": "AF413658396",
+        "designation": "HE-294-BH FORD TRANSIT VI",
+        "situation": "20/11",
+        "echeance": "Auto",
+        "primeTtcAn": "3 115,94 EUR"
+      },
+      {
+        "numContrat": "64397999",
+        "designation": "AB-298-WB RENAULT MIDLUM Camion",
+        "situation": "10/04",
+        "echeance": "Auto",
+        "primeTtcAn": "3 095,52 EUR"
+      },
+      {
+        "numContrat": "AF413677425",
+        "designation": "FR-313-RF VOLKSWAGEN CRAFTER",
+        "situation": "20/11",
+        "echeance": "Auto",
+        "primeTtcAn": "3 068,66 EUR"
+      },
+      {
+        "numContrat": "AF413677388",
+        "designation": "HE-196-BH FORD TRANSIT VI",
+        "situation": "16/06",
+        "echeance": "Auto",
+        "primeTtcAn": "3 007,10 EUR"
+      },
+      {
+        "numContrat": "AF413677394",
+        "designation": "HE-013-BH FORD TRANSIT VI",
+        "situation": "16/06",
+        "echeance": "Auto",
+        "primeTtcAn": "3 007,10 EUR"
+      },
+      {
+        "numContrat": "64608079",
+        "designation": "DM-832-RE RENAULT Camion",
+        "situation": "30/10",
+        "echeance": "Auto",
+        "primeTtcAn": "2 963,76 EUR"
+      },
+      {
+        "numContrat": "64608095",
+        "designation": "EB-374-KT RENAULT Camion",
+        "situation": "30/10",
+        "echeance": "Auto",
+        "primeTtcAn": "2 963,76 EUR"
+      },
+      {
+        "numContrat": "AF406179800",
+        "designation": "FK-667-MR MERCEDES SPRINTER",
+        "situation": "01/02",
+        "echeance": "Auto",
+        "primeTtcAn": "2 804,78 EUR"
+      },
+      {
+        "numContrat": "AF413658426",
+        "designation": "FM-743-AH VOLKSWAGEN CRAFTER",
+        "situation": "29/10",
+        "echeance": "Auto",
+        "primeTtcAn": "2 763,74 EUR"
+      },
+      {
+        "numContrat": "AF413173719",
+        "designation": "FR-818-YY FIAT DUCATO",
+        "situation": "13/09",
+        "echeance": "Auto",
+        "primeTtcAn": "2 749,94 EUR"
+      },
+      {
+        "numContrat": "AF406179844",
+        "designation": "CG-768-WM MERCEDES SPRINTER",
+        "situation": "31/08",
+        "echeance": "Auto",
+        "primeTtcAn": "2 735,42 EUR"
+      },
+      {
+        "numContrat": "64581999",
+        "designation": "DG-485-MT RENAULT Camion",
+        "situation": "07/10",
+        "echeance": "Auto",
+        "primeTtcAn": "2 677,44 EUR"
+      },
+      {
+        "numContrat": "62864472",
+        "designation": "Allianz RC Transport",
+        "situation": "01/01",
+        "echeance": "RC",
+        "primeTtcAn": "2 675,28 EUR"
+      },
+      {
+        "numContrat": "AF413658419",
+        "designation": "FM-758-AH VOLKSWAGEN CRAFTER",
+        "situation": "29/10",
+        "echeance": "Auto",
+        "primeTtcAn": "2 591,18 EUR"
+      },
+      {
+        "numContrat": "AF413123547",
+        "designation": "FM-357-QN VOLKSWAGEN CRAFTER",
+        "situation": "18/07",
+        "echeance": "Auto",
+        "primeTtcAn": "2 518,34 EUR"
+      },
+      {
+        "numContrat": "AF413027007",
+        "designation": "FH-318-LP MERCEDES SPRINTER",
+        "situation": "12/04",
+        "echeance": "Auto",
+        "primeTtcAn": "2 479,82 EUR"
+      },
+      {
+        "numContrat": "AF413677419",
+        "designation": "FM-794-AH VOLKSWAGEN CRAFTER",
+        "situation": "20/11",
+        "echeance": "Auto",
+        "primeTtcAn": "2 356,10 EUR"
+      },
+      {
+        "numContrat": "AF406179833",
+        "designation": "EH-594-FY RENAULT KANGOO",
+        "situation": "18/07",
+        "echeance": "Auto",
+        "primeTtcAn": "2 109,60 EUR"
+      },
+      {
+        "numContrat": "AF413677413",
+        "designation": "FM-796-AH VOLKSWAGEN CRAFTER",
+        "situation": "20/11",
+        "echeance": "Auto",
+        "primeTtcAn": "2 003,66 EUR"
+      },
+      {
+        "numContrat": "AF407775507",
+        "designation": "FY-306-DE CITROEN BERLINGO",
+        "situation": "20/02",
+        "echeance": "Auto",
+        "primeTtcAn": "1 966,80 EUR"
+      },
+      {
+        "numContrat": "AF406179814",
+        "designation": "DE-113-AF FORD TRANSIT",
+        "situation": "01/02",
+        "echeance": "Auto",
+        "primeTtcAn": "1 961,28 EUR"
+      },
+      {
+        "numContrat": "AF406179847",
+        "designation": "GH-706-FF AUDI Q3 II",
+        "situation": "18/07",
+        "echeance": "Auto",
+        "primeTtcAn": "1 904,54 EUR"
+      },
+      {
+        "numContrat": "AF413207324",
+        "designation": "GB-012-RJ FIAT DUCATO",
+        "situation": "12/10",
+        "echeance": "Auto",
+        "primeTtcAn": "1 895,66 EUR"
+      },
+      {
+        "numContrat": "AF406737407",
+        "designation": "FQ-771-WP RENAULT MASTER III",
+        "situation": "01/04",
+        "echeance": "Auto",
+        "primeTtcAn": "1 835,16 EUR"
+      },
+      {
+        "numContrat": "AF413658408",
+        "designation": "CS-243-JM RENAULT MAXITY",
+        "situation": "29/10",
+        "echeance": "Auto",
+        "primeTtcAn": "1 833,74 EUR"
+      },
+      {
+        "numContrat": "AF406179872",
+        "designation": "DW-872-TA RENAULT MASTER III",
+        "situation": "01/08",
+        "echeance": "Auto",
+        "primeTtcAn": "1 582,70 EUR"
+      },
+      {
+        "numContrat": "AF406179894",
+        "designation": "DK-185-TZ RENAULT MASTER III",
+        "situation": "01/02",
+        "echeance": "Auto",
+        "primeTtcAn": "1 481,16 EUR"
+      },
+      {
+        "numContrat": "AF406179808",
+        "designation": "CF-659-RD CITROEN BERLINGO",
+        "situation": "01/02",
+        "echeance": "Auto",
+        "primeTtcAn": "1 363,92 EUR"
+      },
+      {
+        "numContrat": "AF413267669",
+        "designation": "DX-662-TX PEUGEOT PARTNER II",
+        "situation": "05/12",
+        "echeance": "Auto",
+        "primeTtcAn": "1 306,34 EUR"
+      },
+      {
+        "numContrat": "62745005",
+        "designation": "PLAISANCE",
+        "situation": "05/07",
+        "echeance": "Autres",
+        "primeTtcAn": "1 261,10 EUR"
+      },
+      {
+        "numContrat": "64802678",
+        "designation": "PROTECTION JURIDIQUE",
+        "situation": "14/04",
+        "echeance": "Autres",
+        "primeTtcAn": "792,12 EUR"
+      },
+      {
+        "numContrat": "AF413117761",
+        "designation": "EY-372-LM CITROEN JUMPER",
+        "situation": "11/07",
+        "echeance": "Auto",
+        "primeTtcAn": "472,46 EUR"
+      },
+      {
+        "numContrat": "64547234",
+        "designation": "Allianz Actif Pro - 04 rue Augustin",
+        "situation": "04/09",
+        "echeance": "Multirisques",
+        "primeTtcAn": "185,18 EUR"
+      }
+    ],
+    "resilies": [
+      {
+        "numContrat": "AF413074836",
+        "designation": "GB-012-RJ FIAT DUCATO",
+        "situation": "Resilie",
+        "echeance": "3 450,38 EUR",
+        "primeTtcAn": "3 450,38 EUR"
+      },
+      {
+        "numContrat": "AF413104815",
+        "designation": "GB-042-RJ FIAT DUCATO",
+        "situation": "Resilie",
+        "echeance": "3 309,14 EUR",
+        "primeTtcAn": "3 309,14 EUR"
+      },
+      {
+        "numContrat": "AF406179865",
+        "designation": "CS-243-JM RENAULT MAXITY",
+        "situation": "Resilie",
+        "echeance": "3 440,90 EUR",
+        "primeTtcAn": "3 440,90 EUR"
+      },
+      {
+        "numContrat": "AF406737373",
+        "designation": "FM-758-AH VOLKSWAGEN CRAFTER",
+        "situation": "Resilie",
+        "echeance": "3 250,22 EUR",
+        "primeTtcAn": "3 250,22 EUR"
+      },
+      {
+        "numContrat": "AF406737359",
+        "designation": "FM-743-AH VOLKSWAGEN CRAFTER",
+        "situation": "Resilie",
+        "echeance": "3 250,22 EUR",
+        "primeTtcAn": "3 250,22 EUR"
+      },
+      {
+        "numContrat": "AF406179856",
+        "designation": "FZ-968-DP MERCEDES SPRINTER III",
+        "situation": "Remplace",
+        "echeance": "1 470,84 EUR",
+        "primeTtcAn": "1 470,84 EUR"
+      }
+    ],
+    "suspendus": []
+  },
+  "encaissements": {
+    "intro": "Primes encaissees par annee d'emission (quittances Situation = P uniquement).",
+    "annees": [
+      "Commissions"
+    ],
+    "rows": [
+      {
+        "numPolice": "2022",
+        "designation": "3 036,52 EUR",
+        "montantsParAnnee": {
+          "Commissions": "334,34 EUR"
+        },
+        "total": "2 702,18 EUR"
+      },
+      {
+        "numPolice": "2023",
+        "designation": "40 049,72 EUR",
+        "montantsParAnnee": {
+          "Commissions": "4 447,68 EUR"
+        },
+        "total": "35 602,04 EUR"
+      },
+      {
+        "numPolice": "2024",
+        "designation": "63 571,57 EUR",
+        "montantsParAnnee": {
+          "Commissions": "7 690,04 EUR"
+        },
+        "total": "55 881,53 EUR"
+      },
+      {
+        "numPolice": "2025",
+        "designation": "81 390,32 EUR",
+        "montantsParAnnee": {
+          "Commissions": "8 893,08 EUR"
+        },
+        "total": "72 497,24 EUR"
+      },
+      {
+        "numPolice": "2026 (observe)",
+        "designation": "57 583,61 EUR",
+        "montantsParAnnee": {
+          "Commissions": "6 402,57 EUR"
+        },
+        "total": "51 181,04 EUR"
+      },
+      {
+        "numPolice": "2026 (projection 12 mois)",
+        "designation": "115 167,22 EUR",
+        "montantsParAnnee": {
+          "Commissions": "12 805,14 EUR"
+        },
+        "total": "102 362,08 EUR"
+      },
+      {
+        "numPolice": "Total observe",
+        "designation": "245 631,74 EUR",
+        "montantsParAnnee": {
+          "Commissions": "27 767,71 EUR"
+        },
+        "total": "217 864,03 EUR"
+      }
+    ]
+  },
+  "indicateursCumul": [
+    {
+      "label": "Contrats actifs",
+      "value": "46",
+      "sub": "dont 42 Auto"
+    },
+    {
+      "label": "Prime portefeuille",
+      "value": "126.773 EUR",
+      "sub": "TTC / an"
+    },
+    {
+      "label": "Sinistres reels",
+      "value": "96",
+      "sub": "post regroupement",
+      "accent": "rouge"
+    },
+    {
+      "label": "Sinistralite brute",
+      "value": "167.988 EUR",
+      "sub": "montants regles",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissees",
+      "value": "245.632 EUR",
+      "sub": "cumul observe"
+    },
+    {
+      "label": "Commissions",
+      "value": "27.768 EUR",
+      "sub": "cumul observe"
+    },
+    {
+      "label": "Prime nette",
+      "value": "217.864 EUR",
+      "sub": "primes - commissions"
+    },
+    {
+      "label": "S/P brut cumule",
+      "value": "68.4 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "orange"
+    }
+  ],
+  "methodologie": {
+    "schemaEconomique": "Primes brutes                       Sinistres payes\n- Commissions       doit couvrir ->  - Recours encaisses\n- Taxes                              = Charge nette\n= Prime nette compagnie",
+    "regles": [],
+    "controles": [
+      {
+        "type": "warn",
+        "texte": "Donnees disponibles : primes brutes, commissions, sinistres payes. Donnees manquantes : taxes, recours encaisses. Les ratios S/P sont des proxys qualifies « brut hors recours / hors commissions »."
+      },
+      {
+        "type": "warn",
+        "texte": "Sinistres : deduplication par N° de sinistre societe, puis regle « 1 jour = 1 sinistre » (meme contrat + meme date de survenance = 1 evenement reel). 116 lignes consolidees en 96 evenements (14 regroupements)."
+      },
+      {
+        "type": "warn",
+        "texte": "Quittances : filtre Situation = P (payees). Primes agregees par annee d'emission. Prime nette = Prime - Commission."
+      },
+      {
+        "type": "warn",
+        "texte": "Temporalite mixte (volontaire) : primes par annee d'emission, sinistres par annee de survenance — charge de l'annee vs encaissement de l'annee."
+      },
+      {
+        "type": "warn",
+        "texte": "Projection annualisee 2026 : facteur 12 / mois_couverts = 12 / 6 = 2,0. Primes et commissions projetees ; sinistralite laissee observee."
+      },
+      {
+        "type": "check",
+        "texte": "Montant total des reglements sinistres : 167 987,68 EUR calcule = 167 987,68 EUR Lagon — ecart 0,00 EUR."
+      },
+      {
+        "type": "check",
+        "texte": "Total primes TTC contrats en cours : 126.773,06 EUR calcule = 126 773,06 EUR Lagon — ecart 0,00 EUR."
+      },
+      {
+        "type": "warn",
+        "texte": "Sources Lagon : 01 entreprise, 02 contrats (6 captures), 03 sinistres (13 captures), 04 quittances (export XLSX, 1 490 lignes). Date d'extraction : 27/05/2026."
+      }
+    ],
+    "sources": []
+  },
+  "footer": {
+    "agence": "Agence Allianz Marseille : Nogaro & Boetti",
+    "dateGeneration": "Agence Allianz Marseille : Nogaro & Boetti Document genere le 28/05/2026 — Donnees extraites de Lagon."
+  }
+}

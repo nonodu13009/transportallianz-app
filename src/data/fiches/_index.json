@@ -1,0 +1,92 @@
+[
+  {
+    "slug": "13-or-transport",
+    "nom": "13 OR TRANSPORT",
+    "subtitle": "SAS · Transport routier de fret interurbains · Marseille 13015"
+  },
+  {
+    "slug": "action-reaction",
+    "nom": "ACTION REACTION",
+    "subtitle": "SARL · Transport routier de fret de proximité · Marseille 13011"
+  },
+  {
+    "slug": "al-delivry",
+    "nom": "AL DELIVRY",
+    "subtitle": "Société par Actions Simplifiée · Transport routier de fret de proximité · Marseille 13002"
+  },
+  {
+    "slug": "aso-transports",
+    "nom": "ASO TRANSPORTS",
+    "subtitle": "SAS – Transports routiers de fret interurbains (NAF 4941A) – Marseille"
+  },
+  {
+    "slug": "az-transports",
+    "nom": "AZ TRANSPORTS",
+    "subtitle": "SAS – Transports routiers de fret interurbains (NAF 4941A) – Marseille"
+  },
+  {
+    "slug": "donya-ms-transports",
+    "nom": "DONYA MS TRANSPORTS",
+    "subtitle": "SAS – Transports routiers de fret interurbains (NAF 4941A) – Bordeaux"
+  },
+  {
+    "slug": "e-a-transport",
+    "nom": "E.A TRANSPORT",
+    "subtitle": "Entrepreneur Individuel – Transports routiers de fret interurbains (NAF 4941A) – Wattignies"
+  },
+  {
+    "slug": "groupement-marseillais-de-transporteurs",
+    "nom": "GROUPEMENT MARSEILLAIS DE TRANSPORTEURS",
+    "subtitle": "SAS — Affretement et organisation des transports (5229B) — Saint-Victoret (13730)"
+  },
+  {
+    "slug": "k-b-f-transport",
+    "nom": "K.B.F TRANSPORT",
+    "subtitle": "SAS – Transports routiers de fret de proximité (NAF 4941B) – Sarcelles"
+  },
+  {
+    "slug": "kfb-transports",
+    "nom": "KFB TRANSPORTS",
+    "subtitle": "SARL — Transports routiers de fret de proximite (4941B) — Marseille (13015)"
+  },
+  {
+    "slug": "kst-13",
+    "nom": "KST 13",
+    "subtitle": "Société par Actions Simplifiée · Transport routier de fret de proximité · Les Pennes-Mirabeau"
+  },
+  {
+    "slug": "logestra-hexagone",
+    "nom": "LOGESTRA HEXAGONE",
+    "subtitle": "SARL · Transport routier de fret interurbains · Comines (59560)"
+  },
+  {
+    "slug": "lorraine-transport",
+    "nom": "LORRAINE TRANSPORT",
+    "subtitle": "SAS – Transports routiers de fret interurbains (NAF 4941A) – Metz"
+  },
+  {
+    "slug": "nour",
+    "nom": "NOUR",
+    "subtitle": "SARL – Transports routiers de fret de proximité (NAF 4941B) – Paris 19e"
+  },
+  {
+    "slug": "sotrapli",
+    "nom": "SOTRAPLI",
+    "subtitle": "SAS – Transports routiers de fret de proximité (NAF 4941B) – Evry Courcouronnes"
+  },
+  {
+    "slug": "tln-express",
+    "nom": "TLN EXPRESS",
+    "subtitle": "SARL – Transports routiers de fret de proximité (NAF 4941B) – Marseille"
+  },
+  {
+    "slug": "trans-faire",
+    "nom": "TRANS FAIRE",
+    "subtitle": "SARL · Transport routier · Versailles"
+  },
+  {
+    "slug": "trust-transport-services",
+    "nom": "TRUST TRANSPORT SERVICES",
+    "subtitle": "SARL — Transports routiers de fret de proximité (NAF 4941B) — Marseille (13008)"
+  }
+]

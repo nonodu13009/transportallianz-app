@@ -1,0 +1,426 @@
+{
+  "slug": "e-a-transport",
+  "nom": "E.A TRANSPORT",
+  "subtitle": "Entrepreneur Individuel – Transports routiers de fret interurbains (NAF 4941A) – Wattignies",
+  "kpiHeader": [
+    {
+      "label": "Portefeuille actif",
+      "value": "16 contrats",
+      "sub": "36 664,00 EUR de prime TTC/an"
+    },
+    {
+      "label": "Sinistralité",
+      "value": "0 sinistre",
+      "sub": "aucun règlement depuis ouverture",
+      "accent": "vert"
+    },
+    {
+      "label": "Primes encaissées",
+      "value": "28 667,85 EUR",
+      "sub": "cumul 2025 – 2026"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "0,0 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "vert"
+    },
+    {
+      "label": "Contrats actifs",
+      "value": "16",
+      "sub": "dont 15 Auto + 1 Multirisques"
+    },
+    {
+      "label": "Prime TTC/an portefeuille",
+      "value": "36 664,00 EUR",
+      "sub": "tous contrats actifs"
+    },
+    {
+      "label": "Sinistres réels cumulés",
+      "value": "0",
+      "sub": "aucun sinistre enregistré",
+      "accent": "vert"
+    },
+    {
+      "label": "Sinistralité brute cumulée",
+      "value": "0,00 EUR",
+      "sub": "aucun règlement",
+      "accent": "vert"
+    },
+    {
+      "label": "Primes encaissées (cumul)",
+      "value": "28 667,85 EUR",
+      "sub": "quittances situation P"
+    },
+    {
+      "label": "Commissions cumulées",
+      "value": "3 235,25 EUR",
+      "sub": "11.3 % des primes"
+    },
+    {
+      "label": "Prime nette commissions",
+      "value": "25 432,60 EUR",
+      "sub": "primes – commissions"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "0,0 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "vert"
+    }
+  ],
+  "ficheClient": [
+    {
+      "label": "N° client Lagon",
+      "value": "1000026688"
+    },
+    {
+      "label": "Raison sociale",
+      "value": "STE E.A TRANSPORT"
+    },
+    {
+      "label": "SIRET",
+      "value": "499 612 877 00021"
+    },
+    {
+      "label": "Catégorie juridique",
+      "value": "1000 – Entrepreneur Individuel"
+    },
+    {
+      "label": "Code NAF",
+      "value": "4941A – Transports routiers de fret interurbains"
+    },
+    {
+      "label": "Adresse",
+      "value": "1 Rue Louise de Bettignies, 59139 Wattignies"
+    },
+    {
+      "label": "Effectif",
+      "value": "3 salariés"
+    },
+    {
+      "label": "Date de création de l'entreprise",
+      "value": "01/01/2012"
+    },
+    {
+      "label": "Date de création de la fiche Lagon",
+      "value": "24/07/2025"
+    },
+    {
+      "label": "Point de vente",
+      "value": "Corniche"
+    },
+    {
+      "label": "Chargée de clientèle",
+      "value": "Emma Nogaro"
+    },
+    {
+      "label": "Valorisation foyer / client / potentiel",
+      "value": "4 / 4 / 5"
+    },
+    {
+      "label": "Ancienneté du client",
+      "value": "10 mois (depuis juillet 2025)"
+    },
+    {
+      "label": "Email",
+      "value": "ea_transport@hotmail.fr"
+    }
+  ],
+  "syntheseAnnuelle": {
+    "intro": "Lecture économique année par année. Primes calculées par année d'émission, sinistralité par année de survenance.",
+    "rows": [
+      {
+        "annee": "2025",
+        "primesEncaissees": "12 023,47 EUR",
+        "commissions": "1 352,66 EUR",
+        "primeNette": "10 670,81 EUR",
+        "nbSinistres": "–",
+        "sinistralite": "–",
+        "spBrut": "–",
+        "spNet": "–",
+        "isProjection": false
+      },
+      {
+        "annee": "2026",
+        "primesEncaissees": "16 644,38 EUR",
+        "commissions": "1 882,59 EUR",
+        "primeNette": "14 761,79 EUR",
+        "nbSinistres": "–",
+        "sinistralite": "–",
+        "spBrut": "–",
+        "spNet": "–",
+        "isProjection": false
+      }
+    ],
+    "projection": {
+      "annee": "2026 (projection 12 mois)",
+      "primesEncaissees": "33 288,76 EUR",
+      "commissions": "3 765,18 EUR",
+      "primeNette": "29 523,58 EUR",
+      "nbSinistres": "–",
+      "sinistralite": "–",
+      "spBrut": "–",
+      "spNet": "–",
+      "isProjection": true
+    },
+    "calloutProjection": "Facteur de projection appliqué pour 2026 : mois_couverts = 6 (dernière émission au 01/06/2026), facteur = 12 / 6 = 2,0. Les primes 2026 observées sont multipliées par 2 pour comparaison annualisée. La sinistralité reste à sa valeur observée (non projetée – règle métier)."
+  },
+  "sinistres": {
+    "intro": "Aucun sinistre déclaré depuis l'ouverture de la fiche client en juillet 2025.",
+    "rows": []
+  },
+  "contrats": {
+    "intro": "16 contrats en cours pour une prime TTC/an totale de 36 664,00 EUR.15 Auto1 Multirisques pro",
+    "actifs": [
+      {
+        "numContrat": "AF421047479",
+        "designation": "GQ-119-JE MERCEDES VITO Voiture p",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "4 135,82 EUR"
+      },
+      {
+        "numContrat": "AF421047467",
+        "designation": "HB-955-EV MERCEDES SPRINTER I Vo",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "3 675,14 EUR"
+      },
+      {
+        "numContrat": "AF421461798",
+        "designation": "GL-875-RT MERCEDES VITO Voiture p",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "26/03",
+        "primeTtcAn": "3 324,62 EUR"
+      },
+      {
+        "numContrat": "AF421110006",
+        "designation": "GC-926-VV CITROEN BERLINGO I Voit",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "10/09",
+        "primeTtcAn": "2 848,58 EUR"
+      },
+      {
+        "numContrat": "AF421057066",
+        "designation": "GF-472-NN CITROEN BERLINGO I Voit",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "2 692,70 EUR"
+      },
+      {
+        "numContrat": "AF421047449",
+        "designation": "GH-330-YJ CITROEN BERLINGO II Voit",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "2 352,50 EUR"
+      },
+      {
+        "numContrat": "AF421047455",
+        "designation": "HE-090-TR RENAULT EXPRESS II Voitu",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "2 245,58 EUR"
+      },
+      {
+        "numContrat": "AF421053438",
+        "designation": "GK-596-TR CITROEN BERLINGO I Voit",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "2 239,94 EUR"
+      },
+      {
+        "numContrat": "AF421047421",
+        "designation": "GF-468-SJ OPEL COMBO III Voiture pa",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "2 204,06 EUR"
+      },
+      {
+        "numContrat": "AF421542158",
+        "designation": "EK-153-VF RENAULT KANGOO EXP V",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "2 056,10 EUR"
+      },
+      {
+        "numContrat": "AF421047413",
+        "designation": "FH-779-XY RENAULT MASTER III Voitu",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "1 922,90 EUR"
+      },
+      {
+        "numContrat": "AF421234744",
+        "designation": "FV-272-TA MERCEDES VITO Voiture p",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "1 790,88 EUR"
+      },
+      {
+        "numContrat": "AF421047393",
+        "designation": "EV-134-JR RENAULT TRAFIC III Voitur",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "1 525,58 EUR"
+      },
+      {
+        "numContrat": "AF421131373",
+        "designation": "HC-259-ZE BMW IX Voiture particulière",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/10",
+        "primeTtcAn": "1 498,46 EUR"
+      },
+      {
+        "numContrat": "AF421203697",
+        "designation": "FM-518-FG RENAULT KANGOO EXP V",
+        "couverture": "Automobile",
+        "situation": "En cours",
+        "echeance": "01/01",
+        "primeTtcAn": "1 463,16 EUR"
+      },
+      {
+        "numContrat": "64680785",
+        "designation": "Allianz Profil Entreprise 19 AV ALBERT",
+        "couverture": "Multirisques",
+        "situation": "En cours",
+        "echeance": "05/01",
+        "primeTtcAn": "687,98 EUR"
+      }
+    ],
+    "resilies": [],
+    "suspendus": [],
+    "callout": "Contrôle cohérence Lagon : total prime TTC/an des contrats en cours reconstitué 36 664,00 EUR = pied de page Lagon 36 664,00 EUR. Écart 0,00 EUR."
+  },
+  "encaissements": {
+    "intro": "Quittances en situation P (payées) agrégées par année d'émission. Source : export Lagon (163 quittances P sur 165).",
+    "annees": [
+      "Commissions"
+    ],
+    "rows": [
+      {
+        "numPolice": "2025",
+        "designation": "12 023,47 EUR",
+        "montantsParAnnee": {
+          "Commissions": "1 352,66 EUR"
+        },
+        "total": "10 670,81 EUR"
+      },
+      {
+        "numPolice": "2026",
+        "designation": "16 644,38 EUR",
+        "montantsParAnnee": {
+          "Commissions": "1 882,59 EUR"
+        },
+        "total": "14 761,79 EUR"
+      },
+      {
+        "numPolice": "2026 (projection 12 mois)",
+        "designation": "33 288,76 EUR",
+        "montantsParAnnee": {
+          "Commissions": "3 765,18 EUR"
+        },
+        "total": "29 523,58 EUR"
+      }
+    ]
+  },
+  "indicateursCumul": [
+    {
+      "label": "Contrats actifs",
+      "value": "16",
+      "sub": "dont 15 Auto + 1 Multirisques"
+    },
+    {
+      "label": "Prime TTC/an portefeuille",
+      "value": "36 664,00 EUR",
+      "sub": "tous contrats actifs"
+    },
+    {
+      "label": "Sinistres réels cumulés",
+      "value": "0",
+      "sub": "aucun sinistre enregistré",
+      "accent": "vert"
+    },
+    {
+      "label": "Sinistralité brute cumulée",
+      "value": "0,00 EUR",
+      "sub": "aucun règlement",
+      "accent": "vert"
+    },
+    {
+      "label": "Primes encaissées (cumul)",
+      "value": "28 667,85 EUR",
+      "sub": "quittances situation P"
+    },
+    {
+      "label": "Commissions cumulées",
+      "value": "3 235,25 EUR",
+      "sub": "11.3 % des primes"
+    },
+    {
+      "label": "Prime nette commissions",
+      "value": "25 432,60 EUR",
+      "sub": "primes – commissions"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "0,0 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "vert"
+    }
+  ],
+  "methodologie": {
+    "schemaEconomique": "Primes brutes                       Sinistres payés\n- Commissions       doit couvrir →  - Recours encaissés\n- Taxes                              = Charge nette\n= Prime nette compagnie",
+    "regles": [
+      "Filtre quittances : seules les quittances en situation P (payées) sont prises en compte (163 / 165).",
+      "Déduplication sinistres : non applicable (bloc Sinistres Lagon vide).",
+      "Règle « 1 jour = 1 sinistre » : non applicable (0 sinistre).",
+      "Projection annualisée 2026 : facteur = 12 / 6 = 2,0 (mois_couverts = 6, dernière émission au 01/06/2026). Primes × 2 ; sinistralité non projetée.",
+      "Temporalité mixte : Primes = année d'émission ; Sinistres = année de survenance.",
+      "Bloc 01 – fiche entreprise : 1 capture Lagon (E.A TRANSPORT).",
+      "Bloc 02 – contrats : 2 captures Lagon (A + B), 16 lignes consolidées (16 N actifs).",
+      "Bloc 03 – sinistres : 1 capture Lagon, bloc vide (0 sinistre).",
+      "Bloc 04 – quittances : QUITTANCE_EXP2026052714194319.xlsx (165 lignes, 163 en situation P).",
+      "Date d'extraction Lagon : 27/05/2026."
+    ],
+    "controles": [
+      {
+        "type": "check",
+        "texte": "Prime TTC/an contrats actifs : reconstitué 36 664,00 EUR = pied de page Lagon 36 664,00 EUR. Écart 0,00 EUR."
+      },
+      {
+        "type": "check",
+        "texte": "Total règlements sinistres : bloc Sinistres Lagon vide = 0,00 EUR. Cohérence parfaite."
+      },
+      {
+        "type": "check",
+        "texte": "Cohérence inter-blocs : tous les N° de contrat présents dans les quittances (bloc 04) sont retrouvés dans le bloc 02."
+      }
+    ],
+    "sources": [
+      "Bloc 01 – fiche entreprise : 1 capture Lagon (E.A TRANSPORT).",
+      "Bloc 02 – contrats : 2 captures Lagon (A + B), 16 lignes consolidées (16 N actifs).",
+      "Bloc 03 – sinistres : 1 capture Lagon, bloc vide (0 sinistre).",
+      "Bloc 04 – quittances : QUITTANCE_EXP2026052714194319.xlsx (165 lignes, 163 en situation P).",
+      "Date d'extraction Lagon : 27/05/2026."
+    ]
+  },
+  "footer": {
+    "agence": "Agence Allianz Marseille : Nogaro & Boetti",
+    "dateGeneration": "27/05/2026"
+  }
+}

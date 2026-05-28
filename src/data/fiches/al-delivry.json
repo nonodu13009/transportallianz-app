@@ -1,0 +1,589 @@
+{
+  "slug": "al-delivry",
+  "nom": "AL DELIVRY",
+  "subtitle": "Société par Actions Simplifiée · Transport routier de fret de proximité · Marseille 13002",
+  "kpiHeader": [
+    {
+      "label": "Portefeuille actif",
+      "value": "21",
+      "sub": "contrats — 55 260,90 € / an"
+    },
+    {
+      "label": "Sinistralité cumulée",
+      "value": "27 354,86 €",
+      "sub": "19 évènements (2024-2026)",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissées (cumul)",
+      "value": "70 257,95 €",
+      "sub": "2024 → mai 2026"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "38,9 %",
+      "sub": "hors recours / hors commissions",
+      "accent": "rouge"
+    },
+    {
+      "label": "Primes encaissées",
+      "value": "70 257,95 €"
+    },
+    {
+      "label": "Commissions agence",
+      "value": "7 930,73 €"
+    },
+    {
+      "label": "Prime nette compagnie",
+      "value": "62 327,22 €"
+    },
+    {
+      "label": "Sinistralité brute",
+      "value": "27 354,86 €",
+      "accent": "rouge"
+    },
+    {
+      "label": "Nb sinistres réels",
+      "value": "19",
+      "sub": "après déduplication",
+      "accent": "rouge"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "38,9 %"
+    },
+    {
+      "label": "S/P net cumulé",
+      "value": "43,9 %"
+    },
+    {
+      "label": "Contrats actifs",
+      "value": "21",
+      "sub": "55 260,90 € TTC/an"
+    }
+  ],
+  "ficheClient": [
+    {
+      "label": "Raison sociale",
+      "value": "AL DELIVRY"
+    },
+    {
+      "label": "N° client Lagon",
+      "value": "1000022817"
+    },
+    {
+      "label": "Forme juridique",
+      "value": "SAS · Code 5710"
+    },
+    {
+      "label": "Activité (NAF)",
+      "value": "4941B — Transport routier de fret de proximité"
+    },
+    {
+      "label": "SIREN / SIRET",
+      "value": "924 766 942 · 92476694200016"
+    },
+    {
+      "label": "Date création société",
+      "value": "01/08/2022"
+    },
+    {
+      "label": "Adresse",
+      "value": "25 Boulevard des Dames — 13002 Marseille"
+    },
+    {
+      "label": "Point de vente",
+      "value": "Corniche"
+    },
+    {
+      "label": "Dirigeant",
+      "value": "HAMOUSSI TAREK"
+    },
+    {
+      "label": "Date création fiche",
+      "value": "25/03/2024"
+    }
+  ],
+  "syntheseAnnuelle": {
+    "intro": "Lecture économique année par année. Primes par année d'émission, sinistralité par année de survenance. Année 2026 partielle complétée par une projection linéaire 12 mois.",
+    "rows": [
+      {
+        "annee": "2024",
+        "primesEncaissees": "11 505,16 €",
+        "commissions": "1 327,86 €",
+        "primeNette": "10 177,30 €",
+        "nbSinistres": "3",
+        "sinistralite": "2 652,67 €",
+        "spBrut": "23,1 %",
+        "spNet": "26,1 %",
+        "isProjection": false
+      },
+      {
+        "annee": "2025",
+        "primesEncaissees": "33 133,52 €",
+        "commissions": "3 740,53 €",
+        "primeNette": "29 392,99 €",
+        "nbSinistres": "13",
+        "sinistralite": "24 696,77 €",
+        "spBrut": "74,5 %",
+        "spNet": "84,0 %",
+        "isProjection": false
+      },
+      {
+        "annee": "2026",
+        "primesEncaissees": "25 619,27 €",
+        "commissions": "2 862,34 €",
+        "primeNette": "22 756,93 €",
+        "nbSinistres": "3",
+        "sinistralite": "5,42 €",
+        "spBrut": "0,02 %",
+        "spNet": "0,02 %",
+        "isProjection": false
+      }
+    ],
+    "projection": {
+      "annee": "2026 (projection 12 mois)",
+      "primesEncaissees": "51 238,54 €",
+      "commissions": "5 724,68 €",
+      "primeNette": "45 513,86 €",
+      "nbSinistres": "3",
+      "sinistralite": "5,42 €",
+      "spBrut": "0,01 %",
+      "spNet": "0,01 %",
+      "isProjection": true
+    },
+    "calloutProjection": "Projection 2026. Mois couverts = 6 (quittances émises de janvier à juin 2026). Facteur appliqué sur les primes : 12 / 6 = ×2,00. La sinistralité 2026 est laissée à sa valeur observée (non projetée)."
+  },
+  "sinistres": {
+    "intro": "19 évènements réels après déduplication par N° de sinistre société (27 lignes brutes → 19 après dédup). Aucun regroupement « 1 jour = 1 sinistre » n'a été appliqué : toutes les paires (contrat, survenance) sont uniques.",
+    "rows": [
+      {
+        "dateSurvenance": "27/04/2026",
+        "contrat": "AF413492590",
+        "numSinistre": "202600706",
+        "situation": "Ouvert",
+        "montantRegle": "30/04/2026"
+      },
+      {
+        "dateSurvenance": "14/01/2026",
+        "contrat": "AF413958527",
+        "numSinistre": "202600472",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "12/01/2026",
+        "contrat": "AF421006996",
+        "numSinistre": "202600300",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "09/12/2025",
+        "contrat": "AF413424414",
+        "numSinistre": "202501850",
+        "situation": "Réglé",
+        "montantRegle": "11/12/2025"
+      },
+      {
+        "dateSurvenance": "24/11/2025",
+        "contrat": "AF421009457",
+        "numSinistre": "202600083",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "03/11/2025",
+        "contrat": "AF413492590",
+        "numSinistre": "202600519",
+        "situation": "Sans suite",
+        "montantRegle": "30/04/2026"
+      },
+      {
+        "dateSurvenance": "07/10/2025",
+        "contrat": "AF421121825",
+        "numSinistre": "202501970",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "02/10/2025",
+        "contrat": "AF413424414",
+        "numSinistre": "202500756",
+        "situation": "Réglé",
+        "montantRegle": "23/09/2025"
+      },
+      {
+        "dateSurvenance": "02/10/2025",
+        "contrat": "AF421121825",
+        "numSinistre": "202501420",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "21/09/2025",
+        "contrat": "AF413424414",
+        "numSinistre": "202501704",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "16/09/2025",
+        "contrat": "AF413731578",
+        "numSinistre": "202501291",
+        "situation": "Réglé",
+        "montantRegle": "23/09/2025"
+      },
+      {
+        "dateSurvenance": "12/09/2025",
+        "contrat": "AF421006996",
+        "numSinistre": "202501230",
+        "situation": "Réglé",
+        "montantRegle": "16/09/2025"
+      },
+      {
+        "dateSurvenance": "19/06/2025",
+        "contrat": "AF413958527",
+        "numSinistre": "202500925",
+        "situation": "Réglé",
+        "montantRegle": "08/07/2025"
+      },
+      {
+        "dateSurvenance": "30/04/2025",
+        "contrat": "AF413833241",
+        "numSinistre": "202500825",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "29/03/2025",
+        "contrat": "AF413833188",
+        "numSinistre": "202500515",
+        "situation": "Réglé",
+        "montantRegle": "18/04/2025"
+      },
+      {
+        "dateSurvenance": "15/03/2025",
+        "contrat": "AF413620966",
+        "numSinistre": "202500859",
+        "situation": "Réglé",
+        "montantRegle": "25/06/2025"
+      },
+      {
+        "dateSurvenance": "25/12/2024",
+        "contrat": "AF413413287",
+        "numSinistre": "202500007",
+        "situation": "Ouvert",
+        "montantRegle": "03/01/2025"
+      },
+      {
+        "dateSurvenance": "(non renseignée)",
+        "contrat": "AF413413287",
+        "numSinistre": "202500036",
+        "situation": "Réglé",
+        "montantRegle": "—"
+      },
+      {
+        "dateSurvenance": "14/12/2024",
+        "contrat": "AF413413287",
+        "numSinistre": "202500394",
+        "situation": "Réglé",
+        "montantRegle": "24/03/2025"
+      }
+    ]
+  },
+  "contrats": {
+    "intro": "21 contrats en cours (Sit = N). Pied de page Lagon : 55 260,90 € TTC/an — cohérence vérifiée.",
+    "actifs": [
+      {
+        "numContrat": "🚗",
+        "designation": "AF421563028",
+        "couverture": "21/05/2026",
+        "situation": "HK-566-RF BMW SERIE 4 II",
+        "echeance": "Automobile",
+        "primeTtcAn": "1 708,58 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421541684",
+        "couverture": "18/05/2026",
+        "situation": "WW-236-BL RENAULT TRAFIC III",
+        "echeance": "Automobile",
+        "primeTtcAn": "2 317,46 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421417801",
+        "couverture": "04/05/2026",
+        "situation": "EP-876-GC RENAULT KANGOO EXP",
+        "echeance": "Automobile",
+        "primeTtcAn": "1 083,38 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF413413287",
+        "couverture": "31/03/2026",
+        "situation": "EX-746-ZC RENAULT MASTER III",
+        "echeance": "Automobile",
+        "primeTtcAn": "3 660,38 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421121825",
+        "couverture": "20/04/2026",
+        "situation": "GQ-319-KG RENAULT MASTER III",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 859,26 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421227018",
+        "couverture": "20/04/2026",
+        "situation": "BK-065-KK VOLKSWAGEN CRAFTER",
+        "echeance": "Automobile",
+        "primeTtcAn": "3 584,90 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421454387",
+        "couverture": "23/03/2026",
+        "situation": "DV-238-NT RENAULT TRAFIC",
+        "echeance": "Automobile",
+        "primeTtcAn": "1 675,94 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421241624",
+        "couverture": "26/12/2025",
+        "situation": "AK 7000 BD-629-AA RENAULT MEGA",
+        "echeance": "Automobile",
+        "primeTtcAn": "1 012,10 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421272907",
+        "couverture": "22/12/2025",
+        "situation": "AA-894-QK RENAULT MASTER",
+        "echeance": "Automobile",
+        "primeTtcAn": "3 823,22 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421009457",
+        "couverture": "01/12/2025",
+        "situation": "FA-618-WZ RENAULT MASTER III",
+        "echeance": "Automobile",
+        "primeTtcAn": "4 673,54 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF413492590",
+        "couverture": "06/06/2025",
+        "situation": "GQ-351-DC RENAULT MASTER III",
+        "echeance": "Automobile",
+        "primeTtcAn": "5 115,62 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF421109741",
+        "couverture": "10/09/2025",
+        "situation": "ED-958-XV RENAULT MASTER III",
+        "echeance": "Automobile",
+        "primeTtcAn": "3 269,30 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF413895018",
+        "couverture": "07/08/2025",
+        "situation": "DN-625-FZ RENAULT CLIO",
+        "echeance": "Automobile",
+        "primeTtcAn": "653,52 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF413906304",
+        "couverture": "15/04/2025",
+        "situation": "BS-291-TB VOLKSWAGEN CRAFTER",
+        "echeance": "Automobile",
+        "primeTtcAn": "4 816,82 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF413424414",
+        "couverture": "08/04/2025",
+        "situation": "EE-517-AB RENAULT MASTER III",
+        "echeance": "Automobile",
+        "primeTtcAn": "4 166,06 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF413407239",
+        "couverture": "29/03/2025",
+        "situation": "AK 9000 BN-020-YL SEAT ALTEA",
+        "echeance": "Automobile",
+        "primeTtcAn": "805,68 €"
+      },
+      {
+        "numContrat": "📋",
+        "designation": "64379463",
+        "couverture": "27/03/2025",
+        "situation": "PROTECTION JURIDIQUE",
+        "echeance": "Autres",
+        "primeTtcAn": "351,12 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF413833241",
+        "couverture": "27/02/2025",
+        "situation": "EY-257-GG IVECO DAILY",
+        "echeance": "Automobile",
+        "primeTtcAn": "4 371,02 €"
+      },
+      {
+        "numContrat": "🚗",
+        "designation": "AF413833188",
+        "couverture": "27/02/2025",
+        "situation": "AK 7000 CG-739-AP OPEL INSIGNIA",
+        "echeance": "Automobile",
+        "primeTtcAn": "872,16 €"
+      },
+      {
+        "numContrat": "⚖️",
+        "designation": "64034555",
+        "couverture": "30/01/2025",
+        "situation": "Allianz RC Transport",
+        "echeance": "Resp. Civile",
+        "primeTtcAn": "1 152,84 €"
+      },
+      {
+        "numContrat": "🏥",
+        "designation": "A0CSCCA000",
+        "couverture": "—",
+        "situation": "Composio Entreprise Socle",
+        "echeance": "Santé",
+        "primeTtcAn": "288,00 €"
+      }
+    ],
+    "resilies": [],
+    "suspendus": []
+  },
+  "encaissements": {
+    "intro": "Primes effectivement encaissées (quittances Situation = P) par année d'émission. 382 quittances payées sur 410.",
+    "annees": [
+      "Commissions"
+    ],
+    "rows": [
+      {
+        "numPolice": "2024",
+        "designation": "11 505,16 €",
+        "montantsParAnnee": {
+          "Commissions": "1 327,86 €"
+        },
+        "total": "10 177,30 €"
+      },
+      {
+        "numPolice": "2025",
+        "designation": "33 133,52 €",
+        "montantsParAnnee": {
+          "Commissions": "3 740,53 €"
+        },
+        "total": "29 392,99 €"
+      },
+      {
+        "numPolice": "2026",
+        "designation": "25 619,27 €",
+        "montantsParAnnee": {
+          "Commissions": "2 862,34 €"
+        },
+        "total": "22 756,93 €"
+      },
+      {
+        "numPolice": "2026 (projection 12 mois)",
+        "designation": "51 238,54 €",
+        "montantsParAnnee": {
+          "Commissions": "5 724,68 €"
+        },
+        "total": "45 513,86 €"
+      }
+    ]
+  },
+  "indicateursCumul": [
+    {
+      "label": "Primes encaissées",
+      "value": "70 257,95 €"
+    },
+    {
+      "label": "Commissions agence",
+      "value": "7 930,73 €"
+    },
+    {
+      "label": "Prime nette compagnie",
+      "value": "62 327,22 €"
+    },
+    {
+      "label": "Sinistralité brute",
+      "value": "27 354,86 €",
+      "accent": "rouge"
+    },
+    {
+      "label": "Nb sinistres réels",
+      "value": "19",
+      "sub": "après déduplication",
+      "accent": "rouge"
+    },
+    {
+      "label": "S/P brut cumulé",
+      "value": "38,9 %"
+    },
+    {
+      "label": "S/P net cumulé",
+      "value": "43,9 %"
+    },
+    {
+      "label": "Contrats actifs",
+      "value": "21",
+      "sub": "55 260,90 € TTC/an"
+    }
+  ],
+  "methodologie": {
+    "schemaEconomique": "Primes brutes                       Sinistres payés\n− Commissions       doit couvrir →  − Recours encaissés\n− Taxes                              = Charge nette\n= Prime nette compagnie",
+    "regles": [
+      "Déduplication contrats par N° entre les captures 02_CONTRATS A/B/C/D (filtrage Sit=N pour les actifs).",
+      "Déduplication sinistres par N° de sinistre société : 27 lignes brutes → 19 lignes uniques.",
+      "Règle « 1 jour = 1 sinistre » sur clé (N° contrat, date de survenance) : aucun regroupement nécessaire (toutes les paires sont uniques).",
+      "Quittances filtrées Situation = P (Payées) : 382 quittances retenues sur 449.",
+      "Projection annualisée 2026 : facteur 12/6 = ×2,00 appliqué aux primes et commissions observées de janvier à juin 2026. Sinistralité non projetée.",
+      "Temporalité mixte assumée : primes par année d'émission, sinistres par année de survenance.",
+      "01_ENTREPRISE.PNG — capture Lagon fiche société",
+      "02_CONTRATS_A.PNG, B.PNG, C.PNG, D.PNG — captures Lagon liste contrats (actifs + résiliés)",
+      "03_SINISTRE_A.PNG, B.PNG, C.PNG — captures Lagon liste sinistres",
+      "QUITTANCE_EXP2026052714055680.XLSX — export Lagon quittances",
+      "Date d'extraction Lagon : 27/05/2026"
+    ],
+    "controles": [
+      {
+        "type": "warn",
+        "texte": "Données disponibles : primes brutes, commissions, sinistres payés. Données manquantes : taxes, recours encaissés. → Tous les S/P produits sont qualifiés « brut hors recours / hors commissions »."
+      },
+      {
+        "type": "check",
+        "texte": "✓ Pied de page contrats Lagon : 55 260,90 € — Total calculé : 55 260,90 € — Écart : 0,00 €"
+      },
+      {
+        "type": "check",
+        "texte": "✓ Pied de page sinistres Lagon : 27 354,86 € — Total après dédup : 27 354,86 € — Écart : 0,00 €"
+      }
+    ],
+    "sources": [
+      "01_ENTREPRISE.PNG — capture Lagon fiche société",
+      "02_CONTRATS_A.PNG, B.PNG, C.PNG, D.PNG — captures Lagon liste contrats (actifs + résiliés)",
+      "03_SINISTRE_A.PNG, B.PNG, C.PNG — captures Lagon liste sinistres",
+      "QUITTANCE_EXP2026052714055680.XLSX — export Lagon quittances",
+      "Date d'extraction Lagon : 27/05/2026"
+    ]
+  },
+  "footer": {
+    "agence": "Agence Allianz Marseille : Nogaro & Boetti",
+    "dateGeneration": "27 mai 2026"
+  }
+}
