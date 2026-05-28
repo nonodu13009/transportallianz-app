@@ -20,29 +20,33 @@
       </span>
     </a>
 
-    <nav class="nav" aria-label="Navigation principale">
+        <nav class="nav" aria-label="Navigation principale">
       <a href="index.html" class="active">Accueil</a>
       <a href="synthese.html">Synthese portefeuille</a>
       <span class="nav-sep"></span>
-      <span class="nav-section-label">Clients</span>
-      <a href="fiche-kst-13.html">KST 13</a>
-      <a href="fiche-al-delivry.html">AL DELIVRY</a>
-      <a href="fiche-action-reaction.html">ACTION REACTION</a>
-      <a href="fiche-13-or-transport.html">13 OR TRANSPORT</a>
-      <a href="fiche-logestra-hexagone.html">LOGESTRA HEXAGONE</a>
-      <a href="fiche-trans-faire.html">TRANS FAIRE</a>
-      <a href="fiche-sotrapli.html">SOTRAPLI</a>
-      <a href="fiche-tln-express.html">TLN EXPRESS</a>
-      <a href="fiche-donya-ms-transports.html">DONYA MS TRANSPORTS</a>
-      <a href="fiche-e-a-transport.html">E.A TRANSPORT</a>
-      <a href="fiche-nour.html">NOUR</a>
-      <a href="fiche-az-transports.html">AZ TRANSPORTS</a>
-      <a href="fiche-k-b-f-transport.html">K.B.F TRANSPORT</a>
-      <a href="fiche-lorraine-transport.html">LORRAINE TRANSPORT</a>
-      <a href="fiche-aso-transports.html">ASO TRANSPORTS</a>
-      <a href="fiche-trust-transport-services.html">TRUST TRANSPORT SERVICES</a>
-      <a href="fiche-kfb-transports.html">KFB TRANSPORTS</a>
-      <a href="fiche-groupement-marseillais-de-transporteurs.html">GROUPEMENT MARSEILLAIS DE TRANSPORTEURS</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" aria-expanded="false">Clients <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-dropdown-menu">
+        <a href="fiche-kst-13.html">KST 13</a>
+        <a href="fiche-al-delivry.html">AL DELIVRY</a>
+        <a href="fiche-action-reaction.html">ACTION REACTION</a>
+        <a href="fiche-13-or-transport.html">13 OR TRANSPORT</a>
+        <a href="fiche-logestra-hexagone.html">LOGESTRA HEXAGONE</a>
+        <a href="fiche-trans-faire.html">TRANS FAIRE</a>
+        <a href="fiche-sotrapli.html">SOTRAPLI</a>
+        <a href="fiche-tln-express.html">TLN EXPRESS</a>
+        <a href="fiche-donya-ms-transports.html">DONYA MS TRANSPORTS</a>
+        <a href="fiche-e-a-transport.html">E.A TRANSPORT</a>
+        <a href="fiche-nour.html">NOUR</a>
+        <a href="fiche-az-transports.html">AZ TRANSPORTS</a>
+        <a href="fiche-k-b-f-transport.html">K.B.F TRANSPORT</a>
+        <a href="fiche-lorraine-transport.html">LORRAINE TRANSPORT</a>
+        <a href="fiche-aso-transports.html">ASO TRANSPORTS</a>
+        <a href="fiche-trust-transport-services.html">TRUST TRANSPORT SERVICES</a>
+        <a href="fiche-kfb-transports.html">KFB TRANSPORTS</a>
+        <a href="fiche-groupement-marseillais-de-transporteurs.html">GROUPEMENT MARSEILLAIS DE TRANSPORTEURS</a>
+        </div>
+      </div>
     </nav>
 
     <div class="top-actions">
@@ -347,5 +351,16 @@
 
 </div>
 
+<script>
+document.addEventListener('click', function(e) {
+  var dd = document.querySelector('.nav-dropdown');
+  if (!dd) return;
+  if (e.target.closest('.nav-dropdown-toggle')) {
+    dd.classList.toggle('open');
+  } else {
+    dd.classList.remove('open');
+  }
+});
+</script>
 </body>
 </html>
