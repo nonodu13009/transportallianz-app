@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Accueil - Portefeuille Transport</title>
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============ TOP NAV ============ -->
+  <header class="topbar">
+    <a href="index.html" class="brand" aria-label="Accueil">
+      <span class="brand-mark">/A</span>
+      <span class="brand-name">
+        <span class="b1">Agence Allianz Nogaro &amp; Boetti</span>
+        <span class="b2">Corniche / Portefeuille Transport</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="synthese.html">Synthese portefeuille</a>
+      <span class="nav-sep"></span>
+      <span class="nav-section-label">Clients</span>
+      <a href="fiche-kst-13.html">KST 13</a>
+      <a href="fiche-al-delivry.html">AL DELIVRY</a>
+      <a href="fiche-action-reaction.html">ACTION REACTION</a>
+      <a href="fiche-13-or-transport.html">13 OR TRANSPORT</a>
+      <a href="fiche-logestra-hexagone.html">LOGESTRA HEXAGONE</a>
+      <a href="fiche-trans-faire.html">TRANS FAIRE</a>
+      <a href="fiche-sotrapli.html">SOTRAPLI</a>
+      <a href="fiche-tln-express.html">TLN EXPRESS</a>
+      <a href="fiche-donya-ms-transports.html">DONYA MS TRANSPORTS</a>
+      <a href="fiche-e-a-transport.html">E.A TRANSPORT</a>
+      <a href="fiche-nour.html">NOUR</a>
+      <a href="fiche-az-transports.html">AZ TRANSPORTS</a>
+      <a href="fiche-k-b-f-transport.html">K.B.F TRANSPORT</a>
+      <a href="fiche-lorraine-transport.html">LORRAINE TRANSPORT</a>
+      <a href="fiche-aso-transports.html">ASO TRANSPORTS</a>
+      <a href="fiche-trust-transport-services.html">TRUST TRANSPORT SERVICES</a>
+      <a href="fiche-kfb-transports.html">KFB TRANSPORTS</a>
+      <a href="fiche-groupement-marseillais-de-transporteurs.html">GROUPEMENT MARSEILLAIS DE TRANSPORTEURS</a>
+    </nav>
+
+    <div class="top-actions">
+      <button class="btn-pill" title="Exporter" onclick="window.print()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Export
+      </button>
+      <button class="btn-pill dark">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+        Kennedy/Rouviere
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-deco"></div>
+    <div class="hero-deco b"></div>
+    <div style="position:relative; z-index:1;">
+      <div class="eyebrow" style="margin-bottom:18px">Portefeuille transport / 2026</div>
+      <h1>Le pilotage<br/>de vos dossiers<br/>transporteurs.</h1>
+      <p class="lead">Vue consolidee du portefeuille et fiches detaillees par client. Primes, sinistralite et S/P brut hors taxes / hors recours - sans interpretation, juste les chiffres.</p>
+      <div class="hero-cta">
+        <a href="synthese.html" class="btn-pill dark">
+          Ouvrir la synthese
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <a href="#clients" class="btn-pill">Voir les clients</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KPI WELCOME ============ -->
+  <section class="section">
+    <div class="eyebrow" style="margin-bottom:12px">Chiffres-cles du portefeuille</div>
+    <div class="kpis">
+      <div class="kpi">
+        <div class="kpi-label">Clients transport suivis</div>
+        <div>
+          <div class="kpi-value">18</div>
+          <div class="kpi-sub">entreprises de transport</div>
+        </div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Prime portefeuille TTC / an</div>
+        <div>
+          <div class="kpi-value tnum">1 357 175 <span class="unit">&euro;</span></div>
+          <div class="kpi-sub">en cours, base annuelle</div>
+        </div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-label">Contrats actifs</div>
+        <div>
+          <div class="kpi-value tnum">445</div>
+          <div class="kpi-sub">tous risques transport confondus</div>
+        </div>
+      </div>
+      <div class="kpi dark">
+        <div class="kpi-label">S/P brut consolide</div>
+        <div style="display:flex; align-items:flex-end; justify-content:space-between;">
+          <div class="kpi-value tnum">40,6 <span class="unit" style="color:rgba(255,255,255,0.55)">%</span></div>
+          <span class="sp-badge ok" style="font-size:11.5px;">sain</span>
+        </div>
+        <div class="kpi-sub">brut hors taxes / hors recours</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RACCOURCIS ============ -->
+  <section class="section">
+    <div class="eyebrow" style="margin-bottom:12px">Acces rapide</div>
+    <div class="shortcut-grid">
+
+      <a class="shortcut" href="synthese.html">
+        <div>
+          <div class="eyebrow" style="margin-bottom:14px">01</div>
+          <h3>Synthese portefeuille</h3>
+          <p style="margin-top:14px;">Vue consolidee : bandeau KPI, tableau comparatif des 18 clients, S/P par client et repartition de la prime.</p>
+        </div>
+        <div class="foot">
+          <span class="muted" style="font-size:12.5px;">18 clients / 1 357 175 &euro; de prime / an</span>
+          <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </a>
+
+      <a class="shortcut" href="#clients">
+        <div>
+          <div class="eyebrow" style="margin-bottom:14px">02</div>
+          <h3>Dossiers clients</h3>
+          <p style="margin-top:14px;">Fiche detaillee par client : KPI, synthese annuelle, sinistres, contrats, encaissements et note methodologique.</p>
+        </div>
+        <div class="foot">
+          <span class="muted" style="font-size:12.5px;">445 contrats actifs / 641 sinistres</span>
+          <span class="arrow"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============ LISTE CLIENTS ============ -->
+  <section class="section" id="clients">
+    <div class="eyebrow" style="margin-bottom:12px">Clients transport</div>
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h2>Liste des dossiers</h2>
+          <div class="hint" style="margin-top:4px">Cliquer pour ouvrir la fiche detaillee</div>
+        </div>
+        <div class="hint">18 clients</div>
+      </div>
+
+      <div class="client-list">
+        <a href="fiche-kst-13.html">
+          <span class="nm">
+            KST 13
+            <small>SAS / Les Pennes-Mirabeau / 13 contrats actifs / 28 123 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 34,6 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-al-delivry.html">
+          <span class="nm">
+            AL DELIVRY
+            <small>SAS / Marseille 13002 / 21 contrats actifs / 55 261 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 38,9 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-action-reaction.html">
+          <span class="nm">
+            ACTION REACTION
+            <small>SARL / Marseille 13011 / 9 contrats actifs / 33 710 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 5,8 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-13-or-transport.html">
+          <span class="nm">
+            13 OR TRANSPORT
+            <small>SAS / Marseille 13015 / 13 contrats actifs / 33 865 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 40,8 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-logestra-hexagone.html">
+          <span class="nm">
+            LOGESTRA HEXAGONE
+            <small>SARL / Comines (59560) / 13 contrats actifs / 70 182 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 28,3 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-trans-faire.html">
+          <span class="nm">
+            TRANS FAIRE
+            <small>SARL / Versailles / 28 contrats actifs / 47 191 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 49,0 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-sotrapli.html">
+          <span class="nm">
+            SOTRAPLI
+            <small>SAS / Evry Courcouronnes / 9 contrats actifs / 21 614 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 0,0 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-tln-express.html">
+          <span class="nm">
+            TLN EXPRESS
+            <small>SARL / Marseille / 10 contrats actifs / 25 933 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 26,3 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-donya-ms-transports.html">
+          <span class="nm">
+            DONYA MS TRANSPORTS
+            <small>SAS / Bordeaux / 12 contrats actifs / 35 098 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 42,8 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-e-a-transport.html">
+          <span class="nm">
+            E.A TRANSPORT
+            <small>EI / Wattignies / 16 contrats actifs / 36 664 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 0,0 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-nour.html">
+          <span class="nm">
+            NOUR
+            <small>SARL / Paris 19e / 13 contrats actifs / 24 267 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 15,4 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-az-transports.html">
+          <span class="nm">
+            AZ TRANSPORTS
+            <small>SAS / Marseille / 15 contrats actifs / 46 405 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 31,1 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-k-b-f-transport.html">
+          <span class="nm">
+            K.B.F TRANSPORT
+            <small>SAS / Sarcelles / 24 contrats actifs / 88 309 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 36,7 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-lorraine-transport.html">
+          <span class="nm">
+            LORRAINE TRANSPORT
+            <small>SAS / Metz / 8 contrats actifs / 23 296 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 43,3 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-aso-transports.html">
+          <span class="nm">
+            ASO TRANSPORTS
+            <small>SAS / Marseille / 30 contrats actifs / 89 651 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge warn">S/P 61,0 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-trust-transport-services.html">
+          <span class="nm">
+            TRUST TRANSPORT SERVICES
+            <small>SARL / Marseille (13008) / 108 contrats actifs / 277 930 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 34,2 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-kfb-transports.html">
+          <span class="nm">
+            KFB TRANSPORTS
+            <small>SARL / Marseille (13015) / 46 contrats actifs / 126 773 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge warn">S/P 68,4 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+        <a href="fiche-groupement-marseillais-de-transporteurs.html">
+          <span class="nm">
+            GROUPEMENT MARSEILLAIS DE TRANSPORTEURS
+            <small>SAS / Saint-Victoret (13730) / 57 contrats actifs / 292 903 &euro; / an</small>
+          </span>
+          <span style="display:inline-flex; align-items:center; gap:14px;">
+            <span class="sp-badge ok">S/P 27,0 %</span>
+            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footnote">
+    <div>Donnees portefeuille / S/P brut <b>hors taxes / hors recours</b> / mise a jour 28 mai 2026.</div>
+    <div>Agence Allianz Nogaro &amp; Boetti / Corniche</div>
+  </div>
+
+</div>
+
+</body>
+</html>
