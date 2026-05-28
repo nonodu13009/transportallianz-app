@@ -119,10 +119,16 @@ button { font: inherit; cursor: pointer; }
   align-items: center;
   gap: 6px;
   flex: 1;
-  overflow-x: auto;
-  scrollbar-width: none;
+  overflow: visible;
 }
-.nav::-webkit-scrollbar { display: none; }
+
+@media (max-width: 720px) {
+  .nav {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .nav::-webkit-scrollbar { display: none; }
+}
 
 .nav a {
   padding: 9px 14px;
