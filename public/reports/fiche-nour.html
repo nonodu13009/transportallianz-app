@@ -160,15 +160,18 @@ ul.clean{padding-left:22px;margin:12px 0}ul.clean li{margin:6px 0;color:var(--gr
 </div>
 
 <script>
-document.addEventListener('click', function(e) {
+(function() {
+  var toggle = document.querySelector('.nav-dropdown-toggle');
   var dd = document.querySelector('.nav-dropdown');
-  if (!dd) return;
-  if (e.target.closest('.nav-dropdown-toggle')) {
+  if (!toggle || !dd) return;
+  toggle.addEventListener('click', function(e) {
+    e.stopPropagation();
     dd.classList.toggle('open');
-  } else {
+  });
+  document.addEventListener('click', function() {
     dd.classList.remove('open');
-  }
-});
+  });
+})();
 </script>
 </body>
 </html>

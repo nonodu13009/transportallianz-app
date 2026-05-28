@@ -30,6 +30,7 @@ interface Session {
   id: string;
   uid: string;
   email: string;
+  ip: string;
   loginAt: Timestamp | null;
   logoutAt: Timestamp | null;
   lastSeen: Timestamp | null;
@@ -41,6 +42,7 @@ interface LogEntry {
   id: string;
   uid: string;
   email: string;
+  ip?: string;
   action: string;
   page?: string;
   timestamp: Timestamp | null;
@@ -161,7 +163,7 @@ export default function AdminLogsPage() {
 
   // Export CSV
   const exportCSV = () => {
-    const header = "Email,Login,Logout,Duree,Device,Navigateur\n";
+    const header = "Email,IP,Login,Logout,Duree,Device,Navigateur\n";
     const rows = sessions
       .map((s) => {
         const login = s.loginAt ? s.loginAt.toDate().toISOString() : "";
@@ -169,7 +171,7 @@ export default function AdminLogsPage() {
         const dur = formatDuration(s.loginAt, s.logoutAt || s.lastSeen);
         const device = parseDevice(s.userAgent);
         const browser = parseBrowser(s.userAgent);
-        return `${s.email},${login},${logout},${dur},${device},${browser}`;
+        return `${s.email},${s.ip || "—"},${login},${logout},${dur},${device},${browser}`;
       })
       .join("\n");
     const blob = new Blob([header + rows], { type: "text/csv" });
@@ -337,7 +339,7 @@ export default function AdminLogsPage() {
       {tab === "sessions" && (
         <div className="bg-white border border-[var(--line)] rounded-[14px] overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full text-sm min-w-[800px]">
+            <table className="w-full text-sm min-w-[950px]">
               <thead>
                 <tr className="border-b border-[var(--line)]">
                   <th className="text-left px-4 py-3 text-xs font-medium uppercase tracking-wider text-[var(--muted)]">
@@ -345,6 +347,9 @@ export default function AdminLogsPage() {
                   </th>
                   <th className="text-left px-4 py-3 text-xs font-medium uppercase tracking-wider text-[var(--muted)]">
                     Utilisateur
+                  </th>
+                  <th className="text-left px-4 py-3 text-xs font-medium uppercase tracking-wider text-[var(--muted)]">
+                    Adresse IP
                   </th>
                   <th className="text-left px-4 py-3 text-xs font-medium uppercase tracking-wider text-[var(--muted)]">
                     Connexion
@@ -385,6 +390,9 @@ export default function AdminLogsPage() {
                         </span>
                       </td>
                       <td className="px-4 py-3 font-medium">{s.email}</td>
+                      <td className="px-4 py-3 text-xs font-mono text-[var(--ink-2)]">
+                        {s.ip || "—"}
+                      </td>
                       <td className="px-4 py-3 tabular-nums">
                         <div>{formatDate(s.loginAt)}</div>
                         <div className="text-xs text-[var(--muted)]">
@@ -425,7 +433,7 @@ export default function AdminLogsPage() {
                 {sessions.length === 0 && (
                   <tr>
                     <td
-                      colSpan={6}
+                      colSpan={7}
                       className="px-4 py-12 text-center text-[var(--muted)]"
                     >
                       Aucune session enregistree.
@@ -442,7 +450,7 @@ export default function AdminLogsPage() {
       {tab === "logs" && (
         <div className="bg-white border border-[var(--line)] rounded-[14px] overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full text-sm min-w-[600px]">
+            <table className="w-full text-sm min-w-[750px]">
               <thead>
                 <tr className="border-b border-[var(--line)]">
                   <th className="text-left px-4 py-3 text-xs font-medium uppercase tracking-wider text-[var(--muted)]">
@@ -450,6 +458,9 @@ export default function AdminLogsPage() {
                   </th>
                   <th className="text-left px-4 py-3 text-xs font-medium uppercase tracking-wider text-[var(--muted)]">
                     Utilisateur
+                  </th>
+                  <th className="text-left px-4 py-3 text-xs font-medium uppercase tracking-wider text-[var(--muted)]">
+                    Adresse IP
                   </th>
                   <th className="text-left px-4 py-3 text-xs font-medium uppercase tracking-wider text-[var(--muted)]">
                     Detail
@@ -474,6 +485,9 @@ export default function AdminLogsPage() {
                       </span>
                     </td>
                     <td className="px-4 py-3">{l.email}</td>
+                    <td className="px-4 py-3 text-xs font-mono text-[var(--ink-2)]">
+                      {l.ip || "—"}
+                    </td>
                     <td className="px-4 py-3 text-[var(--muted)]">
                       {l.page || "—"}
                     </td>
@@ -488,7 +502,7 @@ export default function AdminLogsPage() {
                 {logs.length === 0 && (
                   <tr>
                     <td
-                      colSpan={4}
+                      colSpan={5}
                       className="px-4 py-12 text-center text-[var(--muted)]"
                     >
                       Aucun evenement enregistre.

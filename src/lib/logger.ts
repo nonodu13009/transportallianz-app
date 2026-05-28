@@ -11,10 +11,26 @@ import { db } from "./firebase";
 const SESSIONS = "sessions";
 const LOGS = "logs";
 
+async function fetchClientIP(): Promise<string> {
+  try {
+    const res = await fetch("/api/ip");
+    if (res.ok) {
+      const data = await res.json();
+      return data.ip || "unknown";
+    }
+  } catch {
+    // silent fail
+  }
+  return "unknown";
+}
+
 export async function logLogin(email: string, uid: string) {
+  const ip = await fetchClientIP();
+
   const sessionRef = await addDoc(collection(db, SESSIONS), {
     uid,
     email,
+    ip,
     loginAt: serverTimestamp(),
     lastSeen: serverTimestamp(),
     logoutAt: null,
@@ -26,6 +42,7 @@ export async function logLogin(email: string, uid: string) {
   await addDoc(collection(db, LOGS), {
     uid,
     email,
+    ip,
     action: "login",
     timestamp: serverTimestamp(),
     userAgent: navigator.userAgent,
