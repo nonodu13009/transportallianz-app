@@ -114,7 +114,7 @@ export default function HomePage() {
           S/P brut = sinistralite / primes encaissees,{" "}
           <b>hors recours / hors commissions</b>. Mise a jour 28 mai 2026.
         </span>
-        <span>Agence Allianz Nogaro &amp; Boetti / Kennedy-Rouviere</span>
+        <span>Agence Allianz Marseille : Nogaro &amp; Boetti</span>
       </footer>
     </div>
   );

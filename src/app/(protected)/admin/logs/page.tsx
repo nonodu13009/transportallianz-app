@@ -517,7 +517,7 @@ export default function AdminLogsPage() {
 
       <footer className="mt-8 pt-5 border-t border-[var(--line)] text-xs text-[var(--muted)] flex justify-between flex-wrap gap-2">
         <span>Donnees temps reel / Firestore</span>
-        <span>Agence Allianz Nogaro &amp; Boetti / Kennedy-Rouviere</span>
+        <span>Agence Allianz Marseille : Nogaro &amp; Boetti</span>
       </footer>
     </div>
   );

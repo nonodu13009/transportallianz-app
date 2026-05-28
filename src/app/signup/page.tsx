@@ -212,7 +212,7 @@ export default function SignupPage() {
         </div>
 
         <p className="text-center text-xs text-[var(--muted)] mt-6">
-          Agence Allianz Nogaro &amp; Boetti / Kennedy-Rouviere
+          Agence Allianz Marseille : Nogaro &amp; Boetti
         </p>
       </div>
     </div>
