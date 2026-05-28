@@ -7,7 +7,8 @@ import type {
   ControleItem,
 } from "@/types/fiche";
 import Image from "next/image";
-import { CheckCircle, AlertTriangle } from "lucide-react";
+import Link from "next/link";
+import { CheckCircle, AlertTriangle, ArrowLeft } from "lucide-react";
 
 function spAccent(value: string): "vert" | "orange" | "rouge" | undefined {
   const num = parseFloat(value.replace(/[^0-9.,]/g, "").replace(",", "."));
@@ -123,6 +124,17 @@ function DataTable({
 export default function FicheClientView({ data }: { data: FicheData }) {
   return (
     <div className="max-w-[1100px] mx-auto px-6 pb-20">
+      {/* ── Back button ── */}
+      <div className="pt-5 pb-2">
+        <Link
+          href="/dashboard"
+          className="inline-flex items-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--ink)] transition-colors"
+        >
+          <ArrowLeft size={14} />
+          Retour au portefeuille
+        </Link>
+      </div>
+
       {/* ── Hero ── */}
       <header className="bg-[var(--sage)] rounded-[22px] px-10 py-10 mt-4 overflow-hidden max-sm:px-5 max-sm:py-6 max-sm:rounded-[14px]">
         <p className="text-xs font-semibold tracking-[0.10em] uppercase text-[var(--ink-2)] mb-3">
