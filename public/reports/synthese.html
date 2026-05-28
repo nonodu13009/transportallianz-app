@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Synthese portefeuille - Portefeuille Transport</title>
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<div class="app">
+
+  <!-- ============ TOP NAV ============ -->
+  <header class="topbar">
+    <a href="index.html" class="brand" aria-label="Accueil">
+      <span class="brand-mark">/A</span>
+      <span class="brand-name">
+        <span class="b1">Agence Allianz Nogaro &amp; Boetti</span>
+        <span class="b2">Corniche / Portefeuille Transport</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="synthese.html" class="active">Synthese portefeuille</a>
+      <span class="nav-sep"></span>
+      <span class="nav-section-label">Clients</span>
+      <a href="fiche-kst-13.html">KST 13</a>
+      <a href="fiche-al-delivry.html">AL DELIVRY</a>
+      <a href="fiche-action-reaction.html">ACTION REACTION</a>
+      <a href="fiche-13-or-transport.html">13 OR TRANSPORT</a>
+      <a href="fiche-logestra-hexagone.html">LOGESTRA HEXAGONE</a>
+      <a href="fiche-trans-faire.html">TRANS FAIRE</a>
+      <a href="fiche-sotrapli.html">SOTRAPLI</a>
+      <a href="fiche-tln-express.html">TLN EXPRESS</a>
+      <a href="fiche-donya-ms-transports.html">DONYA MS TRANSPORTS</a>
+      <a href="fiche-e-a-transport.html">E.A TRANSPORT</a>
+      <a href="fiche-nour.html">NOUR</a>
+      <a href="fiche-az-transports.html">AZ TRANSPORTS</a>
+      <a href="fiche-k-b-f-transport.html">K.B.F TRANSPORT</a>
+      <a href="fiche-lorraine-transport.html">LORRAINE TRANSPORT</a>
+      <a href="fiche-aso-transports.html">ASO TRANSPORTS</a>
+      <a href="fiche-trust-transport-services.html">TRUST TRANSPORT SERVICES</a>
+      <a href="fiche-kfb-transports.html">KFB TRANSPORTS</a>
+      <a href="fiche-groupement-marseillais-de-transporteurs.html">GROUPEMENT MARSEILLAIS DE TRANSPORTEURS</a>
+    </nav>
+
+    <div class="top-actions">
+      <button class="btn-pill" title="Exporter" onclick="window.print()">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Export
+      </button>
+      <button class="btn-pill dark">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>
+        Kennedy/Rouviere
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ BREADCRUMB ============ -->
+  <div class="crumbs">
+    <a href="index.html">Accueil</a>
+    <span class="sep">/</span>
+    <span class="current">Synthese portefeuille</span>
+  </div>
+
+  <!-- ============ PAGE HEAD ============ -->
+  <div class="page-head">
+    <div>
+      <div class="eyebrow" style="margin-bottom:18px">Vue consolidee</div>
+      <h1>Synthese portefeuille<br/>transport</h1>
+    </div>
+    <div>
+      <p class="intro">Consolidation des 18 dossiers transport suivis par l'agence. Les ratios S/P sont calcules <b>brut, hors taxes et hors recours</b>, sur l'ensemble des contrats actifs et resilies.</p>
+      <div class="meta">
+        <span><b>Periode</b> / cumul portefeuille</span>
+        <span><b>Devise</b> / EUR TTC</span>
+        <span><b>Mise a jour</b> / 28 mai 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ KPI BANDEAU ============ -->
+  <div class="eyebrow" style="margin-bottom:12px">Indicateurs consolides</div>
+
+  <div class="kpis">
+    <div class="kpi">
+      <div class="kpi-label">Clients transport</div>
+      <div>
+        <div class="kpi-value">18</div>
+        <div class="kpi-sub">SAS / SARL / EI</div>
+      </div>
+    </div>
+
+    <div class="kpi">
+      <div class="kpi-label">Prime portefeuille TTC / an</div>
+      <div>
+        <div class="kpi-value tnum">1 357 175 <span class="unit">&euro;</span></div>
+        <div class="kpi-sub">en cours, base annuelle</div>
+      </div>
+    </div>
+
+    <div class="kpi">
+      <div class="kpi-label">Primes encaissees / cumul</div>
+      <div>
+        <div class="kpi-value tnum">2 335 476 <span class="unit">&euro;</span></div>
+        <div class="kpi-sub">toutes annees confondues</div>
+      </div>
+    </div>
+
+    <div class="kpi">
+      <div class="kpi-label">Sinistralite brute cumulee</div>
+      <div>
+        <div class="kpi-value tnum">947 175 <span class="unit">&euro;</span></div>
+        <div class="kpi-sub">hors taxes / hors recours</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="kpis" style="grid-template-columns: 1.4fr 1fr;">
+    <div class="kpi sage">
+      <div class="kpi-label">S/P brut consolide</div>
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:18px; flex-wrap:wrap;">
+        <span class="sp-badge ok lg">40,6 %</span>
+        <div class="kpi-sub" style="margin:0; max-width: 28ch;">
+          Ratio sinistres / primes encaissees, brut hors taxes hors recours, cumule portefeuille.
+        </div>
+      </div>
+    </div>
+
+    <div class="kpi">
+      <div class="kpi-label">Volume</div>
+      <div class="kpi-split">
+        <div>
+          <span class="num tnum">445</span>
+          <span class="lbl">Contrats actifs</span>
+        </div>
+        <div>
+          <span class="num tnum">641</span>
+          <span class="lbl">Sinistres reels</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ TABLE CLIENTS ============ -->
+  <section class="section">
+    <div class="eyebrow" style="margin-bottom:10px">Detail par client</div>
+    <div class="card" style="padding: 8px 8px 12px;">
+      <div class="card-head" style="padding: 14px 16px 0;">
+        <div>
+          <h2>Tableau recapitulatif clients</h2>
+          <div class="hint" style="margin-top:4px">Cliquez sur une ligne pour ouvrir la fiche detaillee</div>
+        </div>
+        <div class="hint">18 clients / cumul portefeuille</div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th style="padding-left:16px;">Client</th>
+              <th>Ville</th>
+              <th class="num">Contrats actifs</th>
+              <th class="num">Prime TTC/an</th>
+              <th class="num">Primes encaissees</th>
+              <th class="num">Sinistralite</th>
+              <th class="num">S/P brut</th>
+              <th style="width:48px;"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr onclick="location.href='fiche-kst-13.html'">
+              <td class="client" style="padding-left:16px;">
+                KST 13
+                <small>SAS / Les Pennes-Mirabeau</small>
+              </td>
+              <td>Les Pennes-Mirabeau</td>
+              <td class="num tnum">13</td>
+              <td class="num tnum">28 123 &euro;</td>
+              <td class="num tnum">63 794 &euro;</td>
+              <td class="num tnum">22 043 &euro;</td>
+              <td class="num"><span class="sp-badge ok">34,6 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-al-delivry.html'">
+              <td class="client" style="padding-left:16px;">
+                AL DELIVRY
+                <small>SAS / Marseille 13002</small>
+              </td>
+              <td>Marseille 13002</td>
+              <td class="num tnum">21</td>
+              <td class="num tnum">55 261 &euro;</td>
+              <td class="num tnum">70 258 &euro;</td>
+              <td class="num tnum">27 355 &euro;</td>
+              <td class="num"><span class="sp-badge ok">38,9 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-action-reaction.html'">
+              <td class="client" style="padding-left:16px;">
+                ACTION REACTION
+                <small>SARL / Marseille 13011</small>
+              </td>
+              <td>Marseille 13011</td>
+              <td class="num tnum">9</td>
+              <td class="num tnum">33 710 &euro;</td>
+              <td class="num tnum">37 954 &euro;</td>
+              <td class="num tnum">2 211 &euro;</td>
+              <td class="num"><span class="sp-badge ok">5,8 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-13-or-transport.html'">
+              <td class="client" style="padding-left:16px;">
+                13 OR TRANSPORT
+                <small>SAS / Marseille 13015</small>
+              </td>
+              <td>Marseille 13015</td>
+              <td class="num tnum">13</td>
+              <td class="num tnum">33 865 &euro;</td>
+              <td class="num tnum">37 627 &euro;</td>
+              <td class="num tnum">15 355 &euro;</td>
+              <td class="num"><span class="sp-badge ok">40,8 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-logestra-hexagone.html'">
+              <td class="client" style="padding-left:16px;">
+                LOGESTRA HEXAGONE
+                <small>SARL / Comines (59560)</small>
+              </td>
+              <td>Comines (59560)</td>
+              <td class="num tnum">13</td>
+              <td class="num tnum">70 182 &euro;</td>
+              <td class="num tnum">50 032 &euro;</td>
+              <td class="num tnum">14 150 &euro;</td>
+              <td class="num"><span class="sp-badge ok">28,3 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-trans-faire.html'">
+              <td class="client" style="padding-left:16px;">
+                TRANS FAIRE
+                <small>SARL / Versailles</small>
+              </td>
+              <td>Versailles</td>
+              <td class="num tnum">28</td>
+              <td class="num tnum">47 191 &euro;</td>
+              <td class="num tnum">201 757 &euro;</td>
+              <td class="num tnum">98 897 &euro;</td>
+              <td class="num"><span class="sp-badge ok">49,0 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-sotrapli.html'">
+              <td class="client" style="padding-left:16px;">
+                SOTRAPLI
+                <small>SAS / Evry Courcouronnes</small>
+              </td>
+              <td>Evry Courcouronnes</td>
+              <td class="num tnum">9</td>
+              <td class="num tnum">21 614 &euro;</td>
+              <td class="num tnum">16 303 &euro;</td>
+              <td class="num tnum">0 &euro;</td>
+              <td class="num"><span class="sp-badge ok">0,0 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-tln-express.html'">
+              <td class="client" style="padding-left:16px;">
+                TLN EXPRESS
+                <small>SARL / Marseille</small>
+              </td>
+              <td>Marseille</td>
+              <td class="num tnum">10</td>
+              <td class="num tnum">25 933 &euro;</td>
+              <td class="num tnum">31 562 &euro;</td>
+              <td class="num tnum">8 291 &euro;</td>
+              <td class="num"><span class="sp-badge ok">26,3 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-donya-ms-transports.html'">
+              <td class="client" style="padding-left:16px;">
+                DONYA MS TRANSPORTS
+                <small>SAS / Bordeaux</small>
+              </td>
+              <td>Bordeaux</td>
+              <td class="num tnum">12</td>
+              <td class="num tnum">35 098 &euro;</td>
+              <td class="num tnum">38 234 &euro;</td>
+              <td class="num tnum">16 367 &euro;</td>
+              <td class="num"><span class="sp-badge ok">42,8 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-e-a-transport.html'">
+              <td class="client" style="padding-left:16px;">
+                E.A TRANSPORT
+                <small>EI / Wattignies</small>
+              </td>
+              <td>Wattignies</td>
+              <td class="num tnum">16</td>
+              <td class="num tnum">36 664 &euro;</td>
+              <td class="num tnum">28 668 &euro;</td>
+              <td class="num tnum">0 &euro;</td>
+              <td class="num"><span class="sp-badge ok">0,0 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-nour.html'">
+              <td class="client" style="padding-left:16px;">
+                NOUR
+                <small>SARL / Paris 19e</small>
+              </td>
+              <td>Paris 19e</td>
+              <td class="num tnum">13</td>
+              <td class="num tnum">24 267 &euro;</td>
+              <td class="num tnum">37 819 &euro;</td>
+              <td class="num tnum">5 836 &euro;</td>
+              <td class="num"><span class="sp-badge ok">15,4 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-az-transports.html'">
+              <td class="client" style="padding-left:16px;">
+                AZ TRANSPORTS
+                <small>SAS / Marseille</small>
+              </td>
+              <td>Marseille</td>
+              <td class="num tnum">15</td>
+              <td class="num tnum">46 405 &euro;</td>
+              <td class="num tnum">42 708 &euro;</td>
+              <td class="num tnum">13 288 &euro;</td>
+              <td class="num"><span class="sp-badge ok">31,1 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-k-b-f-transport.html'">
+              <td class="client" style="padding-left:16px;">
+                K.B.F TRANSPORT
+                <small>SAS / Sarcelles</small>
+              </td>
+              <td>Sarcelles</td>
+              <td class="num tnum">24</td>
+              <td class="num tnum">88 309 &euro;</td>
+              <td class="num tnum">70 305 &euro;</td>
+              <td class="num tnum">25 797 &euro;</td>
+              <td class="num"><span class="sp-badge ok">36,7 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-lorraine-transport.html'">
+              <td class="client" style="padding-left:16px;">
+                LORRAINE TRANSPORT
+                <small>SAS / Metz</small>
+              </td>
+              <td>Metz</td>
+              <td class="num tnum">8</td>
+              <td class="num tnum">23 296 &euro;</td>
+              <td class="num tnum">23 264 &euro;</td>
+              <td class="num tnum">10 075 &euro;</td>
+              <td class="num"><span class="sp-badge ok">43,3 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-aso-transports.html'">
+              <td class="client" style="padding-left:16px;">
+                ASO TRANSPORTS
+                <small>SAS / Marseille</small>
+              </td>
+              <td>Marseille</td>
+              <td class="num tnum">30</td>
+              <td class="num tnum">89 651 &euro;</td>
+              <td class="num tnum">322 298 &euro;</td>
+              <td class="num tnum">196 500 &euro;</td>
+              <td class="num"><span class="sp-badge warn">61,0 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-trust-transport-services.html'">
+              <td class="client" style="padding-left:16px;">
+                TRUST TRANSPORT SERVICES
+                <small>SARL / Marseille (13008)</small>
+              </td>
+              <td>Marseille (13008)</td>
+              <td class="num tnum">108</td>
+              <td class="num tnum">277 930 &euro;</td>
+              <td class="num tnum">669 880 &euro;</td>
+              <td class="num tnum">229 237 &euro;</td>
+              <td class="num"><span class="sp-badge ok">34,2 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-kfb-transports.html'">
+              <td class="client" style="padding-left:16px;">
+                KFB TRANSPORTS
+                <small>SARL / Marseille (13015)</small>
+              </td>
+              <td>Marseille (13015)</td>
+              <td class="num tnum">46</td>
+              <td class="num tnum">126 773 &euro;</td>
+              <td class="num tnum">245 632 &euro;</td>
+              <td class="num tnum">167 988 &euro;</td>
+              <td class="num"><span class="sp-badge warn">68,4 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr onclick="location.href='fiche-groupement-marseillais-de-transporteurs.html'">
+              <td class="client" style="padding-left:16px;">
+                GROUPEMENT MARSEILLAIS DE TRANSPORTEURS
+                <small>SAS / Saint-Victoret (13730)</small>
+              </td>
+              <td>Saint-Victoret (13730)</td>
+              <td class="num tnum">57</td>
+              <td class="num tnum">292 903 &euro;</td>
+              <td class="num tnum">347 380 &euro;</td>
+              <td class="num tnum">93 784 &euro;</td>
+              <td class="num"><span class="sp-badge ok">27,0 %</span></td>
+              <td>
+                <span class="row-arrow" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
+              </td>
+            </tr>
+            <tr style="cursor:default; background:var(--surface-2);" onclick="event.preventDefault()">
+              <td class="client" style="padding-left:16px;">
+                Total portefeuille
+                <small>consolide / 18 clients</small>
+              </td>
+              <td class="muted">&mdash;</td>
+              <td class="num tnum"><b>445</b></td>
+              <td class="num tnum"><b>1 357 175 &euro;</b></td>
+              <td class="num tnum"><b>2 335 476 &euro;</b></td>
+              <td class="num tnum"><b>947 175 &euro;</b></td>
+              <td class="num"><span class="sp-badge ok"><b>40,6 %</b></span></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CHARTS ============ -->
+  <section class="section grid-2">
+
+    <!-- Bars S/P -->
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="eyebrow" style="margin-bottom:6px">Comparatif</div>
+          <h2>S/P brut par client</h2>
+        </div>
+        <div class="hint">Repere 100 % / seuil d'equilibre</div>
+      </div>
+
+      <div class="bar-chart" style="margin-top:18px;">
+
+        <div class="bar-row">
+          <div class="lbl">SOTRAPLI<small>Evry Courcouronnes</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 0.0%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">0,0 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">E.A TRANSPORT<small>Wattignies</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 0.0%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">0,0 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">ACTION REACTION<small>Marseille 13011</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 5.8%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">5,8 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">NOUR<small>Paris 19e</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 15.4%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">15,4 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">TLN EXPRESS<small>Marseille</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 26.3%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">26,3 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">GROUPEMENT MARSEILLAIS DE TRANSPORTEURS<small>Saint-Victoret (13730)</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 27.0%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">27,0 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">LOGESTRA HEXAGONE<small>Comines (59560)</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 28.3%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">28,3 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">AZ TRANSPORTS<small>Marseille</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 31.1%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">31,1 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">TRUST TRANSPORT SERVICES<small>Marseille (13008)</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 34.2%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">34,2 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">KST 13<small>Les Pennes-Mirabeau</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 34.6%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">34,6 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">K.B.F TRANSPORT<small>Sarcelles</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 36.7%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">36,7 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">AL DELIVRY<small>Marseille 13002</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 38.9%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">38,9 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">13 OR TRANSPORT<small>Marseille 13015</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 40.8%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">40,8 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">DONYA MS TRANSPORTS<small>Bordeaux</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 42.8%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">42,8 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">LORRAINE TRANSPORT<small>Metz</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 43.3%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">43,3 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">TRANS FAIRE<small>Versailles</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 49.0%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">49,0 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">ASO TRANSPORTS<small>Marseille</small></div>
+          <div class="bar-track">
+            <div class="bar-fill warn" style="width: 61.0%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">61,0 %</div>
+        </div>
+        <div class="bar-row">
+          <div class="lbl">KFB TRANSPORTS<small>Marseille (13015)</small></div>
+          <div class="bar-track">
+            <div class="bar-fill warn" style="width: 68.4%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">68,4 %</div>
+        </div>
+
+        <div class="bar-row" style="margin-top:6px; padding-top:14px; border-top: 1px dashed var(--line);">
+          <div class="lbl"><b>Consolide</b><small>portefeuille transport</small></div>
+          <div class="bar-track">
+            <div class="bar-fill ok" style="width: 40.6%"></div>
+            <div class="bar-ref" style="left: 100.0%;"></div>
+          </div>
+          <div class="val">40,6 %</div>
+        </div>
+      </div>
+
+      <div class="bar-scale">
+        <div></div>
+        <div class="ticks">
+          <span>0 %</span>
+          <span>25 %</span>
+          <span>50 %</span>
+          <span>75 %</span>
+          <span>100 %</span>
+        </div>
+        <div></div>
+      </div>
+
+      <div style="display:flex; gap:16px; margin-top:18px; padding-top:16px; border-top: 1px solid var(--line-2); flex-wrap:wrap;">
+        <span class="sp-badge ok" style="font-size:11.5px;">&le; 60 % sain</span>
+        <span class="sp-badge warn" style="font-size:11.5px;">60-80 % a surveiller</span>
+        <span class="sp-badge bad" style="font-size:11.5px;">&gt; 80 % eleve</span>
+      </div>
+    </div>
+
+    <!-- Donut repartition prime -->
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <div class="eyebrow" style="margin-bottom:6px">Repartition</div>
+          <h2>Prime portefeuille</h2>
+        </div>
+        <div class="hint">TTC, base annuelle</div>
+      </div>
+
+      <div class="donut-wrap" style="margin-top:14px;">
+        <svg width="220" height="220" viewBox="0 0 200 200" role="img" aria-label="Repartition prime portefeuille">
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#EFEBE0" stroke-width="28"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#1C1B1B" stroke-width="28"
+      stroke-dasharray="108.48 502.65"
+      stroke-dashoffset="0.00"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#A8AC92" stroke-width="28"
+      stroke-dasharray="102.94 502.65"
+      stroke-dashoffset="-108.48"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#7E8369" stroke-width="28"
+      stroke-dasharray="46.95 502.65"
+      stroke-dashoffset="-211.42"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#474545" stroke-width="28"
+      stroke-dasharray="33.20 502.65"
+      stroke-dashoffset="-258.37"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#C6C9B4" stroke-width="28"
+      stroke-dasharray="32.71 502.65"
+      stroke-dashoffset="-291.58"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#8B7355" stroke-width="28"
+      stroke-dasharray="25.99 502.65"
+      stroke-dashoffset="-324.28"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#5C6B4F" stroke-width="28"
+      stroke-dasharray="20.47 502.65"
+      stroke-dashoffset="-350.28"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#9E8B76" stroke-width="28"
+      stroke-dasharray="17.48 502.65"
+      stroke-dashoffset="-370.74"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#3D5A3E" stroke-width="28"
+      stroke-dasharray="17.19 502.65"
+      stroke-dashoffset="-388.22"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#6B7B5E" stroke-width="28"
+      stroke-dasharray="13.58 502.65"
+      stroke-dashoffset="-405.41"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#4A4A48" stroke-width="28"
+      stroke-dasharray="13.00 502.65"
+      stroke-dashoffset="-418.99"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#B8B4A8" stroke-width="28"
+      stroke-dasharray="12.54 502.65"
+      stroke-dashoffset="-431.99"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#6E7B6A" stroke-width="28"
+      stroke-dasharray="12.49 502.65"
+      stroke-dashoffset="-444.53"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#8A8A7E" stroke-width="28"
+      stroke-dasharray="10.42 502.65"
+      stroke-dashoffset="-457.01"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#5A6B52" stroke-width="28"
+      stroke-dasharray="9.60 502.65"
+      stroke-dashoffset="-467.43"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#A09888" stroke-width="28"
+      stroke-dasharray="8.99 502.65"
+      stroke-dashoffset="-477.03"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#7A8672" stroke-width="28"
+      stroke-dasharray="8.63 502.65"
+      stroke-dashoffset="-486.02"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <circle cx="100" cy="100" r="80" fill="none"
+      stroke="#C4BFB2" stroke-width="28"
+      stroke-dasharray="8.01 502.65"
+      stroke-dashoffset="-494.65"
+      transform="rotate(-90 100 100)"
+      stroke-linecap="butt"/>
+    <text x="100" y="92" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-weight="600" font-size="22" fill="#1C1B1B" letter-spacing="-0.5">1 357 175</text>
+    <text x="100" y="114" text-anchor="middle" font-family="Source Sans 3, sans-serif" font-weight="500" font-size="11" fill="#767372" letter-spacing="1">EUR TTC / AN</text>
+  </svg>
+
+        <div class="donut-legend">
+          
+    <div class="legend-row">
+      <span class="sw" style="background:#1C1B1B"></span>
+      <span class="lbl">GROUPEMENT MARSEILLAIS DE TRANSPORTEURS<small>Saint-Victoret (13730) / SAS</small></span>
+      <span><span class="val tnum">292 903 &euro;</span><span class="pct tnum">21.6 %</span></span>
+    </div>
+    <div class="legend-row">
+      <span class="sw" style="background:#A8AC92"></span>
+      <span class="lbl">TRUST TRANSPORT SERVICES<small>Marseille (13008) / SARL</small></span>
+      <span><span class="val tnum">277 930 &euro;</span><span class="pct tnum">20.5 %</span></span>
+    </div>
+    <div class="legend-row">
+      <span class="sw" style="background:#7E8369"></span>
+      <span class="lbl">KFB TRANSPORTS<small>Marseille (13015) / SARL</small></span>
+      <span><span class="val tnum">126 773 &euro;</span><span class="pct tnum">9.3 %</span></span>
+    </div>
+    <div class="legend-row">
+      <span class="sw" style="background:#474545"></span>
+      <span class="lbl">ASO TRANSPORTS<small>Marseille / SAS</small></span>
+      <span><span class="val tnum">89 651 &euro;</span><span class="pct tnum">6.6 %</span></span>
+    </div>
+    <div class="legend-row">
+      <span class="sw" style="background:#C6C9B4"></span>
+      <span class="lbl">K.B.F TRANSPORT<small>Sarcelles / SAS</small></span>
+      <span><span class="val tnum">88 309 &euro;</span><span class="pct tnum">6.5 %</span></span>
+    </div>
+    <div class="legend-row">
+      <span class="sw" style="background:#E6E2D7"></span>
+      <span class="lbl">13 autres clients</span>
+      <span><span class="val tnum">481 609 &euro;</span><span class="pct tnum">35.5 %</span></span>
+    </div>
+    <div class="legend-row" style="padding-top:4px;">
+      <span></span>
+      <span class="lbl"><b>Total portefeuille</b></span>
+      <span><span class="val tnum">1 357 175 &euro;</span></span>
+    </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ============ FOOTNOTE ============ -->
+  <div class="footnote">
+    <div>S/P brut = sinistralite / primes encaissees, <b>hors taxes / hors recours</b>. Donnees portefeuille, mise a jour 28 mai 2026.</div>
+    <div>Agence Allianz Nogaro &amp; Boetti / Corniche</div>
+  </div>
+
+</div>
+
+</body>
+</html>
