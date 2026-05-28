@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import {
-  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
   signInWithPopup,
   GoogleAuthProvider,
 } from "firebase/auth";
@@ -11,32 +11,43 @@ import { auth } from "@/lib/firebase";
 import { Eye, EyeOff, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 
-export default function LoginPage() {
+export default function SignupPage() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirm, setConfirm] = useState("");
   const [showPw, setShowPw] = useState(false);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const handleEmail = async (e: React.FormEvent) => {
+  const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     setError("");
+
+    if (password.length < 6) {
+      setError("Le mot de passe doit contenir au moins 6 caracteres.");
+      return;
+    }
+    if (password !== confirm) {
+      setError("Les mots de passe ne correspondent pas.");
+      return;
+    }
+
     setLoading(true);
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      await createUserWithEmailAndPassword(auth, email, password);
       router.push("/dashboard");
     } catch (err: unknown) {
       const msg =
-        err instanceof Error ? err.message : "Erreur de connexion";
-      if (msg.includes("invalid-credential") || msg.includes("wrong-password")) {
-        setError("Email ou mot de passe incorrect.");
-      } else if (msg.includes("user-not-found")) {
-        setError("Aucun compte avec cet email.");
-      } else if (msg.includes("too-many-requests")) {
-        setError("Trop de tentatives. Reessayez plus tard.");
+        err instanceof Error ? err.message : "Erreur lors de la creation";
+      if (msg.includes("email-already-in-use")) {
+        setError("Un compte existe deja avec cet email.");
+      } else if (msg.includes("invalid-email")) {
+        setError("Adresse email invalide.");
+      } else if (msg.includes("weak-password")) {
+        setError("Le mot de passe doit contenir au moins 6 caracteres.");
       } else {
-        setError("Erreur de connexion. Verifiez vos identifiants.");
+        setError("Erreur lors de la creation du compte.");
       }
     } finally {
       setLoading(false);
@@ -62,18 +73,15 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="w-full max-w-[420px]">
-        {/* Back link */}
         <Link
-          href="/"
+          href="/login"
           className="inline-flex items-center gap-2 text-sm text-[var(--muted)] hover:text-[var(--ink)] mb-8 transition-colors"
         >
           <ArrowLeft size={14} />
-          Retour a l accueil
+          Retour a la connexion
         </Link>
 
-        {/* Card */}
         <div className="bg-white border border-[var(--line)] rounded-[14px] p-8">
-          {/* Header */}
           <div className="flex items-center gap-3 mb-6">
             <span className="w-[34px] h-[34px] rounded-lg bg-[var(--ink)] text-white grid place-items-center font-bold text-lg tracking-tight">
               /A
@@ -89,21 +97,19 @@ export default function LoginPage() {
           </div>
 
           <h1 className="text-2xl font-semibold tracking-tight mb-1">
-            Connexion
+            Creer un compte
           </h1>
           <p className="text-sm text-[var(--muted)] mb-6">
-            Acces reserve aux collaborateurs autorises.
+            Inscrivez-vous pour acceder au portefeuille.
           </p>
 
-          {/* Error */}
           {error && (
             <div className="mb-4 px-4 py-3 rounded-lg bg-[var(--bad-bg)] text-[var(--bad-fg)] text-sm font-medium">
               {error}
             </div>
           )}
 
-          {/* Email form */}
-          <form onSubmit={handleEmail} className="space-y-4">
+          <form onSubmit={handleSignup} className="space-y-4">
             <div>
               <label className="block text-xs font-semibold tracking-wide uppercase text-[var(--muted)] mb-1.5">
                 Email
@@ -113,7 +119,7 @@ export default function LoginPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="prenom@allianz-nogaro.fr"
+                placeholder="prenom@exemple.fr"
                 className="w-full px-4 py-3 rounded-lg border border-[var(--line)] bg-[var(--surface-2)] text-sm outline-none focus:border-[var(--sage-deep)] transition-colors"
               />
             </div>
@@ -127,7 +133,7 @@ export default function LoginPage() {
                   required
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  placeholder="••••••••"
+                  placeholder="6 caracteres minimum"
                   className="w-full px-4 py-3 pr-12 rounded-lg border border-[var(--line)] bg-[var(--surface-2)] text-sm outline-none focus:border-[var(--sage-deep)] transition-colors"
                 />
                 <button
@@ -140,31 +146,34 @@ export default function LoginPage() {
                 </button>
               </div>
             </div>
-            <div className="flex justify-end">
-              <Link
-                href="/forgot-password"
-                className="text-xs text-[var(--muted)] hover:text-[var(--ink)] transition-colors"
-              >
-                Mot de passe oublie ?
-              </Link>
+            <div>
+              <label className="block text-xs font-semibold tracking-wide uppercase text-[var(--muted)] mb-1.5">
+                Confirmer le mot de passe
+              </label>
+              <input
+                type={showPw ? "text" : "password"}
+                required
+                value={confirm}
+                onChange={(e) => setConfirm(e.target.value)}
+                placeholder="Retapez votre mot de passe"
+                className="w-full px-4 py-3 rounded-lg border border-[var(--line)] bg-[var(--surface-2)] text-sm outline-none focus:border-[var(--sage-deep)] transition-colors"
+              />
             </div>
             <button
               type="submit"
               disabled={loading}
               className="w-full py-3 rounded-full bg-[var(--ink)] text-white text-sm font-medium hover:bg-[#2a2828] transition-colors disabled:opacity-50"
             >
-              {loading ? "Connexion..." : "Se connecter"}
+              {loading ? "Creation..." : "Creer mon compte"}
             </button>
           </form>
 
-          {/* Separator */}
           <div className="flex items-center gap-3 my-5">
             <div className="flex-1 h-px bg-[var(--line)]" />
             <span className="text-xs text-[var(--muted)]">ou</span>
             <div className="flex-1 h-px bg-[var(--line)]" />
           </div>
 
-          {/* Google */}
           <button
             onClick={handleGoogle}
             disabled={loading}
@@ -192,12 +201,12 @@ export default function LoginPage() {
           </button>
 
           <p className="text-center text-sm text-[var(--muted)] mt-5">
-            Pas encore de compte ?{" "}
+            Deja un compte ?{" "}
             <Link
-              href="/signup"
+              href="/login"
               className="text-[var(--ink)] font-medium hover:underline"
             >
-              Creer un compte
+              Se connecter
             </Link>
           </p>
         </div>
