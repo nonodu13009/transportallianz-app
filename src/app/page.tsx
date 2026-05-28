@@ -5,7 +5,7 @@ import Link from "next/link";
 import { ArrowRight, ShieldCheck, BarChart3, Users } from "lucide-react";
 
 export default function HomePage() {
-  const { user, logout } = useAuth();
+  const { user } = useAuth();
 
   return (
     <div className="max-w-[1440px] mx-auto px-8 pb-24 max-sm:px-4">
@@ -24,31 +24,13 @@ export default function HomePage() {
             </span>
           </div>
         </div>
-        {user ? (
-          <div className="flex items-center gap-3">
-            <Link
-              href="/dashboard"
-              className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[var(--ink)] text-white text-sm font-medium hover:bg-[#2a2828] transition-colors"
-            >
-              Portefeuille
-              <ArrowRight size={14} />
-            </Link>
-            <button
-              onClick={logout}
-              className="px-4 py-2.5 rounded-full border border-[var(--line)] bg-white text-sm font-medium hover:bg-[var(--surface-2)] transition-colors"
-            >
-              Deconnexion
-            </button>
-          </div>
-        ) : (
-          <Link
-            href="/login"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[var(--ink)] text-white text-sm font-medium hover:bg-[#2a2828] transition-colors"
-          >
-            Se connecter
-            <ArrowRight size={14} />
-          </Link>
-        )}
+        <Link
+          href={user ? "/dashboard" : "/login"}
+          className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-[var(--ink)] text-white text-sm font-medium hover:bg-[#2a2828] transition-colors"
+        >
+          {user ? "Portefeuille" : "Se connecter"}
+          <ArrowRight size={14} />
+        </Link>
       </header>
 
       {/* Hero */}
@@ -65,7 +47,7 @@ export default function HomePage() {
           </h1>
           <p className="mt-6 max-w-[46ch] text-[16.5px] text-[var(--ink)] opacity-85">
             Vue consolidee du portefeuille et fiches detaillees par client.
-            Primes, sinistralite et S/P brut hors taxes / hors recours — sans
+            Primes, sinistralite et S/P brut (sinistres hors recours / primes hors commissions) — sans
             interpretation, juste les chiffres.
           </p>
           <div className="flex gap-3 mt-8 flex-wrap">
@@ -130,7 +112,7 @@ export default function HomePage() {
       <footer className="mt-10 pt-5 border-t border-[var(--line)] text-xs text-[var(--muted)] flex justify-between flex-wrap gap-2">
         <span>
           S/P brut = sinistralite / primes encaissees,{" "}
-          <b>hors taxes / hors recours</b>. Mise a jour 28 mai 2026.
+          <b>hors recours / hors commissions</b>. Mise a jour 28 mai 2026.
         </span>
         <span>Agence Allianz Nogaro &amp; Boetti / Kennedy-Rouviere</span>
       </footer>
