@@ -1,0 +1,36 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper : est-ce un admin ?
+    function isAdmin() {
+      return request.auth != null &&
+        request.auth.token.email in [
+          'jeanmichel@allianz-nogaro.fr',
+          'julien.boetti@allianz-nogaro.fr'
+        ];
+    }
+
+    // Sessions de connexion
+    match /sessions/{doc} {
+      allow create: if request.auth != null;
+      allow update: if request.auth != null && request.auth.uid == resource.data.uid;
+      allow read: if request.auth != null &&
+        (request.auth.uid == resource.data.uid || isAdmin());
+      allow delete: if isAdmin();
+    }
+
+    // Journal des evenements (logs)
+    match /logs/{doc} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null &&
+        (request.auth.uid == resource.data.uid || isAdmin());
+      allow delete: if isAdmin();
+    }
+
+    // Clients (fiches transport)
+    match /clients/{doc=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
