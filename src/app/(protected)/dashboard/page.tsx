@@ -3,6 +3,8 @@
 import { useEffect } from "react";
 import { useAuth } from "@/lib/auth-context";
 import { logPageView } from "@/lib/logger";
+import Navbar from "@/components/Navbar";
+import SyntheseDashboard from "@/components/SyntheseDashboard";
 
 export default function DashboardPage() {
   const { user } = useAuth();
@@ -14,10 +16,9 @@ export default function DashboardPage() {
   }, [user]);
 
   return (
-    <iframe
-      src="/reports/synthese.html"
-      className="w-full min-h-screen border-0"
-      title="Synthese portefeuille"
-    />
+    <>
+      <Navbar activePage="synthese" />
+      <SyntheseDashboard />
+    </>
   );
 }

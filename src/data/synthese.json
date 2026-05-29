@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "periode": "cumul portefeuille",
+    "devise": "EUR TTC",
+    "miseAJour": "28 mai 2026"
+  },
+  "kpis": {
+    "nbClients": 18,
+    "primePortefeuille": "1 357 175",
+    "primesEncaissees": "2 335 476",
+    "sinistraliteBrute": "947 175",
+    "spBrutConsolide": "40,6",
+    "contratsActifs": 445,
+    "sinistresReels": 641
+  },
+  "clients": [
+    {
+      "slug": "kst-13",
+      "forme": "SAS",
+      "ville": "Les Pennes-Mirabeau",
+      "contratsActifs": 13,
+      "primeTtcAn": "28 123",
+      "primesEncaissees": "63 794",
+      "sinistralite": "22 043",
+      "spBrut": 34.6
+    },
+    {
+      "slug": "al-delivry",
+      "forme": "SAS",
+      "ville": "Marseille 13002",
+      "contratsActifs": 21,
+      "primeTtcAn": "55 261",
+      "primesEncaissees": "70 258",
+      "sinistralite": "27 355",
+      "spBrut": 38.9
+    },
+    {
+      "slug": "action-reaction",
+      "forme": "SARL",
+      "ville": "Marseille 13011",
+      "contratsActifs": 9,
+      "primeTtcAn": "33 710",
+      "primesEncaissees": "37 954",
+      "sinistralite": "2 211",
+      "spBrut": 5.8
+    },
+    {
+      "slug": "13-or-transport",
+      "forme": "SAS",
+      "ville": "Marseille 13015",
+      "contratsActifs": 13,
+      "primeTtcAn": "33 865",
+      "primesEncaissees": "37 627",
+      "sinistralite": "15 355",
+      "spBrut": 40.8
+    },
+    {
+      "slug": "logestra-hexagone",
+      "forme": "SARL",
+      "ville": "Comines (59560)",
+      "contratsActifs": 13,
+      "primeTtcAn": "70 182",
+      "primesEncaissees": "50 032",
+      "sinistralite": "14 150",
+      "spBrut": 28.3
+    },
+    {
+      "slug": "trans-faire",
+      "forme": "SARL",
+      "ville": "Versailles",
+      "contratsActifs": 28,
+      "primeTtcAn": "47 191",
+      "primesEncaissees": "201 757",
+      "sinistralite": "98 897",
+      "spBrut": 49.0
+    },
+    {
+      "slug": "sotrapli",
+      "forme": "SAS",
+      "ville": "Evry Courcouronnes",
+      "contratsActifs": 9,
+      "primeTtcAn": "21 614",
+      "primesEncaissees": "16 303",
+      "sinistralite": "0",
+      "spBrut": 0.0
+    },
+    {
+      "slug": "tln-express",
+      "forme": "SARL",
+      "ville": "Marseille",
+      "contratsActifs": 10,
+      "primeTtcAn": "25 933",
+      "primesEncaissees": "31 562",
+      "sinistralite": "8 291",
+      "spBrut": 26.3
+    },
+    {
+      "slug": "donya-ms-transports",
+      "forme": "SAS",
+      "ville": "Bordeaux",
+      "contratsActifs": 12,
+      "primeTtcAn": "35 098",
+      "primesEncaissees": "38 234",
+      "sinistralite": "16 367",
+      "spBrut": 42.8
+    },
+    {
+      "slug": "e-a-transport",
+      "forme": "EI",
+      "ville": "Wattignies",
+      "contratsActifs": 16,
+      "primeTtcAn": "36 664",
+      "primesEncaissees": "28 668",
+      "sinistralite": "0",
+      "spBrut": 0.0
+    },
+    {
+      "slug": "nour",
+      "forme": "SARL",
+      "ville": "Paris 19e",
+      "contratsActifs": 13,
+      "primeTtcAn": "24 267",
+      "primesEncaissees": "37 819",
+      "sinistralite": "5 836",
+      "spBrut": 15.4
+    },
+    {
+      "slug": "az-transports",
+      "forme": "SAS",
+      "ville": "Marseille",
+      "contratsActifs": 15,
+      "primeTtcAn": "46 405",
+      "primesEncaissees": "42 708",
+      "sinistralite": "13 288",
+      "spBrut": 31.1
+    },
+    {
+      "slug": "k-b-f-transport",
+      "forme": "SAS",
+      "ville": "Sarcelles",
+      "contratsActifs": 24,
+      "primeTtcAn": "88 309",
+      "primesEncaissees": "70 305",
+      "sinistralite": "25 797",
+      "spBrut": 36.7
+    },
+    {
+      "slug": "lorraine-transport",
+      "forme": "SAS",
+      "ville": "Metz",
+      "contratsActifs": 8,
+      "primeTtcAn": "23 296",
+      "primesEncaissees": "23 264",
+      "sinistralite": "10 075",
+      "spBrut": 43.3
+    },
+    {
+      "slug": "aso-transports",
+      "forme": "SAS",
+      "ville": "Marseille",
+      "contratsActifs": 30,
+      "primeTtcAn": "89 651",
+      "primesEncaissees": "322 298",
+      "sinistralite": "196 500",
+      "spBrut": 61.0
+    },
+    {
+      "slug": "trust-transport-services",
+      "forme": "SARL",
+      "ville": "Marseille (13008)",
+      "contratsActifs": 108,
+      "primeTtcAn": "277 930",
+      "primesEncaissees": "669 880",
+      "sinistralite": "229 237",
+      "spBrut": 34.2
+    },
+    {
+      "slug": "kfb-transports",
+      "forme": "SARL",
+      "ville": "Marseille (13015)",
+      "contratsActifs": 46,
+      "primeTtcAn": "126 773",
+      "primesEncaissees": "245 632",
+      "sinistralite": "167 988",
+      "spBrut": 68.4
+    },
+    {
+      "slug": "groupement-marseillais-de-transporteurs",
+      "forme": "SAS",
+      "ville": "Saint-Victoret (13730)",
+      "contratsActifs": 57,
+      "primeTtcAn": "292 903",
+      "primesEncaissees": "347 380",
+      "sinistralite": "93 784",
+      "spBrut": 27.0
+    }
+  ],
+  "donut": {
+    "total": "1 357 175",
+    "segments": [
+      { "slug": "groupement-marseillais-de-transporteurs", "color": "#1C1B1B", "value": "292 903", "pct": 21.6, "dasharray": "108.48 502.65", "dashoffset": "0.00" },
+      { "slug": "trust-transport-services", "color": "#A8AC92", "value": "277 930", "pct": 20.5, "dasharray": "102.94 502.65", "dashoffset": "-108.48" },
+      { "slug": "kfb-transports", "color": "#7E8369", "value": "126 773", "pct": 9.3, "dasharray": "46.95 502.65", "dashoffset": "-211.42" },
+      { "slug": "aso-transports", "color": "#474545", "value": "89 651", "pct": 6.6, "dasharray": "33.20 502.65", "dashoffset": "-258.37" },
+      { "slug": "k-b-f-transport", "color": "#C6C9B4", "value": "88 309", "pct": 6.5, "dasharray": "32.71 502.65", "dashoffset": "-291.58" },
+      { "slug": null, "color": "#E6E2D7", "label": "13 autres clients", "value": "481 609", "pct": 35.5, "dasharray": "178.37 502.65", "dashoffset": "-324.28" }
+    ]
+  }
+}

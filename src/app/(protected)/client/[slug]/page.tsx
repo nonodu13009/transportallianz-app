@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { useAuth } from "@/lib/auth-context";
 import { logPageView } from "@/lib/logger";
+import Navbar from "@/components/Navbar";
 import FicheClientView from "@/components/FicheClient";
 import type { FicheClient } from "@/types/fiche";
 
@@ -28,24 +29,35 @@ export default function ClientPage() {
 
   if (error) {
     return (
-      <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="text-center">
-          <div className="text-lg font-semibold mb-2">Fiche introuvable</div>
-          <div className="text-sm text-[var(--muted)]">
-            Le client &laquo;{slug}&raquo; n existe pas.
+      <>
+        <Navbar activePage="client" activeSlug={slug} />
+        <div className="flex items-center justify-center min-h-[60vh]">
+          <div className="text-center">
+            <div className="text-lg font-semibold mb-2">Fiche introuvable</div>
+            <div className="text-sm text-[var(--muted)]">
+              Le client &laquo;{slug}&raquo; n existe pas.
+            </div>
           </div>
         </div>
-      </div>
+      </>
     );
   }
 
   if (!data) {
     return (
-      <div className="flex items-center justify-center min-h-[60vh]">
-        <div className="text-sm text-[var(--muted)]">Chargement...</div>
-      </div>
+      <>
+        <Navbar activePage="client" activeSlug={slug} />
+        <div className="flex items-center justify-center min-h-[60vh]">
+          <div className="text-sm text-[var(--muted)]">Chargement...</div>
+        </div>
+      </>
     );
   }
 
-  return <FicheClientView data={data} />;
+  return (
+    <>
+      <Navbar activePage="client" activeSlug={slug} />
+      <FicheClientView data={data} />
+    </>
+  );
 }

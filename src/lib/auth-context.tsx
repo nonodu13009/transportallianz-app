@@ -40,6 +40,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [admin, setAdmin] = useState(false);
   const [sessionId, setSessionId] = useState<string | null>(null);
   const heartbeatRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const loggedRef = useRef(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -48,13 +49,19 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       setAdmin(isAdmin(u?.email));
       setLoading(false);
 
-      if (u && !sessionId) {
+      if (u && !loggedRef.current) {
+        loggedRef.current = true;
         try {
           const sid = await logLogin(u.email || "unknown", u.uid);
           setSessionId(sid);
         } catch (e) {
           console.error("Log login failed:", e);
+          loggedRef.current = false;
         }
+      }
+
+      if (!u) {
+        loggedRef.current = false;
       }
     });
     return () => unsub();
