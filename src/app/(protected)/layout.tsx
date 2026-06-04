@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { LogOut, Shield } from "lucide-react";
 import Link from "next/link";
+import IdleTimeoutAlert from "@/components/IdleTimeoutAlert";
 
 export default function ProtectedLayout({
   children,
@@ -77,6 +78,7 @@ export default function ProtectedLayout({
       <div className="flex-1 overflow-auto">
         {children}
       </div>
+      <IdleTimeoutAlert />
     </div>
   );
 }
