@@ -1,12 +1,38 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Undo2 } from "lucide-react";
 import syntheseData from "@/data/synthese.json";
 import indexData from "@/data/fiches/_index.json";
+import recoursData from "@/data/recours.json";
 
 function getNom(slug: string): string {
   return indexData.find((c) => c.slug === slug)?.nom ?? slug;
+}
+
+// Slugs des fiches enrichies « avec recours » → montant total encaissé.
+// Dérivé de recours.json (source de vérité), pas de liste codée en dur.
+const recoursMap: Record<string, number> = Object.fromEntries(
+  Object.entries(recoursData.parClient)
+    .filter(([, v]) => v.totalRecours > 0)
+    .map(([slug, v]) => [slug, v.totalRecours])
+);
+const nbAvecRecours = Object.keys(recoursMap).length;
+
+function fmtEuro0(n: number): string {
+  return Math.round(n).toLocaleString("fr-FR") + " €";
+}
+
+function RecoursBadge({ montant }: { montant: number }) {
+  return (
+    <span
+      className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/15 text-emerald-700 border border-emerald-500/40 whitespace-nowrap"
+      title={`Fiche enrichie : ${fmtEuro0(montant)} de recours encaissés`}
+    >
+      <Undo2 size={11} strokeWidth={2.5} />
+      Recours {fmtEuro0(montant)}
+    </span>
+  );
 }
 
 function spClass(value: number): string {
@@ -171,9 +197,15 @@ export default function SyntheseDashboard() {
                 Cliquez sur une ligne pour ouvrir la fiche detaillee
               </p>
             </div>
-            <span className="text-[13px] text-[var(--muted)]">
-              {kpis.nbClients} clients / {meta.periode}
-            </span>
+            <div className="flex items-center gap-3 flex-wrap justify-end">
+              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[12px] font-semibold bg-emerald-500/15 text-emerald-700 border border-emerald-500/40">
+                <Undo2 size={13} strokeWidth={2.5} />
+                {nbAvecRecours} fiches avec recours
+              </span>
+              <span className="text-[13px] text-[var(--muted)]">
+                {kpis.nbClients} clients / {meta.periode}
+              </span>
+            </div>
           </div>
 
           <div className="overflow-x-auto">
@@ -208,15 +240,22 @@ export default function SyntheseDashboard() {
                 {clients.map((c) => (
                   <tr
                     key={c.slug}
-                    className="border-b border-[var(--line-2)] last:border-0 hover:bg-[var(--surface-2)] cursor-pointer transition-colors"
+                    className={`border-b border-[var(--line-2)] last:border-0 hover:bg-[var(--surface-2)] cursor-pointer transition-colors ${recoursMap[c.slug] ? "bg-emerald-500/[0.05]" : ""}`}
                   >
-                    <td className="px-4 py-3">
+                    <td
+                      className={`px-4 py-3 ${recoursMap[c.slug] ? "border-l-[3px] border-l-emerald-500" : "border-l-[3px] border-l-transparent"}`}
+                    >
                       <Link
                         href={`/client/${c.slug}`}
                         className="block"
                       >
-                        <div className="font-semibold text-[var(--ink)]">
-                          {getNom(c.slug)}
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="font-semibold text-[var(--ink)]">
+                            {getNom(c.slug)}
+                          </span>
+                          {recoursMap[c.slug] && (
+                            <RecoursBadge montant={recoursMap[c.slug]} />
+                          )}
                         </div>
                         <div className="text-[12px] text-[var(--muted)]">
                           {c.forme} / {c.ville}
@@ -299,8 +338,15 @@ export default function SyntheseDashboard() {
             {barData.map((c) => (
               <div key={c.slug} className="flex items-center gap-3">
                 <div className="w-[200px] shrink-0 text-right">
-                  <div className="text-[12px] font-medium text-[var(--ink)] leading-tight truncate">
-                    {getNom(c.slug)}
+                  <div className="text-[12px] font-medium text-[var(--ink)] leading-tight truncate flex items-center justify-end gap-1">
+                    {recoursMap[c.slug] && (
+                      <Undo2
+                        size={11}
+                        strokeWidth={2.5}
+                        className="text-emerald-600 shrink-0"
+                      />
+                    )}
+                    <span className="truncate">{getNom(c.slug)}</span>
                   </div>
                   <div className="text-[11px] text-[var(--muted)]">
                     {c.ville}
@@ -474,6 +520,12 @@ export default function SyntheseDashboard() {
           S/P brut = sinistralite / primes encaissees,{" "}
           <b>hors recours / hors commissions</b>. Donnees portefeuille, mise a
           jour {meta.miseAJour}.
+          <br />
+          <span className="inline-flex items-center gap-1 mt-1 text-emerald-700">
+            <Undo2 size={11} strokeWidth={2.5} />
+            {nbAvecRecours} fiches enrichies des recours encaisses (S/P bis
+            disponible en detail).
+          </span>
         </span>
         <span>Agence Allianz Marseille : Nogaro &amp; Boetti</span>
       </footer>
