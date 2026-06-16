@@ -142,7 +142,11 @@
         "sinistralite": "7 879,28 EUR",
         "spBrut": "47,6 %",
         "spNet": "53,3 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "4 060,00 EUR",
+        "sinistraliteNetteRecours": "3 819,28 EUR",
+        "spBrutRecours": "23,1 %",
+        "spNetRecours": "25,8 %"
       },
       {
         "annee": "2026",
@@ -153,7 +157,11 @@
         "sinistralite": "412,07 EUR",
         "spBrut": "3,7 %",
         "spNet": "4,1 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "—",
+        "sinistraliteNetteRecours": "412,07 EUR",
+        "spBrutRecours": "3,7 %",
+        "spNetRecours": "4,1 %"
       }
     ],
     "projection": {
@@ -165,7 +173,11 @@
       "sinistralite": "412,07 EUR",
       "spBrut": "1,8 %",
       "spNet": "2,1 %",
-      "isProjection": true
+      "isProjection": true,
+      "recours": "—",
+      "sinistraliteNetteRecours": "412,07 EUR",
+      "spBrutRecours": "1,8 %",
+      "spNetRecours": "2,1 %"
     },
     "calloutProjection": "Facteur de projection appliqué pour 2026 : mois_couverts = 6 (dernière émission au 01/06/2026), facteur = 12 / 6 = 2,0. Les primes 2026 observées sont multipliées par 2 pour comparaison annualisée. La sinistralité reste à sa valeur observée (non projetée – règle métier)."
   },
@@ -412,6 +424,18 @@
       "value": "26,3 %",
       "sub": "hors recours / hors commissions",
       "accent": "vert"
+    },
+    {
+      "label": "Recours encaissés (cumul)",
+      "value": "4 060,00 EUR",
+      "sub": "1 sinistres ≥ 3 000 €",
+      "accent": "vert"
+    },
+    {
+      "label": "S/P net cumulé (avec recours)",
+      "value": "17,1 %",
+      "sub": "vs 33,4 % hors recours",
+      "accent": "vert"
     }
   ],
   "methodologie": {
@@ -426,7 +450,8 @@
       "Bloc 02 – contrats : 2 captures Lagon (A + B), 14 lignes consolidées (10 N + 1 S + 3 R).",
       "Bloc 03 – sinistres : 1 capture Lagon, 5 lignes → 5 évènements après règle « 1 jour = 1 sinistre ».",
       "Bloc 04 – quittances : QUITTANCE_EXP2026052714141590.xlsx (218 lignes, 208 en situation P).",
-      "Date d'extraction Lagon : 27/05/2026."
+      "Date d'extraction Lagon : 27/05/2026.",
+      "Recours encaissés intégrés (sinistres ≥ 3 000 € payés par Allianz), rattachés à l'année de déclaration via le n° de sinistre. Sinistralité nette = max(0 ; sinistres payés − recours) par année (plancher annuel). S/P bis = sinistralité nette ÷ prime nette."
     ],
     "controles": [
       {
@@ -440,6 +465,10 @@
       {
         "type": "check",
         "texte": "Cohérence inter-blocs : tous les N° de contrat présents dans les sinistres (bloc 03) et les quittances (bloc 04) sont retrouvés dans le bloc 02."
+      },
+      {
+        "type": "check",
+        "texte": "✓ Recours encaissés intégrés : 1 sinistres ≥ 3 000 € pour 4 060,00 EUR."
       }
     ],
     "sources": [
@@ -447,11 +476,20 @@
       "Bloc 02 – contrats : 2 captures Lagon (A + B), 14 lignes consolidées (10 N + 1 S + 3 R).",
       "Bloc 03 – sinistres : 1 capture Lagon, 5 lignes → 5 évènements après règle « 1 jour = 1 sinistre ».",
       "Bloc 04 – quittances : QUITTANCE_EXP2026052714141590.xlsx (218 lignes, 208 en situation P).",
-      "Date d'extraction Lagon : 27/05/2026."
+      "Date d'extraction Lagon : 27/05/2026.",
+      "Captures Lagon « Garanties sinistrées » — dossier docs/Recours (33 sinistres, 9 clients)."
     ]
   },
   "footer": {
     "agence": "Agence Allianz Marseille : Nogaro & Boetti",
     "dateGeneration": "27/05/2026"
+  },
+  "recoursInfo": {
+    "totalRecours": "4 060,00 EUR",
+    "nbSinistres": 1,
+    "sinistraliteNetteCumul": "4 231,35 EUR",
+    "spNetCumulBrut": "33,4 %",
+    "spNetCumulRecours": "17,1 %",
+    "note": "1 recours encaissés (sinistres ≥ 3 000 € payés par Allianz) déduits par année de déclaration. S/P net cumulé : 33,4 % → 17,1 % avec recours."
   }
 }

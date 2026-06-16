@@ -124,7 +124,11 @@
         "sinistralite": "26 181,19 €",
         "spBrut": "78,2 %",
         "spNet": "88,4 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "8 801,68 €",
+        "sinistraliteNetteRecours": "17 379,51 €",
+        "spBrutRecours": "51,9 %",
+        "spNetRecours": "58,7 %"
       },
       {
         "annee": "2023",
@@ -135,7 +139,11 @@
         "sinistralite": "16 161,11 €",
         "spBrut": "42,4 %",
         "spNet": "48,0 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "1 776,00 €",
+        "sinistraliteNetteRecours": "14 385,11 €",
+        "spBrutRecours": "37,7 %",
+        "spNetRecours": "42,7 %"
       },
       {
         "annee": "2024",
@@ -146,7 +154,11 @@
         "sinistralite": "25 462,50 €",
         "spBrut": "52,1 %",
         "spNet": "59,1 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "—",
+        "sinistraliteNetteRecours": "25 462,50 €",
+        "spBrutRecours": "52,1 %",
+        "spNetRecours": "59,1 %"
       },
       {
         "annee": "2025",
@@ -157,7 +169,11 @@
         "sinistralite": "31 092,00 €",
         "spBrut": "55,7 %",
         "spNet": "62,9 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "9 010,00 €",
+        "sinistraliteNetteRecours": "22 082,00 €",
+        "spBrutRecours": "39,5 %",
+        "spNetRecours": "44,7 %"
       },
       {
         "annee": "2026",
@@ -562,6 +578,18 @@
       "value": "49,0 %",
       "sub": "hors recours / hors commissions",
       "accent": "rouge"
+    },
+    {
+      "label": "Recours encaissés (cumul)",
+      "value": "19 587,68 €",
+      "sub": "5 sinistres ≥ 3 000 €",
+      "accent": "vert"
+    },
+    {
+      "label": "S/P net cumulé (avec recours)",
+      "value": "50,9 %",
+      "sub": "vs 63,5 % hors recours",
+      "accent": "vert"
     }
   ],
   "methodologie": {
@@ -581,19 +609,34 @@
       "Bloc 02 — contrats : 6 captures Lagon (A à F), 51 lignes consolidées (28 N + 7 S + 16 R).",
       "Bloc 03 — sinistres : 13 captures Lagon (A à M), 98 lignes après dédup → 93 évènements après règle « 1 jour = 1 sinistre ».",
       "Bloc 04 — quittances : QUITTANCES_FUSION.xlsx (1 368 lignes, dont 1 299 en situation P).",
-      "Date d'extraction Lagon : 27/05/2026."
+      "Date d'extraction Lagon : 27/05/2026.",
+      "Recours encaissés intégrés (sinistres ≥ 3 000 € payés par Allianz), rattachés à l'année de déclaration via le n° de sinistre. Sinistralité nette = max(0 ; sinistres payés − recours) par année (plancher annuel). S/P bis = sinistralité nette ÷ prime nette."
     ],
-    "controles": [],
+    "controles": [
+      {
+        "type": "check",
+        "texte": "✓ Recours encaissés intégrés : 5 sinistres ≥ 3 000 € pour 19 587,68 €."
+      }
+    ],
     "sources": [
       "Bloc 01 — fiches entreprise : 1 capture Lagon (TRANS FAIRE Entreprise).",
       "Bloc 02 — contrats : 6 captures Lagon (A à F), 51 lignes consolidées (28 N + 7 S + 16 R).",
       "Bloc 03 — sinistres : 13 captures Lagon (A à M), 98 lignes après dédup → 93 évènements après règle « 1 jour = 1 sinistre ».",
       "Bloc 04 — quittances : QUITTANCES_FUSION.xlsx (1 368 lignes, dont 1 299 en situation P).",
-      "Date d'extraction Lagon : 27/05/2026."
+      "Date d'extraction Lagon : 27/05/2026.",
+      "Captures Lagon « Garanties sinistrées » — dossier docs/Recours (33 sinistres, 9 clients)."
     ]
   },
   "footer": {
     "agence": "Agence Allianz Marseille : Nogaro & Boetti",
     "dateGeneration": "27/05/2026"
+  },
+  "recoursInfo": {
+    "totalRecours": "19 587,68 €",
+    "nbSinistres": 5,
+    "sinistraliteNetteCumul": "79 309,12 €",
+    "spNetCumulBrut": "63,5 %",
+    "spNetCumulRecours": "50,9 %",
+    "note": "5 recours encaissés (sinistres ≥ 3 000 € payés par Allianz) déduits par année de déclaration. S/P net cumulé : 63,5 % → 50,9 % avec recours."
   }
 }

@@ -140,7 +140,11 @@
         "sinistralite": "1 651,23 EUR",
         "spBrut": "22,2 %",
         "spNet": "25,0 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "—",
+        "sinistraliteNetteRecours": "1 651,23 EUR",
+        "spBrutRecours": "22,2 %",
+        "spNetRecours": "25,0 %"
       },
       {
         "annee": "2019",
@@ -151,7 +155,11 @@
         "sinistralite": "75 442,52 EUR",
         "spBrut": "720,8 %",
         "spNet": "813,4 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "1 482,00 EUR",
+        "sinistraliteNetteRecours": "73 960,52 EUR",
+        "spBrutRecours": "706,6 %",
+        "spNetRecours": "797,4 %"
       },
       {
         "annee": "2020",
@@ -173,7 +181,11 @@
         "sinistralite": "46 430,38 EUR",
         "spBrut": "113,9 %",
         "spNet": "127,4 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "—",
+        "sinistraliteNetteRecours": "46 430,38 EUR",
+        "spBrutRecours": "113,9 %",
+        "spNetRecours": "127,4 %"
       },
       {
         "annee": "2022",
@@ -184,7 +196,11 @@
         "sinistralite": "33 927,58 EUR",
         "spBrut": "66,5 %",
         "spNet": "73,9 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "4 503,06 EUR",
+        "sinistraliteNetteRecours": "29 424,52 EUR",
+        "spBrutRecours": "57,7 %",
+        "spNetRecours": "64,1 %"
       },
       {
         "annee": "2023",
@@ -195,7 +211,11 @@
         "sinistralite": "16 516,95 EUR",
         "spBrut": "38,9 %",
         "spNet": "43,4 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "9 871,26 EUR",
+        "sinistraliteNetteRecours": "6 645,69 EUR",
+        "spBrutRecours": "15,7 %",
+        "spNetRecours": "17,5 %"
       },
       {
         "annee": "2024",
@@ -206,7 +226,11 @@
         "sinistralite": "18 517,26 EUR",
         "spBrut": "34,6 %",
         "spNet": "38,4 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "—",
+        "sinistraliteNetteRecours": "18 517,26 EUR",
+        "spBrutRecours": "34,6 %",
+        "spNetRecours": "38,4 %"
       },
       {
         "annee": "2025",
@@ -217,7 +241,11 @@
         "sinistralite": "2 999,06 EUR",
         "spBrut": "5,0 %",
         "spNet": "5,6 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "—",
+        "sinistraliteNetteRecours": "2 999,06 EUR",
+        "spBrutRecours": "5,0 %",
+        "spNetRecours": "5,6 %"
       },
       {
         "annee": "2026",
@@ -228,7 +256,11 @@
         "sinistralite": "1 015,00 EUR",
         "spBrut": "2,7 %",
         "spNet": "3,0 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "—",
+        "sinistraliteNetteRecours": "1 015,00 EUR",
+        "spBrutRecours": "2,7 %",
+        "spNetRecours": "3,0 %"
       }
     ],
     "projection": {
@@ -240,7 +272,11 @@
       "sinistralite": "1 015,00 EUR",
       "spBrut": "1,3 %",
       "spNet": "1,5 %",
-      "isProjection": true
+      "isProjection": true,
+      "recours": "—",
+      "sinistraliteNetteRecours": "1 015,00 EUR",
+      "spBrutRecours": "1,3 %",
+      "spNetRecours": "1,5 %"
     },
     "calloutProjection": "Facteur de projection appliqué pour 2026 : mois_couverts = 6 (dernière émission au 01/06/2026), facteur = 12 / 6 = 2,0. Les primes 2026 observées sont multipliées par 2 pour comparaison annualisée. La sinistralité reste à sa valeur observée (non projetée – règle métier)."
   },
@@ -1150,6 +1186,18 @@
       "value": "61,0 %",
       "sub": "hors recours / hors commissions",
       "accent": "orange"
+    },
+    {
+      "label": "Recours encaissés (cumul)",
+      "value": "15 856,32 EUR",
+      "sub": "3 sinistres ≥ 3 000 €",
+      "accent": "vert"
+    },
+    {
+      "label": "S/P net cumulé (avec recours)",
+      "value": "66,6 %",
+      "sub": "vs 72,5 % hors recours",
+      "accent": "orange"
     }
   ],
   "methodologie": {
@@ -1164,7 +1212,8 @@
       "Bloc 02 – contrats : 4 captures Lagon (A à D), 34 lignes consolidées (30 N + 1 S + 3 R).",
       "Bloc 03 – sinistres : 10 captures Lagon (A à J), 86 lignes après dédup → 70 évènements après règle « 1 jour = 1 sinistre ».",
       "Bloc 04 – quittances : QUITTANCE_EXP2026052714432671.xlsx (1979 lignes, 1960 en situation P, 59 polices distinctes sur 9 ans).",
-      "Date d'extraction Lagon : 27/05/2026."
+      "Date d'extraction Lagon : 27/05/2026.",
+      "Recours encaissés intégrés (sinistres ≥ 3 000 € payés par Allianz), rattachés à l'année de déclaration via le n° de sinistre. Sinistralité nette = max(0 ; sinistres payés − recours) par année (plancher annuel). S/P bis = sinistralité nette ÷ prime nette."
     ],
     "controles": [
       {
@@ -1178,6 +1227,10 @@
       {
         "type": "check",
         "texte": "Cohérence inter-blocs : tous les N° de contrat principaux présents dans les sinistres (bloc 03) et les quittances (bloc 04) sont retrouvés dans le bloc 02."
+      },
+      {
+        "type": "check",
+        "texte": "✓ Recours encaissés intégrés : 3 sinistres ≥ 3 000 € pour 15 856,32 EUR."
       }
     ],
     "sources": [
@@ -1185,11 +1238,20 @@
       "Bloc 02 – contrats : 4 captures Lagon (A à D), 34 lignes consolidées (30 N + 1 S + 3 R).",
       "Bloc 03 – sinistres : 10 captures Lagon (A à J), 86 lignes après dédup → 70 évènements après règle « 1 jour = 1 sinistre ».",
       "Bloc 04 – quittances : QUITTANCE_EXP2026052714432671.xlsx (1979 lignes, 1960 en situation P, 59 polices distinctes sur 9 ans).",
-      "Date d'extraction Lagon : 27/05/2026."
+      "Date d'extraction Lagon : 27/05/2026.",
+      "Captures Lagon « Garanties sinistrées » — dossier docs/Recours (33 sinistres, 9 clients)."
     ]
   },
   "footer": {
     "agence": "Agence Allianz Marseille : Nogaro & Boetti",
     "dateGeneration": "27/05/2026"
+  },
+  "recoursInfo": {
+    "totalRecours": "15 856,32 EUR",
+    "nbSinistres": 3,
+    "sinistraliteNetteCumul": "180 643,66 EUR",
+    "spNetCumulBrut": "72,5 %",
+    "spNetCumulRecours": "66,6 %",
+    "note": "3 recours encaissés (sinistres ≥ 3 000 € payés par Allianz) déduits par année de déclaration. S/P net cumulé : 72,5 % → 66,6 % avec recours."
   }
 }

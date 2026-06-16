@@ -137,7 +137,11 @@
         "sinistralite": "14 149,88 €",
         "spBrut": "42,2 %",
         "spNet": "47,6 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "2 030,00 €",
+        "sinistraliteNetteRecours": "12 119,88 €",
+        "spBrutRecours": "36,2 %",
+        "spNetRecours": "40,8 %"
       }
     ],
     "projection": {
@@ -149,7 +153,11 @@
       "sinistralite": "14 149,88 €",
       "spBrut": "21,1 %",
       "spNet": "23,8 %",
-      "isProjection": true
+      "isProjection": true,
+      "recours": "2 030,00 €",
+      "sinistraliteNetteRecours": "12 119,88 €",
+      "spBrutRecours": "18,1 %",
+      "spNetRecours": "20,4 %"
     },
     "calloutProjection": "Projection 2026. Mois couverts = 6 (quittances émises de janvier à juin 2026). Facteur appliqué sur les primes : 12 / 6 = ×2,00. Sinistralité non projetée. Le S/P brut projeté tombe ainsi à 21,1 % (vs 42,2 % observé sur 6 mois)."
   },
@@ -401,6 +409,18 @@
       "label": "Contrats actifs",
       "value": "13",
       "sub": "70 181,54 € TTC/an"
+    },
+    {
+      "label": "Recours encaissés (cumul)",
+      "value": "2 030,00 €",
+      "sub": "1 sinistres ≥ 3 000 €",
+      "accent": "vert"
+    },
+    {
+      "label": "S/P net cumulé (avec recours)",
+      "value": "40,8 %",
+      "sub": "vs 47,6 % hors recours",
+      "accent": "vert"
     }
   ],
   "methodologie": {
@@ -416,12 +436,13 @@
       "02_-_CONTRAT_A.PNG, 02_-_CONTRAT_B.PNG — captures Lagon liste contrats",
       "03_-_SINISTRE_A.PNG, 03_-_SINISTRE_B.PNG — captures Lagon liste sinistres",
       "QUITTANCE_EXP2026052714093126.XLSX — export Lagon quittances",
-      "Date d'extraction Lagon : 27/05/2026"
+      "Date d'extraction Lagon : 27/05/2026",
+      "Recours encaissés intégrés (sinistres ≥ 3 000 € payés par Allianz), rattachés à l'année de déclaration via le n° de sinistre. Sinistralité nette = max(0 ; sinistres payés − recours) par année (plancher annuel). S/P bis = sinistralité nette ÷ prime nette."
     ],
     "controles": [
       {
-        "type": "warn",
-        "texte": "Données disponibles : primes brutes, commissions, sinistres payés. Données manquantes : taxes, recours encaissés. → Tous les S/P produits sont qualifiés « brut hors recours / hors commissions »."
+        "type": "check",
+        "texte": "✓ Recours encaissés intégrés : 1 sinistres ≥ 3 000 € pour 2 030,00 €. S/P net cumulé corrigé : 47,6 % → 40,8 %."
       },
       {
         "type": "check",
@@ -437,11 +458,20 @@
       "02_-_CONTRAT_A.PNG, 02_-_CONTRAT_B.PNG — captures Lagon liste contrats",
       "03_-_SINISTRE_A.PNG, 03_-_SINISTRE_B.PNG — captures Lagon liste sinistres",
       "QUITTANCE_EXP2026052714093126.XLSX — export Lagon quittances",
-      "Date d'extraction Lagon : 27/05/2026"
+      "Date d'extraction Lagon : 27/05/2026",
+      "Captures Lagon « Garanties sinistrées » — dossier docs/Recours (33 sinistres, 9 clients)."
     ]
   },
   "footer": {
     "agence": "Agence Allianz Marseille : Nogaro & Boetti",
     "dateGeneration": "27 mai 2026"
+  },
+  "recoursInfo": {
+    "totalRecours": "2 030,00 €",
+    "nbSinistres": 1,
+    "sinistraliteNetteCumul": "12 119,88 €",
+    "spNetCumulBrut": "47,6 %",
+    "spNetCumulRecours": "40,8 %",
+    "note": "1 recours encaissés (sinistres ≥ 3 000 € payés par Allianz) déduits par année de déclaration. S/P net cumulé : 47,6 % → 40,8 % avec recours."
   }
 }

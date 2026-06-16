@@ -38,6 +38,17 @@ export interface FicheClient {
 
   indicateursCumul: KpiItem[];
 
+  // Présent uniquement sur les fiches avec recours encaissés intégrés.
+  // Active le toggle « avec / sans recours » dans la synthèse.
+  recoursInfo?: {
+    totalRecours: string;
+    nbSinistres: number;
+    sinistraliteNetteCumul: string;
+    spNetCumulBrut: string;
+    spNetCumulRecours: string;
+    note: string;
+  };
+
   methodologie: {
     schemaEconomique?: string; // texte monospace
     regles: string[]; // liste de règles de traitement
@@ -73,6 +84,11 @@ export interface SyntheseRow {
   spBrut: string;
   spNet: string;
   isProjection?: boolean;
+  // Champs « avec recours » (optionnels, présents sur les fiches à recours).
+  recours?: string;
+  sinistraliteNetteRecours?: string;
+  spBrutRecours?: string;
+  spNetRecours?: string;
 }
 
 export interface SinistreRow {

@@ -116,7 +116,11 @@
         "sinistralite": "2 652,67 €",
         "spBrut": "23,1 %",
         "spNet": "26,1 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "—",
+        "sinistraliteNetteRecours": "2 652,67 €",
+        "spBrutRecours": "23,1 %",
+        "spNetRecours": "26,1 %"
       },
       {
         "annee": "2025",
@@ -127,7 +131,11 @@
         "sinistralite": "24 696,77 €",
         "spBrut": "74,5 %",
         "spNet": "84,0 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "13 682,65 €",
+        "sinistraliteNetteRecours": "11 014,12 €",
+        "spBrutRecours": "33,2 %",
+        "spNetRecours": "37,5 %"
       },
       {
         "annee": "2026",
@@ -138,7 +146,11 @@
         "sinistralite": "5,42 €",
         "spBrut": "0,02 %",
         "spNet": "0,02 %",
-        "isProjection": false
+        "isProjection": false,
+        "recours": "—",
+        "sinistraliteNetteRecours": "5,42 €",
+        "spBrutRecours": "0,0 %",
+        "spNetRecours": "0,0 %"
       }
     ],
     "projection": {
@@ -150,7 +162,11 @@
       "sinistralite": "5,42 €",
       "spBrut": "0,01 %",
       "spNet": "0,01 %",
-      "isProjection": true
+      "isProjection": true,
+      "recours": "—",
+      "sinistraliteNetteRecours": "5,42 €",
+      "spBrutRecours": "0,0 %",
+      "spNetRecours": "0,0 %"
     },
     "calloutProjection": "Projection 2026. Mois couverts = 6 (quittances émises de janvier à juin 2026). Facteur appliqué sur les primes : 12 / 6 = ×2,00. La sinistralité 2026 est laissée à sa valeur observée (non projetée)."
   },
@@ -543,6 +559,18 @@
       "label": "Contrats actifs",
       "value": "21",
       "sub": "55 260,90 € TTC/an"
+    },
+    {
+      "label": "Recours encaissés (cumul)",
+      "value": "13 682,65 €",
+      "sub": "2 sinistres ≥ 3 000 €",
+      "accent": "vert"
+    },
+    {
+      "label": "S/P net cumulé (avec recours)",
+      "value": "21,9 %",
+      "sub": "vs 43,9 % hors recours",
+      "accent": "vert"
     }
   ],
   "methodologie": {
@@ -558,12 +586,13 @@
       "02_CONTRATS_A.PNG, B.PNG, C.PNG, D.PNG — captures Lagon liste contrats (actifs + résiliés)",
       "03_SINISTRE_A.PNG, B.PNG, C.PNG — captures Lagon liste sinistres",
       "QUITTANCE_EXP2026052714055680.XLSX — export Lagon quittances",
-      "Date d'extraction Lagon : 27/05/2026"
+      "Date d'extraction Lagon : 27/05/2026",
+      "Recours encaissés intégrés (sinistres ≥ 3 000 € payés par Allianz), rattachés à l'année de déclaration via le n° de sinistre. Sinistralité nette = max(0 ; sinistres payés − recours) par année (plancher annuel). S/P bis = sinistralité nette ÷ prime nette."
     ],
     "controles": [
       {
-        "type": "warn",
-        "texte": "Données disponibles : primes brutes, commissions, sinistres payés. Données manquantes : taxes, recours encaissés. → Tous les S/P produits sont qualifiés « brut hors recours / hors commissions »."
+        "type": "check",
+        "texte": "✓ Recours encaissés intégrés : 2 sinistres ≥ 3 000 € pour 13 682,65 €. S/P net cumulé corrigé : 43,9 % → 21,9 %."
       },
       {
         "type": "check",
@@ -579,11 +608,20 @@
       "02_CONTRATS_A.PNG, B.PNG, C.PNG, D.PNG — captures Lagon liste contrats (actifs + résiliés)",
       "03_SINISTRE_A.PNG, B.PNG, C.PNG — captures Lagon liste sinistres",
       "QUITTANCE_EXP2026052714055680.XLSX — export Lagon quittances",
-      "Date d'extraction Lagon : 27/05/2026"
+      "Date d'extraction Lagon : 27/05/2026",
+      "Captures Lagon « Garanties sinistrées » — dossier docs/Recours (33 sinistres, 9 clients)."
     ]
   },
   "footer": {
     "agence": "Agence Allianz Marseille : Nogaro & Boetti",
     "dateGeneration": "27 mai 2026"
+  },
+  "recoursInfo": {
+    "totalRecours": "13 682,65 €",
+    "nbSinistres": 2,
+    "sinistraliteNetteCumul": "13 672,21 €",
+    "spNetCumulBrut": "43,9 %",
+    "spNetCumulRecours": "21,9 %",
+    "note": "2 recours encaissés (sinistres ≥ 3 000 € payés par Allianz) déduits par année de déclaration. S/P net cumulé : 43,9 % → 21,9 % avec recours."
   }
 }

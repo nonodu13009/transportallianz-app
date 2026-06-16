@@ -8,7 +8,8 @@ import type {
 } from "@/types/fiche";
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle, AlertTriangle, ArrowLeft } from "lucide-react";
+import { useState } from "react";
+import { CheckCircle, AlertTriangle, ArrowLeft, RotateCcw } from "lucide-react";
 
 function spAccent(value: string): "vert" | "orange" | "rouge" | undefined {
   const num = parseFloat(value.replace(/[^0-9.,]/g, "").replace(",", "."));
@@ -122,6 +123,22 @@ function DataTable({
 }
 
 export default function FicheClientView({ data }: { data: FicheData }) {
+  const hasRecours = Boolean(data.recoursInfo);
+  const [avecRecours, setAvecRecours] = useState(false);
+  const recoursOn = hasRecours && avecRecours;
+
+  const syntheseHeaders = [
+    "Annee",
+    "Primes",
+    "Commissions",
+    "Prime nette",
+    "Nb sin.",
+    recoursOn ? "Sinistralite nette" : "Sinistralite",
+    ...(recoursOn ? ["Recours"] : []),
+    "S/P brut",
+    recoursOn ? "S/P net (recours)" : "S/P net",
+  ];
+
   return (
     <div className="max-w-[1100px] mx-auto px-6 pb-20">
       {/* ── Back button ── */}
@@ -189,28 +206,59 @@ export default function FicheClientView({ data }: { data: FicheData }) {
         title="Synthese annuelle"
         lead={data.syntheseAnnuelle.intro}
       />
-      <DataTable
-        headers={[
-          "Annee",
-          "Primes",
-          "Commissions",
-          "Prime nette",
-          "Nb sin.",
-          "Sinistralite",
-          "S/P brut",
-          "S/P net",
-        ]}
-      >
+
+      {/* Toggle recours (uniquement si la fiche a des recours integres) */}
+      {hasRecours && data.recoursInfo && (
+        <div className="mb-4 flex flex-wrap items-center justify-between gap-3 px-4 py-3 rounded-[14px] border border-[var(--line)] bg-white">
+          <div className="flex items-center gap-2 text-[13px] text-[var(--ink-2)]">
+            <RotateCcw size={15} className="text-[var(--sage-deep)]" />
+            <span>
+              Sinistralite : <strong>{recoursOn ? "nette de recours" : "brute"}</strong>
+            </span>
+          </div>
+          <div className="inline-flex rounded-full border border-[var(--line)] p-0.5 bg-[var(--surface-2)]">
+            <button
+              type="button"
+              onClick={() => setAvecRecours(false)}
+              className={`px-3 py-1 text-[13px] font-medium rounded-full transition-colors ${
+                !avecRecours ? "bg-white shadow-sm text-[var(--ink)]" : "text-[var(--muted)]"
+              }`}
+            >
+              Sans recours
+            </button>
+            <button
+              type="button"
+              onClick={() => setAvecRecours(true)}
+              className={`px-3 py-1 text-[13px] font-medium rounded-full transition-colors ${
+                avecRecours ? "bg-white shadow-sm text-[var(--ink)]" : "text-[var(--muted)]"
+              }`}
+            >
+              Avec recours
+            </button>
+          </div>
+        </div>
+      )}
+
+      <DataTable headers={syntheseHeaders}>
         {data.syntheseAnnuelle.rows.map((r, i) => (
-          <SyntheseTableRow key={i} row={r} />
+          <SyntheseTableRow key={i} row={r} recoursOn={recoursOn} />
         ))}
         {data.syntheseAnnuelle.projection && (
           <SyntheseTableRow
             row={data.syntheseAnnuelle.projection}
             isProjection
+            recoursOn={recoursOn}
           />
         )}
       </DataTable>
+
+      {/* Bandeau impact recours */}
+      {recoursOn && data.recoursInfo && (
+        <div className="mt-3 px-5 py-3 rounded-lg bg-[var(--ok-bg)] text-[var(--ok-fg)] text-[13px] border border-emerald-200 flex items-start gap-2">
+          <CheckCircle size={16} className="mt-0.5 shrink-0" />
+          <span>{data.recoursInfo.note}</span>
+        </div>
+      )}
 
       {data.syntheseAnnuelle.calloutProjection && (
         <div className="mt-3 px-5 py-3 rounded-lg bg-[var(--surface-2)] text-[13px] text-[var(--ink-2)] border border-[var(--line)]">
@@ -466,10 +514,20 @@ export default function FicheClientView({ data }: { data: FicheData }) {
 function SyntheseTableRow({
   row,
   isProjection,
+  recoursOn,
 }: {
   row: SyntheseRow;
   isProjection?: boolean;
+  recoursOn?: boolean;
 }) {
+  const sinistralite =
+    recoursOn && row.sinistraliteNetteRecours
+      ? row.sinistraliteNetteRecours
+      : row.sinistralite;
+  const spBrut =
+    recoursOn && row.spBrutRecours ? row.spBrutRecours : row.spBrut;
+  const spNet = recoursOn && row.spNetRecours ? row.spNetRecours : row.spNet;
+
   return (
     <tr
       className={`border-b border-[var(--line-2)] last:border-0 ${isProjection ? "bg-amber-50/60 italic" : ""}`}
@@ -486,13 +544,18 @@ function SyntheseTableRow({
       </td>
       <td className="px-4 py-3 text-sm text-right">{row.nbSinistres}</td>
       <td className="px-4 py-3 text-sm text-right tabular-nums">
-        {row.sinistralite}
+        {sinistralite}
+      </td>
+      {recoursOn && (
+        <td className="px-4 py-3 text-sm text-right tabular-nums text-[var(--sage-deep)]">
+          {row.recours ?? "—"}
+        </td>
+      )}
+      <td className="px-4 py-3 text-sm text-right">
+        <SpBadge value={spBrut} />
       </td>
       <td className="px-4 py-3 text-sm text-right">
-        <SpBadge value={row.spBrut} />
-      </td>
-      <td className="px-4 py-3 text-sm text-right tabular-nums">
-        {row.spNet}
+        {recoursOn ? <SpBadge value={spNet} /> : <span className="tabular-nums">{spNet}</span>}
       </td>
     </tr>
   );

@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "description": "Recours encaissés Allianz sur sinistres ≥ 3 000 € payés, par client transport.",
+    "cle": "n° de sinistre (numSinistre société + numAgence composé)",
+    "rattachement": "année de déclaration (préfixe numAgence)",
+    "regleSP": "S/P bis = max(0 ; sinistres payés − recours) / prime nette, plancher annuel",
+    "source": "Captures Lagon écran Garanties sinistrées (docs/Recours)",
+    "nbSinistres": 33,
+    "nbClients": 9
+  },
+  "parClient": {
+    "al-delivry": {
+      "totalRecours": 13682.65,
+      "nbSinistres": 2,
+      "parAnnee": {
+        "2025": 13682.65
+      },
+      "sinistres": [
+        {
+          "numSinistre": "20251697768",
+          "numAgence": "202501420",
+          "police": "AF421121825",
+          "anneeDeclaration": 2025,
+          "survenance": "02/10/2025",
+          "recours": 7072.12,
+          "regleAllianz": 7193.34,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20251746055",
+          "numAgence": "202501850",
+          "police": "AF413424414",
+          "anneeDeclaration": 2025,
+          "survenance": "09/12/2025",
+          "recours": 6610.53,
+          "regleAllianz": 6734.65,
+          "situation": "Réglé"
+        }
+      ]
+    },
+    "aso-transports": {
+      "totalRecours": 15856.32,
+      "nbSinistres": 3,
+      "parAnnee": {
+        "2019": 1482.0,
+        "2022": 4503.06,
+        "2023": 9871.26
+      },
+      "sinistres": [
+        {
+          "numSinistre": "20191600015",
+          "numAgence": "201900916",
+          "police": "60641033",
+          "anneeDeclaration": 2019,
+          "survenance": "02/11/2019",
+          "recours": 1482.0,
+          "regleAllianz": 5234.6,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20221535543",
+          "numAgence": "202200239",
+          "police": "60641033",
+          "anneeDeclaration": 2022,
+          "survenance": "02/12/2021",
+          "recours": 4503.06,
+          "regleAllianz": 10661.12,
+          "situation": "Ouvert"
+        },
+        {
+          "numSinistre": "20231678818",
+          "numAgence": "202300918",
+          "police": "AF413103256",
+          "anneeDeclaration": 2023,
+          "survenance": "11/09/2023",
+          "recours": 9871.26,
+          "regleAllianz": 9984.68,
+          "situation": "Réglé"
+        }
+      ]
+    },
+    "groupement-marseillais-de-transporteurs": {
+      "totalRecours": 9861.7,
+      "nbSinistres": 2,
+      "parAnnee": {
+        "2025": 9861.7
+      },
+      "sinistres": [
+        {
+          "numSinistre": "20251608458",
+          "numAgence": "202500746",
+          "police": "AF413655131",
+          "anneeDeclaration": 2025,
+          "survenance": "27/05/2025",
+          "recours": 4361.7,
+          "regleAllianz": 8844.63,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20251622978",
+          "numAgence": "202500880",
+          "police": "AF413623332",
+          "anneeDeclaration": 2025,
+          "survenance": "05/06/2025",
+          "recours": 5500.0,
+          "regleAllianz": 5718.37,
+          "situation": "Réglé"
+        }
+      ]
+    },
+    "kfb-transports": {
+      "totalRecours": 30783.0,
+      "nbSinistres": 9,
+      "parAnnee": {
+        "2023": 5328.0,
+        "2024": 23425.0,
+        "2025": 2030.0
+      },
+      "sinistres": [
+        {
+          "numSinistre": "20231664503",
+          "numAgence": "202300838",
+          "police": "AF406179844",
+          "anneeDeclaration": 2023,
+          "survenance": "11/08/2023",
+          "recours": 3552.0,
+          "regleAllianz": 5332.32,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20231684635",
+          "numAgence": "202300962",
+          "police": "AF413027007",
+          "anneeDeclaration": 2023,
+          "survenance": "28/08/2023",
+          "recours": 1776.0,
+          "regleAllianz": 3460.86,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20241558749",
+          "numAgence": "202400391",
+          "police": "AF413267685",
+          "anneeDeclaration": 2024,
+          "survenance": "18/03/2024",
+          "recours": 6700.0,
+          "regleAllianz": 6903.12,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20241586971",
+          "numAgence": "202400577",
+          "police": "AF406737369",
+          "anneeDeclaration": 2024,
+          "survenance": "02/05/2024",
+          "recours": 1950.0,
+          "regleAllianz": 5190.32,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20241677391",
+          "numAgence": "202401126",
+          "police": "AF413395356",
+          "anneeDeclaration": 2024,
+          "survenance": "27/08/2024",
+          "recours": 975.0,
+          "regleAllianz": 5318.08,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20241690013",
+          "numAgence": "202401196",
+          "police": "AF407775507",
+          "anneeDeclaration": 2024,
+          "survenance": "17/09/2024",
+          "recours": 9900.0,
+          "regleAllianz": 10103.12,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20241713016",
+          "numAgence": "202401345",
+          "police": "AF413395410",
+          "anneeDeclaration": 2024,
+          "survenance": "18/10/2024",
+          "recours": 1950.0,
+          "regleAllianz": 5537.64,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20241759725",
+          "numAgence": "202401663",
+          "police": "AF413027007",
+          "anneeDeclaration": 2024,
+          "survenance": "19/12/2024",
+          "recours": 1950.0,
+          "regleAllianz": 5838.78,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20251648787",
+          "numAgence": "202501055",
+          "police": "AF406179800",
+          "anneeDeclaration": 2025,
+          "survenance": "24/07/2025",
+          "recours": 2030.0,
+          "regleAllianz": 6464.5,
+          "situation": "Réglé"
+        }
+      ]
+    },
+    "kst-13": {
+      "totalRecours": 11057.23,
+      "nbSinistres": 2,
+      "parAnnee": {
+        "2022": 9107.23,
+        "2024": 1950.0
+      },
+      "sinistres": [
+        {
+          "numSinistre": "20221712087",
+          "numAgence": "202201170",
+          "police": "AF405812264",
+          "anneeDeclaration": 2022,
+          "survenance": "04/11/2022",
+          "recours": 9107.23,
+          "regleAllianz": 7612.65,
+          "situation": "Sans suite"
+        },
+        {
+          "numSinistre": "20241688405",
+          "numAgence": "202401172",
+          "police": "AF413423151",
+          "anneeDeclaration": 2024,
+          "survenance": "16/09/2024",
+          "recours": 1950.0,
+          "regleAllianz": 3072.35,
+          "situation": "Réglé"
+        }
+      ]
+    },
+    "logestra-hexagone": {
+      "totalRecours": 2030.0,
+      "nbSinistres": 1,
+      "parAnnee": {
+        "2026": 2030.0
+      },
+      "sinistres": [
+        {
+          "numSinistre": "20261532181",
+          "numAgence": "202600259",
+          "police": "AF421239483",
+          "anneeDeclaration": 2026,
+          "survenance": "05/02/2026",
+          "recours": 2030.0,
+          "regleAllianz": 4413.92,
+          "situation": "Réglé"
+        }
+      ]
+    },
+    "tln-express": {
+      "totalRecours": 4060.0,
+      "nbSinistres": 1,
+      "parAnnee": {
+        "2025": 4060.0
+      },
+      "sinistres": [
+        {
+          "numSinistre": "20251702920",
+          "numAgence": "202501455",
+          "police": "AF413858073",
+          "anneeDeclaration": 2025,
+          "survenance": "08/10/2025",
+          "recours": 4060.0,
+          "regleAllianz": 5849.28,
+          "situation": "Réglé"
+        }
+      ]
+    },
+    "trans-faire": {
+      "totalRecours": 19587.68,
+      "nbSinistres": 5,
+      "parAnnee": {
+        "2022": 8801.68,
+        "2023": 1776.0,
+        "2025": 9010.0
+      },
+      "sinistres": [
+        {
+          "numSinistre": "20221551586",
+          "numAgence": "202200334",
+          "police": "AF406123498",
+          "anneeDeclaration": 2022,
+          "survenance": "23/03/2022",
+          "recours": 8801.68,
+          "regleAllianz": 6879.9,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20231656198",
+          "numAgence": "202300799",
+          "police": "AF407655677",
+          "anneeDeclaration": 2023,
+          "survenance": "11/08/2023",
+          "recours": 1776.0,
+          "regleAllianz": 5228.31,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20251550979",
+          "numAgence": "202500355",
+          "police": "AF413393222",
+          "anneeDeclaration": 2025,
+          "survenance": "18/03/2025",
+          "recours": 2030.0,
+          "regleAllianz": 2585.19,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20251745100",
+          "numAgence": "202501840",
+          "police": "AF413818656",
+          "anneeDeclaration": 2025,
+          "survenance": "07/12/2025",
+          "recours": 4950.0,
+          "regleAllianz": 10113.12,
+          "situation": "Ouvert"
+        },
+        {
+          "numSinistre": "20251757420",
+          "numAgence": "202501972",
+          "police": "62101583",
+          "anneeDeclaration": 2025,
+          "survenance": "17/10/2025",
+          "recours": 2030.0,
+          "regleAllianz": 2030.0,
+          "situation": "Réglé"
+        }
+      ]
+    },
+    "trust-transport-services": {
+      "totalRecours": 32472.84,
+      "nbSinistres": 8,
+      "parAnnee": {
+        "2023": 17141.6,
+        "2024": 3900.0,
+        "2025": 11431.24
+      },
+      "sinistres": [
+        {
+          "numSinistre": "20231542169",
+          "numAgence": "202300218",
+          "police": "AF406738170",
+          "anneeDeclaration": 2023,
+          "survenance": "03/03/2023",
+          "recours": 10037.6,
+          "regleAllianz": 9492.02,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20231588879",
+          "numAgence": "202300449",
+          "police": "AF407777661",
+          "anneeDeclaration": 2023,
+          "survenance": "14/05/2023",
+          "recours": 5328.0,
+          "regleAllianz": 5913.92,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20231678809",
+          "numAgence": "202300917",
+          "police": "AF406761217",
+          "anneeDeclaration": 2023,
+          "survenance": "11/09/2023",
+          "recours": 1776.0,
+          "regleAllianz": 6344.87,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20241543636",
+          "numAgence": "202400301",
+          "police": "AF405810826",
+          "anneeDeclaration": 2024,
+          "survenance": "03/02/2024",
+          "recours": 1950.0,
+          "regleAllianz": 3740.35,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20241543843",
+          "numAgence": "202400303",
+          "police": "AF406721329",
+          "anneeDeclaration": 2024,
+          "survenance": "01/03/2024",
+          "recours": 1950.0,
+          "regleAllianz": 3740.36,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20251574521",
+          "numAgence": "202500513",
+          "police": "AF405817255",
+          "anneeDeclaration": 2025,
+          "survenance": "16/04/2025",
+          "recours": 2030.0,
+          "regleAllianz": 3835.87,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20251652328",
+          "numAgence": "202501081",
+          "police": "AF413130001",
+          "anneeDeclaration": 2025,
+          "survenance": "29/07/2025",
+          "recours": 7371.24,
+          "regleAllianz": 7442.26,
+          "situation": "Réglé"
+        },
+        {
+          "numSinistre": "20251716714",
+          "numAgence": "202501576",
+          "police": "AF405810832",
+          "anneeDeclaration": 2025,
+          "survenance": "28/10/2025",
+          "recours": 2030.0,
+          "regleAllianz": 3987.0,
+          "situation": "Réglé"
+        }
+      ]
+    }
+  },
+  "totaux": {
+    "recours": 139391.42,
+    "regleAllianz": 200801.5
+  }
+}
