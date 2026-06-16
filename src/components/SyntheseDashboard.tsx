@@ -524,7 +524,8 @@ export default function SyntheseDashboard() {
           <span className="inline-flex items-center gap-1 mt-1 text-emerald-700">
             <Undo2 size={11} strokeWidth={2.5} />
             {nbAvecRecours} fiches enrichies des recours encaisses (S/P bis
-            disponible en detail).
+            disponible en detail). Nous n&apos;avons cherche a detailler les
+            recours que pour les sinistres payes &ge; 3 000 &euro;.
           </span>
         </span>
         <span>Agence Allianz Marseille : Nogaro &amp; Boetti</span>
