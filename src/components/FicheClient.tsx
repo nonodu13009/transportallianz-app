@@ -9,7 +9,45 @@ import type {
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { CheckCircle, AlertTriangle, ArrowLeft, RotateCcw } from "lucide-react";
+import { CheckCircle, AlertTriangle, ArrowLeft, RotateCcw, ArrowRight } from "lucide-react";
+import recoursData from "@/data/recours.json";
+
+type RecoursSinistre = {
+  police: string;
+  recours: number;
+  numSinistre: string;
+  situation: string;
+  survenance: string;
+};
+
+// Détail des recours encaissés, groupés par contrat (police), pour un client.
+// Source de vérité : recours.json — pas de liste codée en dur dans les fiches.
+function recoursParContrat(slug: string) {
+  const entry = (
+    recoursData.parClient as Record<string, { sinistres?: RecoursSinistre[] }>
+  )[slug];
+  if (!entry?.sinistres?.length) return [];
+  const map = new Map<
+    string,
+    { police: string; total: number; nbSin: number; dates: string[] }
+  >();
+  for (const s of entry.sinistres) {
+    const cur =
+      map.get(s.police) ?? { police: s.police, total: 0, nbSin: 0, dates: [] };
+    cur.total += s.recours;
+    cur.nbSin += 1;
+    if (s.survenance) cur.dates.push(s.survenance);
+    map.set(s.police, cur);
+  }
+  return [...map.values()].sort((a, b) => b.total - a.total);
+}
+
+function fmtEuro2(n: number): string {
+  return n.toLocaleString("fr-FR", {
+    minimumFractionDigits: 2,
+    maximumFractionDigits: 2,
+  }) + " €";
+}
 
 function spAccent(value: string): "vert" | "orange" | "rouge" | undefined {
   const num = parseFloat(value.replace(/[^0-9.,]/g, "").replace(",", "."));
@@ -94,6 +132,42 @@ function SpBadge({ value }: { value: string }) {
   );
 }
 
+// Cellule S/P : en mode recours, montre la direction « base → après recours »
+// (ancienne valeur barrée + flèche + nouvelle valeur) pour rendre la baisse explicite.
+function SpCell({
+  base,
+  recours,
+  recoursOn,
+  plain,
+}: {
+  base: string;
+  recours?: string;
+  recoursOn?: boolean;
+  plain?: boolean;
+}) {
+  const improved =
+    recoursOn && recours && recours !== base && base !== "–" && base !== "—";
+
+  if (improved) {
+    return (
+      <span className="inline-flex items-center gap-1.5 justify-end">
+        <span className="text-[12px] tabular-nums text-[var(--muted)] line-through">
+          {base}
+        </span>
+        <ArrowRight size={12} className="text-[var(--sage-deep)] shrink-0" />
+        <SpBadge value={recours!} />
+      </span>
+    );
+  }
+
+  const value = recoursOn && recours ? recours : base;
+  return plain ? (
+    <span className="tabular-nums">{value}</span>
+  ) : (
+    <SpBadge value={value} />
+  );
+}
+
 function DataTable({
   headers,
   children,
@@ -126,6 +200,7 @@ export default function FicheClientView({ data }: { data: FicheData }) {
   const hasRecours = Boolean(data.recoursInfo);
   const [avecRecours, setAvecRecours] = useState(false);
   const recoursOn = hasRecours && avecRecours;
+  const recoursContrats = recoursParContrat(data.slug);
 
   const syntheseHeaders = [
     "Annee",
@@ -257,6 +332,65 @@ export default function FicheClientView({ data }: { data: FicheData }) {
         <div className="mt-3 px-5 py-3 rounded-lg bg-[var(--ok-bg)] text-[var(--ok-fg)] text-[13px] border border-emerald-200 flex items-start gap-2">
           <CheckCircle size={16} className="mt-0.5 shrink-0" />
           <span>{data.recoursInfo.note}</span>
+        </div>
+      )}
+
+      {/* Recours par contrat (détail des polices ayant généré un recours) */}
+      {recoursOn && recoursContrats.length > 0 && (
+        <div className="mt-3">
+          <div className="text-[11.5px] text-[var(--muted)] uppercase tracking-[0.06em] font-medium mb-2 px-1">
+            Recours par contrat
+          </div>
+          <div className="overflow-x-auto rounded-[14px] border border-[var(--line)] bg-white">
+            <table className="w-full border-collapse text-sm">
+              <thead>
+                <tr>
+                  {["N° contrat", "Survenance", "Recours encaisse", "Nb sin."].map((h, i) => (
+                    <th
+                      key={i}
+                      className={`text-left font-medium text-[11.5px] tracking-[0.08em] uppercase text-[var(--muted)] px-4 py-3 border-b border-[var(--line)] ${i > 0 ? "text-right" : ""}`}
+                    >
+                      {h}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {recoursContrats.map((c) => (
+                  <tr
+                    key={c.police}
+                    className="border-b border-[var(--line-2)] last:border-0"
+                  >
+                    <td className="px-4 py-3 text-sm font-medium tabular-nums">
+                      {c.police}
+                    </td>
+                    <td className="px-4 py-3 text-sm tabular-nums text-[var(--ink-2)]">
+                      {c.dates.join(", ") || "—"}
+                    </td>
+                    <td className="px-4 py-3 text-sm text-right tabular-nums text-[var(--sage-deep)] font-semibold">
+                      {fmtEuro2(c.total)}
+                    </td>
+                    <td className="px-4 py-3 text-sm text-right tabular-nums">
+                      {c.nbSin}
+                    </td>
+                  </tr>
+                ))}
+                <tr className="bg-[var(--surface-2)] font-semibold">
+                  <td className="px-4 py-3 text-sm" colSpan={2}>
+                    Total
+                  </td>
+                  <td className="px-4 py-3 text-sm text-right tabular-nums text-[var(--sage-deep)]">
+                    {fmtEuro2(
+                      recoursContrats.reduce((s, c) => s + c.total, 0),
+                    )}
+                  </td>
+                  <td className="px-4 py-3 text-sm text-right tabular-nums">
+                    {recoursContrats.reduce((s, c) => s + c.nbSin, 0)}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       )}
 
@@ -524,9 +658,6 @@ function SyntheseTableRow({
     recoursOn && row.sinistraliteNetteRecours
       ? row.sinistraliteNetteRecours
       : row.sinistralite;
-  const spBrut =
-    recoursOn && row.spBrutRecours ? row.spBrutRecours : row.spBrut;
-  const spNet = recoursOn && row.spNetRecours ? row.spNetRecours : row.spNet;
 
   return (
     <tr
@@ -552,10 +683,15 @@ function SyntheseTableRow({
         </td>
       )}
       <td className="px-4 py-3 text-sm text-right">
-        <SpBadge value={spBrut} />
+        <SpCell base={row.spBrut} recours={row.spBrutRecours} recoursOn={recoursOn} />
       </td>
       <td className="px-4 py-3 text-sm text-right">
-        {recoursOn ? <SpBadge value={spNet} /> : <span className="tabular-nums">{spNet}</span>}
+        <SpCell
+          base={row.spNet}
+          recours={row.spNetRecours}
+          recoursOn={recoursOn}
+          plain={!recoursOn}
+        />
       </td>
     </tr>
   );
